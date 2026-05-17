@@ -32,5 +32,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-17",
+    "date_verification": "2026-06-14",
+    "score_actuel": 0.32,
+    "score_predit": 0.41,
+    "niveau_alerte_predit": "TENSION",
+    "signal_dominant": "Liquidation actifs Vancouver",
+    "prediction_fr": "Si la tendance vancouvéroise se confirme dans les 4 à 8 prochaines semaines, le score national pourrait grimper vers 0.40-0.45, porté par la propagation des signaux de liquidation d'actifs à d'autres marchés. Un rebond de l'activité montréalaise post-accalmie pourrait amplifier cette hausse.",
+    "prediction_en": "If Vancouver's trend consolidates over the next 4 to 8 weeks, the national score could climb toward 0.40-0.45, driven by asset liquidation signals spreading to other markets. A rebound in Montreal activity following its current lull could further amplify this rise.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
