@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔭 Tous les Indicateurs Long Terme — BEAVER.WATCH</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070707;--s1:#0F0F0F;--s2:#181818;--s3:#242424;--s4:#303030;--text:#F5F0E8;--muted:#999990;--faint:#141414;--red:#FF2D2D;--orange:#FF6D00;--yellow:#FFD600;--green:#00E676;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
+.alert{width:100%;background:var(--orange);padding:11px 28px;display:flex;align-items:center;gap:12px;}
+.a-dot{width:9px;height:9px;border-radius:50%;background:#fff;flex-shrink:0;animation:blnk 1.3s infinite;}
+@keyframes blnk{0%,100%{opacity:1}50%{opacity:0.15}}
+.a-txt{font-size:0.78rem;letter-spacing:1px;font-weight:700;text-transform:uppercase;flex:1;}
+.a-time{font-size:0.65rem;opacity:0.7;}
+header{padding:18px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--orange);position:sticky;top:0;background:rgba(7,7,7,0.97);backdrop-filter:blur(8px);z-index:500;}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:5px;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);}
+.logo-c{color:var(--red);}.logo-d{color:var(--yellow);}
+.logo-sub{font-size:0.58rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px;}
+.header-right{display:flex;align-items:center;gap:10px;}
+.lang-toggle{display:flex;align-items:center;gap:2px;background:var(--s2);border:1px solid var(--s3);padding:4px;}
+.lang-btn{padding:5px 10px;font-size:0.65rem;letter-spacing:2px;font-weight:700;cursor:pointer;border:none;background:transparent;color:var(--muted);text-decoration:none;transition:all 0.2s;}
+.lang-btn.active{background:var(--orange);color:#fff;}
+.lang-btn:hover:not(.active){color:var(--text);}
+.lt-pill{display:flex;align-items:center;gap:7px;background:var(--orange);padding:7px 16px;font-size:0.62rem;letter-spacing:3px;font-weight:700;text-transform:uppercase;}
+.wrapper{max-width:700px;margin:0 auto;padding:0 28px 48px;}
+.back-link{display:inline-flex;align-items:center;gap:8px;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:28px 0 0;transition:color 0.2s;}
+.back-link:hover{color:var(--text);}
+.page-eyebrow{font-size:0.6rem;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin:24px 0 12px;display:flex;align-items:center;gap:10px;}
+.page-eyebrow::before{content:'';width:24px;height:1px;background:var(--muted);}
+.page-title{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;line-height:1;margin-bottom:14px;}
+.page-desc{font-size:0.85rem;line-height:1.9;color:var(--muted);margin-bottom:28px;}
+.score-box{background:var(--s1);border-left:4px solid var(--orange);padding:22px 24px;margin-bottom:24px;}
+.score-label{font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+.score-title{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:4px;color:var(--orange);margin-bottom:6px;}
+.score-sub{font-size:0.68rem;color:var(--muted);margin-bottom:14px;}
+.score-bar-wrap{width:100%;height:6px;background:var(--faint);margin-bottom:8px;}
+.score-bar{height:100%;width:64%;background:var(--orange);transition:width 2s ease;}
+.score-num{font-family:'Bebas Neue',sans-serif;font-size:4rem;letter-spacing:2px;color:var(--orange);line-height:1;}
+.score-status{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:3px;color:var(--orange);}
+.summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--s3);margin-bottom:28px;}
+.sg-item{background:var(--s1);padding:16px;text-align:center;}
+.sg-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;line-height:1;}
+.sg-label{font-size:0.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:5px;line-height:1.5;}
+.why-box{background:rgba(255,109,0,0.05);border-left:4px solid var(--orange);padding:20px 22px;margin-bottom:28px;}
+.why-label{font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:10px;}
+.why-txt{font-size:0.82rem;line-height:1.9;color:var(--text);}
+.why-txt strong{font-weight:700;}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:4px;color:var(--muted);margin:28px 0 14px;display:flex;align-items:center;gap:12px;}
+.sec-title::after{content:'';flex:1;height:1px;background:var(--s3);}
+.ind-card{background:var(--s1);border-left:4px solid;margin-bottom:2px;display:flex;align-items:center;text-decoration:none;color:inherit;transition:background 0.2s;overflow:hidden;}
+.ind-card:hover{background:var(--s2);}
+.ind-icon{width:64px;height:64px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0;background:rgba(255,255,255,0.03);}
+.ind-body{flex:1;padding:14px 16px;}
+.ind-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;line-height:1;margin-bottom:3px;}
+.ind-sub{font-size:0.65rem;color:var(--muted);font-style:italic;letter-spacing:0.5px;}
+.ind-source{font-size:0.55rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--s4);margin-top:5px;}
+.ind-right{padding:14px 16px;display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0;}
+.ind-val{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;line-height:1;}
+.ind-badge{font-size:0.55rem;letter-spacing:2px;padding:4px 10px;font-weight:700;text-transform:uppercase;border:1px solid;}
+.badge-r{color:var(--red);border-color:rgba(255,45,45,0.4);background:rgba(255,45,45,0.08);}
+.badge-o{color:var(--orange);border-color:rgba(255,109,0,0.4);background:rgba(255,109,0,0.08);}
+.badge-y{color:var(--yellow);border-color:rgba(255,214,0,0.4);background:rgba(255,214,0,0.08);}
+.ind-lead{font-size:0.55rem;letter-spacing:1px;color:var(--muted);}
+.ind-arrow{font-size:0.8rem;color:var(--muted);margin-top:2px;}
+footer{margin:32px 0 0;padding:16px 0;border-top:1px solid var(--s3);display:flex;justify-content:space-between;align-items:center;}
+.foot-brand{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:5px;color:var(--muted);}
+.foot-meta{font-size:0.58rem;letter-spacing:1.5px;color:var(--muted);text-align:right;line-height:2;text-transform:uppercase;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.wrapper{animation:fadeUp 0.4s ease both;}
+</style>
+</head>
+<body>
+<div class="alert">
+  <div class="a-dot"></div>
+  <div class="a-txt">🔭 Score Long Terme : 64/100 — 6 indicateurs critiques. Stress structurel en hausse.</div>
+  <div class="a-time" id="clock">--:--:--</div>
+</div>
+<header>
+  <a href="index-fr.html" class="logo"><span>🦫</span><div><div><span class="logo-c">BEAVER</span><span class="logo-d">.</span>WATCH</div><div class="logo-sub">Baromètre de Stress Canadien</div></div></a>
+  <div class="header-right">
+    <div class="lang-toggle">
+      <a class="lang-btn" href="all-long-term.html">🇬🇧 EN</a>
+      <span class="lang-btn active">🇫🇷 FR</span>
+    </div>
+    <div class="lt-pill">🔭 LONG TERME</div>
+  </div>
+</header>
+<div class="wrapper">
+  <a href="index-fr.html" class="back-link">← Retour au tableau de bord</a>
+  <div class="page-eyebrow">🍁 Indicateurs Structurels Long Terme — Canada</div>
+  <div class="page-title">Tous les Indicateurs<br>Long Terme</div>
+  <div class="page-desc">Cliquez sur un indicateur pour voir le tableau de bord complet — jauge, données historiques, conséquences prédites, chaîne causale et sources. Mis à jour annuellement à partir de données officielles canadiennes.</div>
+
+  <div class="score-box">
+    <div class="score-label">🔭 Score Structurel Long Terme</div>
+    <div class="score-title">⚡ MODÉRÉ — Stress structurel en hausse</div>
+    <div class="score-sub">11 indicateurs · Mis à jour annuellement · Sources : StatCan, SCHL, Leger, CCPA, Élections Canada</div>
+    <div class="score-bar-wrap"><div class="score-bar"></div></div>
+    <div class="score-num">64</div>
+    <div class="score-status">/ 100</div>
+  </div>
+
+  <div class="summary-grid">
+    <div class="sg-item">
+      <div class="sg-num" style="color:var(--red)">7</div>
+      <div class="sg-label">🔴 Critique</div>
+    </div>
+    <div class="sg-item">
+      <div class="sg-num" style="color:var(--orange)">2</div>
+      <div class="sg-label">🟠 Élevé</div>
+    </div>
+    <div class="sg-item">
+      <div class="sg-num" style="color:var(--yellow)">2</div>
+      <div class="sg-label">🟡 Surveiller</div>
+    </div>
+  </div>
+
+  <div class="why-box">
+    <div class="why-label">📊 Pourquoi Ces Indicateurs</div>
+    <div class="why-txt">Sélectionnés sur la base de preuves historiques : dans les sociétés qui ont connu des bouleversements majeurs — dont l'effondrement de l'URSS, l'Europe d'après-guerre et les crises latino-américaines des années 1980 — <strong>ces signaux sont apparus des années avant que la crise ne devienne visible.</strong> Pas d'idéologie. Pas d'agenda. Juste des patterns qui se répètent à travers l'histoire.</div>
+  </div>
+
+  <div class="sec-title">🔬 Beaver Physics — Les lois universelles</div>
+
+  <a class="ind-card" href="beaver-physics-fr.html" style="border-color:#A78BFA;background:linear-gradient(90deg,rgba(167,139,250,0.08),var(--s1));">
+    <div class="ind-icon">🔬</div>
+    <div class="ind-body">
+      <div class="ind-name">Beaver Physics — Turchin & Bifurcation</div>
+      <div class="ind-sub">« L'histoire ne se répète pas. Elle rime. »</div>
+      <div class="ind-source">Cliodynamique · Théorie du chaos · StatCan + Oxfam 2026</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:#A78BFA">68</div>
+      <div class="ind-badge" style="background:rgba(167,139,250,0.15);color:#A78BFA;">🟣 INSTABILITÉ</div>
+      <div class="ind-lead">Indice Turchin</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <div class="sec-title">👶 Démographie</div>
+
+  <a class="ind-card" href="fertility-fr.html" style="border-color:var(--red);">
+    <div class="ind-icon">🍼</div>
+    <div class="ind-body">
+      <div class="ind-name">Taux de Fécondité Total</div>
+      <div class="ind-sub">« Le Canada ne se reproduit plus. »</div>
+      <div class="ind-source">StatCan · Statistiques démographiques 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">1.25</div>
+      <div class="ind-badge badge-r">🔴 CRITIQUE</div>
+      <div class="ind-lead">Prédit 10–20 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <a class="ind-card" href="infant-mortality-fr.html" style="border-color:var(--yellow);">
+    <div class="ind-icon">👶</div>
+    <div class="ind-body">
+      <div class="ind-name">Taux de Mortalité Infantile</div>
+      <div class="ind-sub">« Stagnation depuis 2018 dans un pays riche. »</div>
+      <div class="ind-source">StatCan · Institut canadien d'information sur la santé 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--yellow)">4.8</div>
+      <div class="ind-badge badge-y">🟡 SURVEILLER</div>
+      <div class="ind-lead">Prédit 5–15 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <a class="ind-card" href="exogenous-birth-fr.html" style="border-color:var(--orange);">
+    <div class="ind-icon">🌍</div>
+    <div class="ind-body">
+      <div class="ind-name">Taux de Naissance Exogène</div>
+      <div class="ind-sub">« 42.3% des naissances — familles d'immigration. »</div>
+      <div class="ind-source">StatCan · Recensement 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--orange)">42.3%</div>
+      <div class="ind-badge badge-o">🟠 EN TRANSITION</div>
+      <div class="ind-lead">Prédit 10–20 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <div class="sec-title">🎓 Éducation et Genre</div>
+
+  <a class="ind-card" href="gender-gap-fr.html" style="border-color:var(--red);">
+    <div class="ind-icon">🎓</div>
+    <div class="ind-body">
+      <div class="ind-name">Écart Scolaire Hommes/Femmes</div>
+      <div class="ind-sub">« Femmes 71% vs Hommes 57% des diplômés. »</div>
+      <div class="ind-source">StatCan · Indicateurs d'éducation 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">71/57</div>
+      <div class="ind-badge badge-r">🔴 CRITIQUE</div>
+      <div class="ind-lead">Prédit 10–20 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <div class="sec-title">💰 Économie et Inégalité</div>
+
+  <a class="ind-card" href="housing-ratio-fr.html" style="border-color:var(--red);">
+    <div class="ind-icon">🏠</div>
+    <div class="ind-body">
+      <div class="ind-name">Ratio Accessibilité Logement</div>
+      <div class="ind-sub">« Prix > 9x le revenu médian annuel. »</div>
+      <div class="ind-source">SCHL · Évaluation du marché immobilier 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">>9x</div>
+      <div class="ind-badge badge-r">🔴 CRITIQUE</div>
+      <div class="ind-lead">Prédit 5–15 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <a class="ind-card" href="ceo-wage-fr.html" style="border-color:var(--red);">
+    <div class="ind-icon">💼</div>
+    <div class="ind-body">
+      <div class="ind-name">Ratio PDG vs Salaire Médian</div>
+      <div class="ind-sub">« Le PDG gagne le salaire annuel médian au 3 janvier. »</div>
+      <div class="ind-source">CCPA · Rapport sur les inégalités 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">250x</div>
+      <div class="ind-badge badge-r">🔴 CRITIQUE</div>
+      <div class="ind-lead">Prédit 5–20 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <a class="ind-card" href="bnpl-fr.html" style="border-color:var(--orange);">
+    <div class="ind-icon">💳</div>
+    <div class="ind-body">
+      <div class="ind-name">Croissance du Marché BNPL</div>
+      <div class="ind-sub">« Achetez maintenant, payez plus tard — et toujours plus. »</div>
+      <div class="ind-source">Rapport BNPL Canada 2026 · FCA Canada</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--orange)">+16.5%</div>
+      <div class="ind-badge badge-o">🟠 ÉLEVÉ</div>
+      <div class="ind-lead">Prédit 3–10 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <div class="sec-title">🏛️ Société et Institutions</div>
+
+  <a class="ind-card" href="male-suicide-fr.html" style="border-color:var(--yellow);">
+    <div class="ind-icon">🧠</div>
+    <div class="ind-body">
+      <div class="ind-name">Écart Taux Suicide Masculin</div>
+      <div class="ind-sub">« Stagnation depuis 2018 — loin de l'URSS mais signal préoccupant. »</div>
+      <div class="ind-source">StatCan · Statistiques sur les causes de décès 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--yellow)">3x</div>
+      <div class="ind-badge badge-y">🟡 SURVEILLER</div>
+      <div class="ind-lead">Prédit 5–20 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <a class="ind-card" href="national-identity-fr.html" style="border-color:var(--red);">
+    <div class="ind-icon">🍁</div>
+    <div class="ind-body">
+      <div class="ind-name">Désaffiliation Identité Nationale</div>
+      <div class="ind-sub">« Seulement 40% des 18–34 ans fiers d'être Canadiens. »</div>
+      <div class="ind-source">Leger · Sondage identité nationale 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">40%</div>
+      <div class="ind-badge badge-r">🔴 CRITIQUE</div>
+      <div class="ind-lead">Prédit 10–25 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <a class="ind-card" href="religious-confidence-fr.html" style="border-color:var(--yellow);">
+    <div class="ind-icon">⛪</div>
+    <div class="ind-body">
+      <div class="ind-name">Indice Confiance Religieuse</div>
+      <div class="ind-sub">« 25% disent que la religion est très importante. »</div>
+      <div class="ind-source">Environics Institute · Sondage valeurs canadiennes 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--yellow)">25%</div>
+      <div class="ind-badge badge-y">🟡 SURVEILLER</div>
+      <div class="ind-lead">Prédit 10–30 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <a class="ind-card" href="political-donations-fr.html" style="border-color:var(--orange);">
+    <div class="ind-icon">🗳️</div>
+    <div class="ind-body">
+      <div class="ind-name">Surge de Dons Politiques</div>
+      <div class="ind-sub">« +50% en 5 ans — les 5% donnent 78% de l'argent. »</div>
+      <div class="ind-source">Élections Canada · Données de financement politique 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--orange)">+50%</div>
+      <div class="ind-badge badge-o">🟠 ÉLEVÉ</div>
+      <div class="ind-lead">Prédit 3–10 ans</div>
+      <div class="ind-arrow">→</div>
+    </div>
+  </a>
+
+  <footer>
+    <div class="foot-brand">🦫 BEAVER.WATCH</div>
+    <div class="foot-meta">Données publiques canadiennes · Mis à jour annuellement<br>© 2026 BEAVER.WATCH</div>
+  </footer>
+</div>
+<script>
+function tick(){const n=new Date();document.getElementById('clock').textContent=[n.getHours(),n.getMinutes(),n.getSeconds()].map(x=>String(x).padStart(2,'0')).join(':');}
+setInterval(tick,1000);tick();
+</script>
+</body>
+</html>
