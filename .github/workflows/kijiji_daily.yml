@@ -39,15 +39,18 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      - name: 📁 List generated files (debug)
+        run: |
+          echo "=== JSON files in repo root ==="
+          ls -la *.json || echo "No JSON files found in root"
+
       - name: 💾 Commit and push
         run: |
           git config --global user.name "Beaver Bot 🦫"
           git config --global user.email "beaver@beaver.watch"
-          git stash
-          git pull origin main
-          git stash pop
-          git add kijiji_data.json kijiji_baseline.json kijiji_history.json trends_data.json auto_theft_data.json auto_theft_history.json || true
-          git add kijiji_predictions.json auto_theft_predictions.json || true
+          git pull origin main --no-rebase || true
+          git add -A
+          git status
           git diff --staged --quiet || git commit -m "🦫 Daily update $(date +'%Y-%m-%d') — Kijiji + Trends + Auto Theft + Claude"
           git push
         env:
