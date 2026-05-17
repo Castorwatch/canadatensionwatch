@@ -3,381 +3,325 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🔭 Long-Term Indicators — CASTOR.WATCH</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
+<title>🌳 Long Term — BEAVER.WATCH</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#070707;--s1:#0F0F0F;--s2:#181818;--s3:#242424;--s4:#303030;--text:#F5F0E8;--muted:#999990;--faint:#141414;--red:#FF2D2D;--orange:#FF6D00;--yellow:#FFD600;--green:#00E676;}
+:root{--bg:#070707;--s1:#0F0F0F;--s2:#181818;--s3:#242424;--s4:#303030;--text:#F5F0E8;--muted:#9A9A92;--faint:#141414;--red:#FF2D2D;--orange:#FF6D00;--yellow:#FFD600;--green:#00E676;--purple:#A78BFA;}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
 body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
-.alert{width:100%;background:var(--orange);padding:11px 28px;display:flex;align-items:center;gap:12px;}
+.alert{width:100%;background:#7C3AED;padding:11px 24px;display:flex;align-items:center;gap:12px;}
 .a-dot{width:9px;height:9px;border-radius:50%;background:#fff;flex-shrink:0;animation:blnk 1.3s infinite;}
 @keyframes blnk{0%,100%{opacity:1}50%{opacity:0.15}}
-.a-txt{font-size:0.8rem;letter-spacing:1px;font-weight:700;text-transform:uppercase;flex:1;}
-.a-time{font-size:0.7rem;opacity:0.7;}
-header{padding:20px 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--orange);position:sticky;top:0;background:rgba(7,7,7,0.97);backdrop-filter:blur(8px);z-index:500;}
-.logo{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:5px;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);}
-.logo-c{color:var(--red);}.logo-d{color:var(--yellow);}
-.logo-sub{font-size:0.65rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:3px;}
-.lt-pill{display:flex;align-items:center;gap:7px;background:var(--orange);padding:8px 18px;font-size:0.7rem;letter-spacing:3px;font-weight:700;text-transform:uppercase;}
-.wrapper{max-width:1000px;margin:0 auto;padding:0 32px 48px;}
-.back-link{display:inline-flex;align-items:center;gap:8px;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:28px 0 0;transition:color 0.2s;}
+.a-txt{font-size:0.74rem;letter-spacing:1px;font-weight:700;text-transform:uppercase;flex:1;}
+.a-time{font-size:0.62rem;opacity:0.7;}
+header{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--purple);position:sticky;top:0;background:rgba(7,7,7,0.97);backdrop-filter:blur(8px);z-index:500;}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:3px;display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--text);}
+.logo-d{color:var(--yellow);}
+.lang-toggle{display:flex;gap:2px;background:var(--s2);border:1px solid var(--s3);padding:3px;}
+.lang-btn{padding:5px 9px;font-size:0.58rem;letter-spacing:1px;font-weight:700;border:none;background:transparent;color:var(--muted);text-decoration:none;}
+.lang-btn.active{background:var(--purple);color:#000;}
+.wrapper{max-width:720px;margin:0 auto;padding:0 24px 48px;}
+.back-link{display:inline-flex;gap:8px;font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:24px 0 0;}
 .back-link:hover{color:var(--text);}
-.page-hero{padding:28px 0 0;}
-.page-eyebrow{font-size:0.65rem;letter-spacing:4px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:10px;}
-.page-eyebrow::before{content:'';width:24px;height:1px;background:var(--muted);}
-.page-title{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;line-height:1;margin-bottom:8px;}
-.page-desc{font-size:0.85rem;color:var(--muted);line-height:1.8;max-width:600px;}
-
-/* LT SCORE */
-.lt-score{background:var(--s1);border-left:4px solid var(--orange);padding:22px 26px;margin-top:24px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;}
-.lts-label{font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
-.lts-status{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:3px;color:var(--orange);}
-.lts-bar{width:100%;height:6px;background:var(--faint);margin-top:10px;}
-.lts-fill{height:100%;width:68%;background:var(--orange);}
-.lts-desc{font-size:0.62rem;color:var(--muted);margin-top:6px;}
-.lts-num{font-family:'Bebas Neue',sans-serif;font-size:5rem;letter-spacing:2px;line-height:1;color:var(--orange);}
-.lts-sub{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:3px;color:var(--orange);text-align:right;}
-
-/* SUMMARY */
-.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--s3);margin-top:1px;}
-.sum-block{background:var(--s1);padding:18px;display:flex;flex-direction:column;gap:5px;}
-.sum-val{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:2px;}
-.sum-lbl{font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
-
-/* CONTEXT */
-.context-box{background:rgba(255,109,0,0.05);border-left:4px solid var(--orange);padding:20px 24px;margin-top:1px;}
-.context-title{font-size:0.6rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:8px;}
-.context-txt{font-size:0.82rem;line-height:1.9;color:var(--text);}
-.context-txt strong{font-weight:700;}
-
-/* SECTION DIVIDER */
-.sec-div{display:flex;align-items:center;gap:16px;margin:32px 0 0;}
-.sec-div-title{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:4px;color:var(--muted);white-space:nowrap;}
-.sec-div-line{flex:1;height:1px;background:var(--s3);}
-
-/* INDICATOR ROWS — now <a> tags */
-.ind-list{display:flex;flex-direction:column;gap:1px;background:var(--s3);margin-top:12px;}
-
-.ind-row{background:var(--s1);display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:16px;padding:20px 24px;text-decoration:none;color:inherit;transition:background 0.2s;position:relative;}
-.ind-row::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;}
-.ind-row.red::before{background:var(--red);}
-.ind-row.orange::before{background:var(--orange);}
-.ind-row.yellow::before{background:var(--yellow);}
-.ind-row:hover{background:var(--s2);}
-.ind-row:hover .ind-arrow{opacity:1;transform:translateX(4px);}
-
-.ind-icon{font-size:1.8rem;flex-shrink:0;}
-.ind-info{display:flex;flex-direction:column;gap:4px;}
-.ind-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;line-height:1.1;}
-.ind-sub{font-size:0.62rem;color:var(--muted);font-style:italic;letter-spacing:1px;}
-.ind-impact{font-size:0.72rem;color:var(--text);line-height:1.7;margin-top:4px;}
-.ind-impact strong{font-weight:700;}
-.ind-source{font-size:0.55rem;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-top:4px;}
-
-.ind-score-col{text-align:right;flex-shrink:0;}
-.ind-val{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;line-height:1;}
-.red .ind-val{color:var(--red);}
-.orange .ind-val{color:var(--orange);}
-.yellow .ind-val{color:var(--yellow);}
-.ind-badge{font-size:0.5rem;letter-spacing:2px;padding:3px 8px;font-weight:700;text-transform:uppercase;border:1px solid;display:inline-block;margin-top:4px;}
+.bigscore{text-align:center;padding:36px 0 10px;}
+.bs-eyebrow{font-size:0.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--purple);margin-bottom:18px;display:flex;align-items:center;justify-content:center;gap:10px;}
+.bs-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(6rem,22vw,12rem);line-height:0.85;color:var(--orange);text-shadow:0 0 50px rgba(255,109,0,0.25);}
+.bs-status{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.2rem,4vw,2rem);letter-spacing:5px;color:var(--orange);margin-top:6px;}
+.bs-bar{max-width:420px;margin:22px auto 0;height:7px;background:var(--faint);}
+.bs-bar-fill{height:100%;background:var(--orange);width:0%;transition:width 2s ease;}
+.bs-meta{font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:14px;}
+.bs-story{font-size:1rem;line-height:1.8;color:var(--text);margin-top:26px;background:var(--s1);padding:22px 24px;border-left:3px solid var(--orange);text-align:left;}
+.bs-story strong{color:var(--orange);}
+.summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--s3);margin:32px 0 24px;}
+.sg-item{background:var(--s1);padding:18px 14px;text-align:center;}
+.sg-num{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;line-height:1;}
+.sg-label{font-size:0.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:6px;line-height:1.5;}
+.featured{background:linear-gradient(135deg,rgba(167,139,250,0.15),var(--s1));border-left:5px solid var(--purple);padding:26px;margin-bottom:24px;text-decoration:none;color:inherit;display:block;overflow:hidden;}
+.featured:hover{background:linear-gradient(135deg,rgba(167,139,250,0.22),var(--s2));}
+.ft-tag{font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--purple);font-weight:700;margin-bottom:10px;}
+.ft-row{display:flex;align-items:center;gap:18px;}
+.ft-icon{font-size:3rem;flex-shrink:0;}
+.ft-body{flex:1;}
+.ft-name{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:2px;margin-bottom:4px;}
+.ft-sub{font-size:0.78rem;color:var(--muted);font-style:italic;}
+.ft-score{font-family:'Bebas Neue',sans-serif;font-size:3.4rem;line-height:1;color:var(--purple);}
+.ft-badge{font-size:0.58rem;letter-spacing:2px;padding:5px 12px;font-weight:700;text-transform:uppercase;border:1px solid rgba(167,139,250,0.4);background:rgba(167,139,250,0.12);color:var(--purple);display:inline-block;margin-top:8px;}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:4px;color:var(--muted);margin:28px 0 14px;display:flex;align-items:center;gap:12px;}
+.sec-title::after{content:'';flex:1;height:1px;background:var(--s3);}
+.ind-card{background:var(--s1);border-left:4px solid;margin-bottom:2px;display:flex;align-items:center;text-decoration:none;color:inherit;transition:background 0.2s;overflow:hidden;}
+.ind-card:hover{background:var(--s2);}
+.ind-icon{width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-size:1.7rem;flex-shrink:0;background:rgba(255,255,255,0.03);}
+.ind-body{flex:1;padding:14px 16px;}
+.ind-name{font-family:'Bebas Neue',sans-serif;font-size:1.05rem;letter-spacing:2px;line-height:1;margin-bottom:3px;}
+.ind-sub{font-size:0.64rem;color:var(--muted);font-style:italic;}
+.ind-source{font-size:0.54rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--s4);margin-top:5px;}
+.ind-right{padding:14px 16px;display:flex;flex-direction:column;align-items:flex-end;gap:5px;flex-shrink:0;}
+.ind-val{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;line-height:1;}
+.ind-badge{font-size:0.5rem;letter-spacing:2px;padding:4px 9px;font-weight:700;text-transform:uppercase;border:1px solid;}
 .badge-r{color:var(--red);border-color:rgba(255,45,45,0.4);background:rgba(255,45,45,0.08);}
 .badge-o{color:var(--orange);border-color:rgba(255,109,0,0.4);background:rgba(255,109,0,0.08);}
 .badge-y{color:var(--yellow);border-color:rgba(255,214,0,0.4);background:rgba(255,214,0,0.08);}
-.ind-bar-wrap{display:flex;flex-direction:column;gap:4px;min-width:80px;}
-.ind-bar{width:100%;height:4px;background:var(--faint);}
-.ind-bar-fill{height:100%;}
-.red .ind-bar-fill{background:var(--red);}
-.orange .ind-bar-fill{background:var(--orange);}
-.yellow .ind-bar-fill{background:var(--yellow);}
-.ind-arrow{font-size:0.9rem;opacity:0.3;transition:all 0.2s;flex-shrink:0;}
-
-/* NOTE */
-.note-box{background:rgba(255,214,0,0.04);border-left:3px solid var(--yellow);padding:16px 20px;margin-top:24px;}
-.note-title{font-size:0.55rem;letter-spacing:3px;text-transform:uppercase;color:var(--yellow);margin-bottom:6px;}
-.note-txt{font-size:0.72rem;line-height:1.8;color:var(--muted);}
-
-footer{margin:28px 0 0;padding:20px 0;border-top:1px solid var(--s3);display:flex;justify-content:space-between;align-items:center;}
-.foot-brand{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:5px;color:var(--muted);}
-.foot-meta{font-size:0.6rem;letter-spacing:2px;color:var(--muted);text-align:right;line-height:2;text-transform:uppercase;}
-
-@media(max-width:700px){
-  .ind-row{grid-template-columns:auto 1fr auto;}
-  .ind-bar-wrap{display:none;}
-  .summary{grid-template-columns:1fr;}
-  .wrapper{padding:0 18px 48px;}
-  header{padding:16px 18px;}
-  .lt-score{grid-template-columns:1fr;}
-}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-.wrapper{animation:fadeUp 0.4s ease both;}
+.badge-g{color:var(--green);border-color:rgba(0,230,118,0.4);background:rgba(0,230,118,0.08);}
+.ind-lead{font-size:0.52rem;letter-spacing:1px;color:var(--muted);}
+.ind-arrow{font-size:0.8rem;color:var(--muted);margin-top:2px;}
+footer{margin:40px 0 0;padding:20px 0;border-top:1px solid var(--s3);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.foot-brand{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:4px;color:var(--muted);}
+.foot-meta{font-size:0.56rem;letter-spacing:1.5px;color:var(--muted);text-align:right;line-height:1.9;text-transform:uppercase;}
+@media(max-width:500px){.ft-row{flex-direction:column;text-align:center;}.ind-icon{width:48px;height:48px;font-size:1.3rem;}}
 </style>
 </head>
 <body>
-
 <div class="alert">
   <div class="a-dot"></div>
-  <div class="a-txt">🔭 Long-Term Score: 68/100 — 7 indicators critical. Structural stress building.</div>
+  <div class="a-txt">🌳 Structural stress rising — these signals take 5 to 20 years to materialize</div>
   <div class="a-time" id="clock">--:--:--</div>
 </div>
-
 <header>
-  <a href="index.html" class="logo">🦫 <div><div><span class="logo-c">CASTOR</span><span class="logo-d">.</span>WATCH</div><div class="logo-sub">Canadian Stress Barometer</div></div></a>
-  <div class="lt-pill"><div class="a-dot"></div>🔭 LONG-TERM</div>
+  <a href="index.html" class="logo">🦫 <span class="logo-d">BEAVER.WATCH</span></a>
+  <div class="lang-toggle">
+    <a class="lang-btn" href="all-long-term-fr.html">FR</a>
+    <span class="lang-btn active">EN</span>
+  </div>
 </header>
-
 <div class="wrapper">
-  <a href="index.html" class="back-link">← Back to Dashboard</a>
+  <a href="index.html" class="back-link">← Back to home</a>
 
-  <div class="page-hero">
-    <div class="page-eyebrow">🔭 Long-Term Structural Indicators — Canada</div>
-    <div class="page-title">All Long-Term<br>Indicators</div>
-    <div class="page-desc">Click any indicator to see the full dashboard — gauge, historical data, predicted consequences, causal chain and sources. Updated annually from official Canadian data.</div>
-  </div>
-
-  <!-- SCORE -->
-  <div class="lt-score">
-    <div>
-      <div class="lts-label">🔭 Long-Term Structural Score</div>
-      <div class="lts-status">⚡ MODERATE — Structural stress building</div>
-      <div class="lts-bar"><div class="lts-fill"></div></div>
-      <div class="lts-desc">11 indicators · Updated annually · Sources: StatCan, CMHC, Leger, CCPA, Elections Canada</div>
-    </div>
-    <div style="text-align:right;">
-      <div class="lts-num">68</div>
-      <div class="lts-sub">/ 100</div>
+  <div class="bigscore">
+    <div class="bs-eyebrow"><span class="a-dot" style="background:var(--purple);"></span> 🌳 STRUCTURAL STRESS — 5 TO 20 YEARS</div>
+    <div class="bs-num" id="bs-num">0</div>
+    <div class="bs-status" id="bs-status">MODERATE</div>
+    <div class="bs-bar"><div class="bs-bar-fill" id="bs-bar"></div></div>
+    <div class="bs-meta">Structural score · 11 indicators · Updated yearly</div>
+    <div class="bs-story">
+      These signals don't scream. They <strong>whisper for years</strong> before the crisis becomes visible. Demographics, inequality, identity, trust — the same patterns that preceded the USSR collapse appear here, slowly.
     </div>
   </div>
 
-  <!-- SUMMARY -->
-  <div class="summary">
-    <div class="sum-block"><div class="sum-val" style="color:var(--red)">7</div><div class="sum-lbl">🔴 Critical</div></div>
-    <div class="sum-block"><div class="sum-val" style="color:var(--orange)">2</div><div class="sum-lbl">🟠 High</div></div>
-    <div class="sum-block"><div class="sum-val" style="color:var(--yellow)">2</div><div class="sum-lbl">🟡 Watch</div></div>
+  <div class="summary-grid">
+    <div class="sg-item">
+      <div class="sg-num" style="color:var(--red)">6</div>
+      <div class="sg-label">🔴 Critical</div>
+    </div>
+    <div class="sg-item">
+      <div class="sg-num" style="color:var(--orange)">3</div>
+      <div class="sg-label">🟠 High</div>
+    </div>
+    <div class="sg-item">
+      <div class="sg-num" style="color:var(--yellow)">3</div>
+      <div class="sg-label">🟡 Watch</div>
+    </div>
   </div>
 
-  <!-- CONTEXT -->
-  <div class="context-box">
-    <div class="context-title">📊 Why These Indicators</div>
-    <div class="context-txt">Selected based on historical evidence: in societies that experienced major social upheaval — including the USSR collapse, post-war Europe, and Latin American crises of the 1980s — <strong>these demographic and economic signals appeared years before the crisis became visible.</strong> No ideology. No political agenda. Just patterns that have repeated across history. <strong>Canada is showing several of these signals simultaneously — for the first time.</strong></div>
-  </div>
-
-  <!-- ═══ DEMOGRAPHICS ═══ -->
-  <div class="sec-div"><div class="sec-div-title">👶 Demographics</div><div class="sec-div-line"></div></div>
-  <div class="ind-list">
-
-    <a class="ind-row red" href="fertility.html">
-      <div class="ind-icon">🍼</div>
-      <div class="ind-info">
-        <div class="ind-name">Total Fertility Rate</div>
-        <div class="ind-sub">"Canada is no longer reproducing itself."</div>
-        <div class="ind-impact">At <strong>1.25 children per woman</strong> — 40% below replacement — pension systems, healthcare and social programs face a structural funding crisis within 15–20 years.</div>
-        <div class="ind-source">StatCan · Demographic Statistics 2025</div>
+  <a class="featured" href="beaver-physics.html">
+    <div class="ft-tag">🔬 THE INDEX THAT IMPRESSES ANALYSTS</div>
+    <div class="ft-row">
+      <div class="ft-icon">🔬</div>
+      <div class="ft-body">
+        <div class="ft-name">Beaver Physics — Turchin &amp; Bifurcation</div>
+        <div class="ft-sub">"History doesn't repeat itself. It rhymes."</div>
+        <div class="ft-badge">🟣 INSTABILITY · INDEX 68</div>
       </div>
-      <div class="ind-score-col">
-        <div class="ind-val">1.25</div>
-        <div class="ind-badge badge-r">🔴 CRITICAL</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:90%"></div></div></div>
+      <div class="ft-score">68</div>
+    </div>
+  </a>
+
+  <div class="sec-title">👶 Demographics</div>
+
+  <a class="ind-card" href="fertility.html" style="border-color:var(--red);">
+    <div class="ind-icon">🍼</div>
+    <div class="ind-body">
+      <div class="ind-name">Total Fertility Rate</div>
+      <div class="ind-sub">"Canada is no longer reproducing itself."</div>
+      <div class="ind-source">StatCan · Demographic Statistics 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">1.25</div>
+      <div class="ind-badge badge-r">🔴 CRITICAL</div>
+      <div class="ind-lead">Predicts 10–20 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-    <a class="ind-row yellow" href="infant-mortality.html">
-      <div class="ind-icon">👶</div>
-      <div class="ind-info">
-        <div class="ind-name">Infant Mortality Rate</div>
-        <div class="ind-sub">"Progress has stopped. That is the warning."</div>
-        <div class="ind-impact">4.8/1,000 births — <strong>the rate has not improved since 2018.</strong> A 7-year plateau signals rising stress in vulnerable populations. Indigenous communities 2–3x the national average.</div>
-        <div class="ind-source">StatCan · Vital Statistics 2025</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">4.8</div>
-        <div class="ind-badge badge-y">🟡 WATCH</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:45%"></div></div></div>
+  <a class="ind-card" href="infant-mortality.html" style="border-color:var(--yellow);">
+    <div class="ind-icon">👶</div>
+    <div class="ind-body">
+      <div class="ind-name">Infant Mortality Rate</div>
+      <div class="ind-sub">"Stagnant since 2018 in a wealthy country."</div>
+      <div class="ind-source">StatCan · CIHI 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--yellow)">4.8</div>
+      <div class="ind-badge badge-y">🟡 WATCH</div>
+      <div class="ind-lead">Predicts 5–15 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-    <a class="ind-row orange" href="exogenous-birth.html">
-      <div class="ind-icon">🌍</div>
-      <div class="ind-info">
-        <div class="ind-name">Exogenous Birth Rate</div>
-        <div class="ind-sub">"42.3% of births from immigration-origin families."</div>
-        <div class="ind-impact"><strong>The speed of demographic shift matters</strong> — when change outpaces integration capacity, historical evidence shows increased social tension. Integration policy quality determines the outcome.</div>
-        <div class="ind-source">StatCan · Census 2024</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">42.3%</div>
-        <div class="ind-badge badge-o">🟠 SHIFTING</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:55%"></div></div></div>
+  <a class="ind-card" href="exogenous-birth.html" style="border-color:var(--orange);">
+    <div class="ind-icon">🌍</div>
+    <div class="ind-body">
+      <div class="ind-name">Exogenous Birth Rate</div>
+      <div class="ind-sub">"42.3% of births — immigrant families."</div>
+      <div class="ind-source">StatCan · Census 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--orange)">42.3%</div>
+      <div class="ind-badge badge-o">🟠 TRANSITION</div>
+      <div class="ind-lead">Predicts 10–20 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-  </div>
+  <div class="sec-title">🎓 Education &amp; Gender</div>
 
-  <!-- ═══ EDUCATION & GENDER ═══ -->
-  <div class="sec-div"><div class="sec-div-title">🎓 Education & Gender</div><div class="sec-div-line"></div></div>
-  <div class="ind-list">
-
-    <a class="ind-row red" href="gender-gap.html">
-      <div class="ind-icon">🎓</div>
-      <div class="ind-info">
-        <div class="ind-name">Gender Education Gap</div>
-        <div class="ind-sub">"Women 71% vs Men 57% of graduates."</div>
-        <div class="ind-impact"><strong>A growing proportion of Canadian men are leaving education without credentials.</strong> Men without degrees earn 40% less. Produces economic frustration, delayed family formation, and political radicalization.</div>
-        <div class="ind-source">StatCan · Education Indicators 2025</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">71/57</div>
-        <div class="ind-badge badge-r">🔴 CRITICAL</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:85%"></div></div></div>
+  <a class="ind-card" href="gender-gap.html" style="border-color:var(--red);">
+    <div class="ind-icon">🎓</div>
+    <div class="ind-body">
+      <div class="ind-name">Education Gender Gap</div>
+      <div class="ind-sub">"Women 71% vs Men 57% of graduates."</div>
+      <div class="ind-source">StatCan · Education Indicators 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">71/57</div>
+      <div class="ind-badge badge-r">🔴 CRITICAL</div>
+      <div class="ind-lead">Predicts 10–20 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-    <a class="ind-row red" href="male-suicide.html">
-      <div class="ind-icon">💀</div>
-      <div class="ind-info">
-        <div class="ind-name">Male Suicide Rate Gap</div>
-        <div class="ind-sub">"Men die by suicide 3x more than women — gap widening."</div>
-        <div class="ind-impact"><strong>~4,500 Canadian men</strong> die by suicide per year. Gap widening since 2019. One of the most reliable indicators of male social marginalization — precedes rising criminality and political radicalization.</div>
-        <div class="ind-source">StatCan · Causes of Death 2024</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">3x</div>
-        <div class="ind-badge badge-r">🔴 CRITICAL</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:75%"></div></div></div>
+  <div class="sec-title">💰 Economy &amp; Inequality</div>
+
+  <a class="ind-card" href="housing-ratio.html" style="border-color:var(--red);">
+    <div class="ind-icon">🏠</div>
+    <div class="ind-body">
+      <div class="ind-name">Housing Affordability Ratio</div>
+      <div class="ind-sub">"Price &gt; 9x median annual income."</div>
+      <div class="ind-source">CMHC · Housing Market Assessment 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">&gt;9x</div>
+      <div class="ind-badge badge-r">🔴 CRITICAL</div>
+      <div class="ind-lead">Predicts 5–15 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-  </div>
-
-  <!-- ═══ ECONOMY ═══ -->
-  <div class="sec-div"><div class="sec-div-title">💰 Economy & Inequality</div><div class="sec-div-line"></div></div>
-  <div class="ind-list">
-
-    <a class="ind-row red" href="housing-ratio.html">
-      <div class="ind-icon">🏠</div>
-      <div class="ind-info">
-        <div class="ind-name">Housing Affordability Ratio</div>
-        <div class="ind-sub">"Price > 9x annual median income."</div>
-        <div class="ind-impact"><strong>Wealth is permanently locked in the hands of owners.</strong> The rich-poor gap widens automatically — owners gain from inflation, renters fall behind. Creates a permanent two-tier Canada with no path back.</div>
-        <div class="ind-source">CMHC · Housing Market Assessment 2025</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">>9x</div>
-        <div class="ind-badge badge-r">🔴 CRITICAL</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:80%"></div></div></div>
+  <a class="ind-card" href="ceo-wage.html" style="border-color:var(--red);">
+    <div class="ind-icon">💼</div>
+    <div class="ind-body">
+      <div class="ind-name">CEO vs Median Wage Ratio</div>
+      <div class="ind-sub">"The CEO earns the median annual wage by January 3rd."</div>
+      <div class="ind-source">CCPA · Inequality Report 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">250x</div>
+      <div class="ind-badge badge-r">🔴 CRITICAL</div>
+      <div class="ind-lead">Predicts 5–20 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-    <a class="ind-row red" href="ceo-wage.html">
-      <div class="ind-icon">👔</div>
-      <div class="ind-info">
-        <div class="ind-name">CEO vs Median Wage Ratio</div>
-        <div class="ind-sub">"CEOs earn 250x the average worker. Up from 40x in 1995."</div>
-        <div class="ind-impact"><strong>By January 3rd, the average CEO has earned what the median worker earns all year.</strong> One of the strongest predictors of social unrest ever documented. Trust in institutions collapses, populism surges.</div>
-        <div class="ind-source">CCPA / StatCan · Executive Compensation 2025</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">250x</div>
-        <div class="ind-badge badge-r">🔴 CRITICAL</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:78%"></div></div></div>
+  <a class="ind-card" href="bnpl.html" style="border-color:var(--orange);">
+    <div class="ind-icon">💳</div>
+    <div class="ind-body">
+      <div class="ind-name">BNPL Market Growth</div>
+      <div class="ind-sub">"Buy now, pay later — and always more."</div>
+      <div class="ind-source">BNPL Canada Report 2026 · FCAC</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--orange)">+16.5%</div>
+      <div class="ind-badge badge-o">🟠 HIGH</div>
+      <div class="ind-lead">Predicts 3–10 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-    <a class="ind-row orange" href="bnpl.html">
-      <div class="ind-icon">💳</div>
-      <div class="ind-info">
-        <div class="ind-name">BNPL Market Growth</div>
-        <div class="ind-sub">"Buy Now Pay Later — $9.5B market growing 16.5%/year."</div>
-        <div class="ind-impact"><strong>The new payday loan for the middle class.</strong> When a society finances groceries on deferred debt, wages are no longer sufficient for normal life. Hidden debt not visible to credit bureaus.</div>
-        <div class="ind-source">ResearchAndMarkets · FCAC 2026</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">+16.5%</div>
-        <div class="ind-badge badge-o">🟠 HIGH</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:55%"></div></div></div>
+  <div class="sec-title">🏛️ Society &amp; Institutions</div>
+
+  <a class="ind-card" href="male-suicide.html" style="border-color:var(--yellow);">
+    <div class="ind-icon">🧠</div>
+    <div class="ind-body">
+      <div class="ind-name">Male Suicide Rate Gap</div>
+      <div class="ind-sub">"Stagnant since 2018 — concerning signal."</div>
+      <div class="ind-source">StatCan · Cause of Death Statistics 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--yellow)">3x</div>
+      <div class="ind-badge badge-y">🟡 WATCH</div>
+      <div class="ind-lead">Predicts 5–20 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-  </div>
-
-  <!-- ═══ SOCIETY ═══ -->
-  <div class="sec-div"><div class="sec-div-title">🏛️ Society & Institutions</div><div class="sec-div-line"></div></div>
-  <div class="ind-list">
-
-    <a class="ind-row red" href="national-identity.html">
-      <div class="ind-icon">🍁</div>
-      <div class="ind-info">
-        <div class="ind-name">National Identity Disaffiliation</div>
-        <div class="ind-sub">"Only 40% of 18–34 proud to be Canadian vs 78% of 65+."</div>
-        <div class="ind-impact"><strong>National identity is the social glue that holds collective sacrifice together.</strong> Taxes, healthcare, pensions all require a shared "we." When young generations abandon this, support for collective institutions collapses.</div>
-        <div class="ind-source">Leger / Environics Institute 2024</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">40%</div>
-        <div class="ind-badge badge-r">🔴 CRITICAL</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:85%"></div></div></div>
+  <a class="ind-card" href="national-identity.html" style="border-color:var(--red);">
+    <div class="ind-icon">🍁</div>
+    <div class="ind-body">
+      <div class="ind-name">National Identity Disaffiliation</div>
+      <div class="ind-sub">"Only 40% of 18–34 proud to be Canadian."</div>
+      <div class="ind-source">Leger · National Identity Survey 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--red)">40%</div>
+      <div class="ind-badge badge-r">🔴 CRITICAL</div>
+      <div class="ind-lead">Predicts 10–25 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-    <a class="ind-row yellow" href="religious-confidence.html">
-      <div class="ind-icon">⛪</div>
-      <div class="ind-info">
-        <div class="ind-name">Religious Confidence Index</div>
-        <div class="ind-sub">"25% say religion important — at the warning threshold."</div>
-        <div class="ind-impact"><strong>Tracked as social cohesion proxy — not theology.</strong> Religious institutions provide 35% of Canada's social services. When this infrastructure collapses faster than secular replacements are built, the vacuum is never empty.</div>
-        <div class="ind-source">Cardus / General Social Survey 2024</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">25%</div>
-        <div class="ind-badge badge-y">🟡 WATCH</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:48%"></div></div></div>
+  <a class="ind-card" href="religious-confidence.html" style="border-color:var(--yellow);">
+    <div class="ind-icon">⛪</div>
+    <div class="ind-body">
+      <div class="ind-name">Religious Confidence Index</div>
+      <div class="ind-sub">"25% say religion is very important."</div>
+      <div class="ind-source">Environics Institute · Canadian Values 2024</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--yellow)">25%</div>
+      <div class="ind-badge badge-y">🟡 WATCH</div>
+      <div class="ind-lead">Predicts 10–30 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
+    </div>
+  </a>
 
-    <a class="ind-row orange" href="political-donations.html">
-      <div class="ind-icon">🗳️</div>
-      <div class="ind-info">
-        <div class="ind-name">Political Donation Surge</div>
-        <div class="ind-sub">"Political donations up +50% in 5 years."</div>
-        <div class="ind-impact"><strong>Top 5% of donors represent 78% of all donations.</strong> Combined with CEO wage ratio and housing crisis, political power is increasingly captured by economic elites — a documented precursor to democratic erosion.</div>
-        <div class="ind-source">Elections Canada · Political Finance Reports 2025</div>
-      </div>
-      <div class="ind-score-col">
-        <div class="ind-val">+50%</div>
-        <div class="ind-badge badge-o">🟠 HIGH</div>
-      </div>
-      <div class="ind-bar-wrap"><div class="ind-bar"><div class="ind-bar-fill" style="width:52%"></div></div></div>
+  <a class="ind-card" href="political-donations.html" style="border-color:var(--orange);">
+    <div class="ind-icon">🗳️</div>
+    <div class="ind-body">
+      <div class="ind-name">Political Donations Surge</div>
+      <div class="ind-sub">"+50% in 5 years — the 5% give 78% of the money."</div>
+      <div class="ind-source">Elections Canada · Political Financing 2025</div>
+    </div>
+    <div class="ind-right">
+      <div class="ind-val" style="color:var(--orange)">+50%</div>
+      <div class="ind-badge badge-o">🟠 HIGH</div>
+      <div class="ind-lead">Predicts 3–10 yr</div>
       <div class="ind-arrow">→</div>
-    </a>
-
-  </div>
-
-  <!-- NOTE -->
-  <div class="note-box">
-    <div class="note-title">⚠️ Transparency & Limitations</div>
-    <div class="note-txt">All scores are based on publicly available Canadian data. Sources cited on each indicator page. No data is invented or estimated without disclosure. Long-term indicators are updated annually. Predictions are based on statistical patterns — not guarantees. CASTOR.WATCH is independent, not affiliated with any government or political party. Contact: tensionsgeopolitiques@gmail.com</div>
-  </div>
+    </div>
+  </a>
 
   <footer>
-    <div class="foot-brand">🦫 CASTOR.WATCH</div>
-    <div class="foot-meta">Independent · Public data · Canada<br>📧 tensionsgeopolitiques@gmail.com</div>
+    <div class="foot-brand">🦫 BEAVER.WATCH</div>
+    <div class="foot-meta">Canadian public data · Updated yearly<br>© 2026 BEAVER.WATCH</div>
   </footer>
 </div>
-
 <script>
-function tick(){const n=new Date();document.getElementById('clock').textContent=[n.getHours(),n.getMinutes(),n.getSeconds()].map(x=>String(x).padStart(2,'0')).join(':');}
+function tick(){var n=new Date();document.getElementById('clock').textContent=[n.getHours(),n.getMinutes(),n.getSeconds()].map(function(x){return String(x).padStart(2,'0');}).join(':');}
 setInterval(tick,1000);tick();
+
+function animateNum(el,target,dur){
+  dur=dur||1800;var st=performance.now();
+  function u(now){
+    var p=Math.min((now-st)/dur,1);
+    var e=1-Math.pow(1-p,3);
+    el.textContent=Math.round(target*e);
+    if(p<1)requestAnimationFrame(u);
+  }
+  requestAnimationFrame(u);
+}
+var structural=64;
+animateNum(document.getElementById('bs-num'),structural);
+setTimeout(function(){document.getElementById('bs-bar').style.width=structural+'%';},200);
 </script>
 </body>
 </html>
