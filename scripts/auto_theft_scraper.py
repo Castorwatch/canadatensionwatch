@@ -3,15 +3,99 @@ import time
 import random
 import os
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # ============================================
-# BEAVER.WATCH — Auto Theft Scraper
-# Sources : Google Trends + StatCan API
-# + Claude API Analysis
+# BEAVER.WATCH — Auto Theft Scraper v2
+# Sources : Google Trends + Claude API
+# AVEC système de prédictions
 # ============================================
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+
+# ============================================
+# SYSTÈME DE PRÉDICTIONS & APPRENTISSAGE
+# ============================================
+
+def load_predictions_auto(filename='auto_theft_predictions.json'):
+    try:
+        with open(filename, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
+def save_predictions_auto(predictions, filename='auto_theft_predictions.json'):
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(predictions, f, ensure_ascii=False, indent=2)
+
+def check_past_predictions_auto(predictions, current_score):
+    today = datetime.now().strftime("%Y-%m-%d")
+    verified = []
+    for pred in predictions:
+        if pred.get("date_verification") == today and pred.get("score_reel") is None:
+            ecart = round(current_score - pred["score_predit"], 3)
+            ecart_pct = round((ecart / pred["score_predit"]) * 100, 1) if pred["score_predit"] else 0
+            avait_raison = abs(ecart_pct) <= 15
+            pred["score_reel"] = current_score
+            pred["ecart"] = ecart
+            pred["ecart_pct"] = ecart_pct
+            pred["claude_avait_raison"] = avait_raison
+            pred["resultat"] = "✅ CORRECT" if avait_raison else "❌ INCORRECT"
+            pred["verifie_le"] = today
+            verified.append(pred)
+            print(f"\n🎯 VÉRIFICATION PRÉDICTION AUTO :")
+            print(f"   Prédit le : {pred['date_prediction']}")
+            print(f"   Score prédit : {pred['score_predit']}")
+            print(f"   Score réel : {current_score}")
+            print(f"   Écart : {ecart_pct}%")
+            print(f"   Résultat : {pred['resultat']}")
+    return verified
+
+def save_new_prediction_auto(predictions, claude_analysis, current_score):
+    if not claude_analysis or not claude_analysis.get("score_predit_4_semaines"):
+        return
+    today = datetime.now()
+    verification_date = (today + timedelta(days=28)).strftime("%Y-%m-%d")
+    new_pred = {
+        "indicateur": "auto_theft",
+        "date_prediction": today.strftime("%Y-%m-%d"),
+        "date_verification": verification_date,
+        "score_actuel": current_score,
+        "score_predit": claude_analysis["score_predit_4_semaines"],
+        "niveau_alerte_predit": claude_analysis.get("niveau_alerte"),
+        "region_risque": claude_analysis.get("region_risque"),
+        "signal_dominant": claude_analysis.get("signal_dominant"),
+        "prediction_fr": claude_analysis.get("prediction_fr"),
+        "prediction_en": claude_analysis.get("prediction_en"),
+        "score_reel": None,
+        "ecart": None,
+        "ecart_pct": None,
+        "claude_avait_raison": None,
+        "resultat": None,
+        "verifie_le": None,
+    }
+    predictions.append(new_pred)
+    print(f"\n📌 Prédiction AUTO sauvegardée :")
+    print(f"   Score prédit : {new_pred['score_predit']}")
+    print(f"   Vérification le : {verification_date}")
+
+def get_feedback_auto(predictions):
+    verified = [p for p in predictions if p.get("score_reel") is not None]
+    if not verified:
+        return None
+    recent = verified[-10:]
+    correct = sum(1 for p in recent if p.get("claude_avait_raison"))
+    taux = round((correct / len(recent)) * 100, 1)
+    return {
+        "total_verifications": len(verified),
+        "taux_precision": taux,
+        "recent_results": [
+            {"date": p["date_prediction"], "predit": p["score_predit"],
+             "reel": p["score_reel"], "ecart_pct": p["ecart_pct"],
+             "correct": p["claude_avait_raison"]}
+            for p in recent
+        ]
+    }
 
 # Google Trends keywords
 KEYWORDS = {
@@ -41,7 +125,6 @@ KEYWORDS = {
     },
 }
 
-# Canadian regions
 REGIONS = {
     "canada":  {"geo": "CA",    "name_fr": "Canada",   "name_en": "Canada"},
     "ontario": {"geo": "CA-ON", "name_fr": "Ontario",  "name_en": "Ontario"},
@@ -54,7 +137,7 @@ def get_trend_score(terms, geo="CA"):
     try:
         from pytrends.request import TrendReq
         pytrends = TrendReq(hl='en-CA', tz=-300, timeout=(10,25), retries=2)
-        time.sleep(random.uniform(3, 6))
+        time.sleep(random.uniform(10, 15))
         pytrends.build_payload(
             terms[:5], cat=0,
             timeframe='now 7-d', geo=geo, gprop=''
@@ -92,24 +175,16 @@ def analyze_with_claude(today_data, history):
 
     print("\n🤖 Claude Auto Theft analysis...")
 
-    # Prepare history summary (last 30 days)
+    feedback = get_feedback_auto(load_predictions_auto())
+
     history_summary = {
-        date: {
-            "score": data.get("national_score"),
-            "trend": data.get("trend")
-        }
+        date: {"score": data.get("national_score"), "trend": data.get("trend")}
         for date, data in list(history.items())[-30:]
     }
 
     national = today_data.get("national_score", 0)
-    regions = {
-        k: v.get("composite_score")
-        for k, v in today_data.get("regions", {}).items()
-    }
-    keywords = {
-        k: v.get("stress_score")
-        for k, v in today_data.get("keywords", {}).items()
-    }
+    regions = {k: v.get("composite_score") for k, v in today_data.get("regions", {}).items()}
+    keywords = {k: v.get("stress_score") for k, v in today_data.get("keywords", {}).items()}
 
     prompt = (
         "Tu es l'analyste de BEAVER.WATCH, barometre de stress canadien.\n\n"
@@ -128,7 +203,7 @@ def analyze_with_claude(today_data, history):
         '  "region_risque": "Region la plus a risque en 2 mots",\n'
         '  "signal_dominant": "Signal principal en 5 mots max",\n'
         '  "niveau_alerte": "NORMAL ou TENSION ou CRITIQUE",\n'
-        f'  "score_predit_4_semaines": 0.XX\n'
+        '  "score_predit_4_semaines": 0.XX\n'
         "}\n\n"
         f"IMPORTANT: score_predit_4_semaines = decimal reel entre 0.05 et 0.95. "
         f"Score actuel = {national}. JAMAIS 0.0."
@@ -175,12 +250,11 @@ def analyze_with_claude(today_data, history):
         return None
 
 def run():
-    print("🦫 BEAVER.WATCH — Auto Theft Scraper")
+    print("🦫 BEAVER.WATCH — Auto Theft Scraper v2")
     print(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("🔍 Sources: Google Trends")
     print("=" * 52)
 
-    # Load history
     try:
         with open('auto_theft_history.json', 'r') as f:
             history = json.load(f)
@@ -200,7 +274,6 @@ def run():
         "trend": None,
     }
 
-    # === KEYWORDS (Canada national) ===
     print("\n📊 Keyword analysis — Canada")
     weighted_scores = []
 
@@ -210,12 +283,10 @@ def run():
         raw = get_trend_score(terms, geo="CA")
         stress = normalize_score(raw)
         status = get_status(stress)
-
         if raw is not None:
             print(f"Raw: {raw} → Stress: {stress}")
         else:
             print("N/A")
-
         output['keywords'][cat_key] = {
             "label_fr": cat_info['label_fr'],
             "label_en": cat_info['label_en'],
@@ -225,25 +296,19 @@ def run():
             "status": status,
             "weight": cat_info['weight'],
         }
-
         if stress is not None:
             weighted_scores.append((stress, cat_info['weight']))
 
-    # === REGIONS ===
     print("\n📍 Regional analysis")
     for reg_key, reg_info in REGIONS.items():
         print(f"\n  📍 {reg_info['name_en']}...", end=" ", flush=True)
-        raw = get_trend_score(
-            KEYWORDS['vol_auto']['terms_en'],
-            geo=reg_info['geo']
-        )
+        raw = get_trend_score(KEYWORDS['vol_auto']['terms_en'], geo=reg_info['geo'])
         stress = normalize_score(raw)
         status = get_status(stress)
         if raw is not None:
             print(f"Raw: {raw} → Stress: {stress}")
         else:
             print("N/A")
-
         output['regions'][reg_key] = {
             "name_fr": reg_info['name_fr'],
             "name_en": reg_info['name_en'],
@@ -251,7 +316,6 @@ def run():
             "composite_status": status,
         }
 
-    # === NATIONAL SCORE ===
     if weighted_scores:
         total_w = sum(w for _, w in weighted_scores)
         national = round(sum(s*w for s,w in weighted_scores)/total_w, 2)
@@ -259,7 +323,6 @@ def run():
         output['national_status'] = get_status(national)
         print(f"\n🍁 NATIONAL Auto Theft: {national} {get_status(national)['emoji']}")
 
-        # Trend vs yesterday
         yesterday = list(history.values())[-1] if history else None
         if yesterday and yesterday.get('national_score'):
             diff = national - yesterday['national_score']
@@ -267,7 +330,6 @@ def run():
             trend_str = f"▲ +{diff:.2f}" if diff > 0 else f"▼ {diff:.2f}"
             print(f"   Tendance: {trend_str}")
 
-        # Save to history
         date_key = datetime.now().strftime("%Y-%m-%d")
         history[date_key] = {
             "national_score": national,
@@ -275,12 +337,20 @@ def run():
             "trend": output['trend'],
         }
 
-        # Claude Analysis
+        predictions_auto = load_predictions_auto()
+        verified = check_past_predictions_auto(predictions_auto, national)
+        if verified:
+            output['predictions_verifiees'] = verified
+
         claude = analyze_with_claude(output, history)
         if claude:
             output['claude_analysis'] = claude
+            save_new_prediction_auto(predictions_auto, claude, national)
+            save_predictions_auto(predictions_auto)
+            output['prochaine_verification'] = (
+                datetime.now() + timedelta(days=28)
+            ).strftime("%Y-%m-%d")
 
-    # Save files
     with open('auto_theft_data.json', 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print("\n✅ auto_theft_data.json saved")
@@ -288,6 +358,12 @@ def run():
     with open('auto_theft_history.json', 'w', encoding='utf-8') as f:
         json.dump(history, f, ensure_ascii=False, indent=2)
     print("✅ auto_theft_history.json saved")
+
+    predictions_auto = load_predictions_auto()
+    vc = sum(1 for p in predictions_auto if p.get("score_reel") is not None)
+    cc = sum(1 for p in predictions_auto if p.get("claude_avait_raison"))
+    if vc > 0:
+        print(f"\n📊 Précision Claude Auto: {cc}/{vc} ({round(cc/vc*100,1)}%)")
 
     print("\n🦫 Done!")
 
