@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔬 Beaver Physics — The laws that govern societies</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070707;--s1:#0F0F0F;--s2:#181818;--s3:#242424;--s4:#303030;
+  --text:#F5F0E8;--muted:#9A9A92;--faint:#141414;
+  --red:#FF2D2D;--orange:#FF6D00;--yellow:#FFD600;--green:#00E676;--purple:#A78BFA;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
+
+header{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--purple);position:sticky;top:0;background:rgba(7,7,7,0.97);backdrop-filter:blur(8px);z-index:500;}
+.logo{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:3px;display:flex;align-items:center;gap:8px;}
+.logo-d{color:var(--yellow);}
+.logo-sub{font-size:0.5rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px;}
+.lang-toggle{display:flex;gap:2px;background:var(--s2);border:1px solid var(--s3);padding:3px;}
+.lang-btn{padding:5px 9px;font-size:0.58rem;letter-spacing:1px;font-weight:700;border:none;background:transparent;color:var(--muted);text-decoration:none;}
+.lang-btn.active{background:var(--purple);color:#000;}
+
+.back{max-width:860px;margin:0 auto;padding:24px 24px 0;}
+.back a{font-size:0.7rem;letter-spacing:2px;color:var(--muted);text-decoration:none;text-transform:uppercase;}
+.back a:hover{color:var(--text);}
+
+.hero{max-width:760px;margin:0 auto;padding:36px 24px 0;text-align:center;}
+.hero-eyebrow{font-size:0.72rem;letter-spacing:5px;text-transform:uppercase;color:var(--purple);margin-bottom:16px;}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,8vw,4.5rem);letter-spacing:2px;line-height:1;margin-bottom:16px;}
+.hero-title em{font-style:normal;color:var(--purple);}
+.hero-desc{font-size:1.05rem;line-height:1.7;color:var(--muted);max-width:600px;margin:0 auto 8px;}
+.hero-quote{font-family:'Playfair Display',serif;font-style:italic;font-size:1.2rem;color:var(--text);margin-top:24px;line-height:1.5;}
+
+.indices{max-width:860px;margin:50px auto 0;padding:0 24px;}
+.index-card{background:var(--s1);border-left:4px solid var(--purple);padding:32px;margin-bottom:20px;}
+.idx-label{font-size:0.62rem;letter-spacing:4px;text-transform:uppercase;color:var(--purple);margin-bottom:8px;}
+.idx-title{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:2px;margin-bottom:6px;}
+.idx-row{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;margin:20px 0;}
+.idx-score{font-family:'Bebas Neue',sans-serif;font-size:5rem;line-height:0.9;color:var(--orange);}
+.idx-status{font-size:0.95rem;line-height:1.6;}
+.idx-status strong{color:var(--orange);font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:1px;display:block;margin-bottom:4px;}
+.idx-bar{width:100%;height:8px;background:var(--faint);margin:16px 0;}
+.idx-bar-fill{height:100%;transition:width 2s ease;width:0%;}
+.idx-desc{font-size:0.88rem;line-height:1.7;color:var(--muted);margin-top:14px;}
+.idx-factors{margin-top:20px;border-top:1px solid var(--s3);padding-top:18px;}
+.factor{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--s2);font-size:0.85rem;}
+.factor:last-child{border-bottom:none;}
+.factor-name{color:var(--text);}
+.factor-val{font-family:'Bebas Neue',sans-serif;letter-spacing:1px;font-size:0.95rem;white-space:nowrap;}
+.fv-high{color:var(--red);}
+.fv-mid{color:var(--orange);}
+.fv-low{color:var(--green);}
+
+.history{max-width:860px;margin:50px auto 0;padding:0 24px;}
+.hist-title{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:3px;margin-bottom:6px;}
+.hist-sub{font-size:0.78rem;color:var(--muted);margin-bottom:22px;}
+.hist-box{background:var(--s1);padding:28px;}
+.hist-row{display:grid;grid-template-columns:1fr auto;gap:14px;padding:14px 0;border-bottom:1px solid var(--s3);align-items:center;}
+.hist-row:last-child{border-bottom:none;}
+.hist-event .yr{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:1px;color:var(--text);}
+.hist-event .lbl{font-size:0.75rem;color:var(--muted);margin-top:2px;}
+.hist-score{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:1px;text-align:right;}
+
+.method{max-width:860px;margin:50px auto 0;padding:0 24px;}
+.method-box{background:var(--s1);border-left:4px solid var(--muted);padding:28px;}
+.method-title{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:2px;margin-bottom:14px;}
+.method-text{font-size:0.85rem;line-height:1.8;color:var(--muted);}
+.method-text strong{color:var(--text);}
+
+.cta-explore{max-width:860px;margin:50px auto 0;padding:0 24px;}
+.cta-box{background:var(--s1);border-left:4px solid var(--purple);padding:26px;text-align:center;}
+.cta-box a{color:var(--purple);text-decoration:none;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;}
+
+footer{max-width:860px;margin:70px auto 40px;padding:30px 24px;border-top:1px solid var(--s3);text-align:center;}
+.foot-brand{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:5px;color:var(--muted);}
+.foot-meta{font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-top:8px;line-height:1.7;}
+
+@media (max-width:600px){
+  .idx-row{grid-template-columns:1fr;text-align:center;}
+  .idx-score{font-size:4rem;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo">🦫 <span class="logo-d">BEAVER.WATCH</span></div>
+    <div class="logo-sub">Beaver Physics</div>
+  </div>
+  <div class="lang-toggle">
+    <a class="lang-btn" href="beaver-physics-fr.html">FR</a>
+    <span class="lang-btn active">EN</span>
+  </div>
+</header>
+
+<div class="back"><a href="all-long-term.html">← Back to Long Term</a></div>
+
+<section class="hero">
+  <div class="hero-eyebrow">🔬 THE LAWS THAT GOVERN SOCIETIES</div>
+  <h1 class="hero-title">BEAVER <em>PHYSICS</em></h1>
+  <p class="hero-desc">
+    Societies don't collapse at random. For 5,000 years they've followed
+    measurable patterns — studied by mathematicians and historians.
+    The Beaver applies these laws to Canada.
+  </p>
+  <div class="hero-quote">
+    "History doesn't repeat itself.<br>It rhymes. The Beaver listens to the rhymes."
+  </div>
+</section>
+
+<section class="indices">
+
+  <div class="index-card">
+    <div class="idx-label">📐 INDEX #1 — CLIODYNAMICS</div>
+    <div class="idx-title">TURCHIN INDEX CANADA</div>
+    <div class="idx-row">
+      <div class="idx-score" id="turchin-score">0</div>
+      <div class="idx-status">
+        <strong>🟠 RISING INSTABILITY</strong>
+        Peter Turchin's model predicted US instability 2020-2030
+        accurately, years in advance.
+      </div>
+    </div>
+    <div class="idx-bar"><div class="idx-bar-fill" id="turchin-bar" style="background:var(--orange);"></div></div>
+    <div class="idx-desc">
+      Turchin identified 4 factors that, combined, predict a society's
+      instability. Here is Canada's state in 2025-2026, based on public
+      data from Statistics Canada and Oxfam Canada.
+    </div>
+    <div class="idx-factors">
+      <div class="factor">
+        <div class="factor-name">Elite overproduction <span style="color:var(--muted);font-size:0.75rem;">(too many graduates, not enough positions)</span></div>
+        <div class="factor-val fv-high">HIGH</div>
+      </div>
+      <div class="factor">
+        <div class="factor-name">Wealth concentration <span style="color:var(--muted);font-size:0.75rem;">(top 20% = 65% of net worth)</span></div>
+        <div class="factor-val fv-high">TRÈS HIGH</div>
+      </div>
+      <div class="factor">
+        <div class="factor-name">Popular immiseration <span style="color:var(--muted);font-size:0.75rem;">(youth priced out of housing)</span></div>
+        <div class="factor-val fv-high">HIGH</div>
+      </div>
+      <div class="factor">
+        <div class="factor-name">Institutional trust <span style="color:var(--muted);font-size:0.75rem;">(declining)</span></div>
+        <div class="factor-val fv-mid">DECLINING</div>
+      </div>
+    </div>
+    <div class="idx-desc" style="margin-top:18px;border-top:1px solid var(--s3);padding-top:16px;">
+      <strong style="color:var(--text);">Real 2025 data:</strong> the income gap
+      between the richest 40% and poorest 40% hit a
+      <strong style="color:var(--orange);">record 49 points</strong>
+      in Q1 2025 (Statistics Canada). The top 20% holds 65% of net worth.
+      The richest 1% owns nearly $3.9 trillion — almost as much as the
+      bottom 80% combined (Oxfam Canada 2026). People under 35 are the
+      only group pulling out of the housing market.
+    </div>
+  </div>
+
+  <div class="index-card" style="border-left-color:var(--yellow);">
+    <div class="idx-label" style="color:var(--yellow);">🌀 INDEX #2 — CHAOS THEORY</div>
+    <div class="idx-title">BIFURCATION INDEX</div>
+    <div class="idx-row">
+      <div class="idx-score" id="bifur-score" style="color:var(--yellow);">0</div>
+      <div class="idx-status">
+        <strong style="color:var(--yellow);">🟡 OSCILLATIONS RISING</strong>
+        In chaos theory, before a system flips abruptly, its oscillations
+        amplify. Like the tremors before an earthquake.
+      </div>
+    </div>
+    <div class="idx-bar"><div class="idx-bar-fill" id="bifur-bar" style="background:var(--yellow);"></div></div>
+    <div class="idx-desc">
+      This index measures the amplitude of the Canadian system's oscillations:
+      political poll volatility, economic confidence zigzag, growing
+      polarization. The wider the oscillations, the closer the system gets
+      to a <strong style="color:var(--text);">bifurcation point</strong>
+      — a sudden flip into an unpredictable state, with no return.
+    </div>
+  </div>
+
+</section>
+
+<section class="history">
+  <div class="hist-title">CANADA IN HISTORY</div>
+  <div class="hist-sub">Estimated Turchin Index — compared with history's great turning points.</div>
+  <div class="hist-box">
+    <div class="hist-row">
+      <div class="hist-event"><div class="yr">FRANCE 1789</div><div class="lbl">Eve of the Revolution</div></div>
+      <div class="hist-score" style="color:var(--red);">~92</div>
+    </div>
+    <div class="hist-row">
+      <div class="hist-event"><div class="yr">USSR 1989</div><div class="lbl">Eve of collapse</div></div>
+      <div class="hist-score" style="color:var(--red);">~88</div>
+    </div>
+    <div class="hist-row">
+      <div class="hist-event"><div class="yr">USA 2020</div><div class="lbl">Peak polarization (predicted by Turchin)</div></div>
+      <div class="hist-score" style="color:var(--orange);">~75</div>
+    </div>
+    <div class="hist-row">
+      <div class="hist-event"><div class="yr">CANADA 2026</div><div class="lbl">Today — the Beaver's estimate</div></div>
+      <div class="hist-score" style="color:var(--orange);">68</div>
+    </div>
+    <div class="hist-row">
+      <div class="hist-event"><div class="yr">SWITZERLAND 2026</div><div class="lbl">Stable society (low reference)</div></div>
+      <div class="hist-score" style="color:var(--green);">~28</div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="method-box">
+    <div class="method-title">📋 METHODOLOGY & HONESTY</div>
+    <div class="method-text">
+      <strong>What it is:</strong> an educational estimate based on real
+      public data from 2025-2026 (Statistics Canada, Oxfam Canada,
+      Bank of Canada).<br><br>
+      <strong>What it is NOT:</strong> a live prediction connected to real-time
+      APIs. Not yet. Connecting to live Statistics Canada and Bank of Canada
+      data is the next step.<br><br>
+      <strong>Why 68?</strong> Canada shows 3 of Turchin's 4 factors at a high
+      level (record inequality, youth immiseration, graduate elite
+      overproduction). Institutional trust is declining but remains more
+      solid than in the US. Hence a high score, but below the critical threshold of 75.
+    </div>
+  </div>
+</section>
+
+<section class="cta-explore">
+  <div class="cta-box">
+    <a href="all-long-term.html">← See all Long Term indicators</a>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-brand">🦫 BEAVER.WATCH</div>
+  <div class="foot-meta">
+    Cliodynamics · Chaos theory · Public data 2025-2026<br>
+    © 2026 BEAVER.WATCH
+  </div>
+</footer>
+
+<script>
+function animateNum(el,target,dur){
+  dur=dur||1800;var st=performance.now();
+  function u(now){
+    var p=Math.min((now-st)/dur,1);
+    var e=1-Math.pow(1-p,3);
+    el.textContent=Math.round(target*e);
+    if(p<1)requestAnimationFrame(u);
+  }
+  requestAnimationFrame(u);
+}
+window.addEventListener('load',function(){
+  animateNum(document.getElementById('turchin-score'),68);
+  animateNum(document.getElementById('bifur-score'),54);
+  setTimeout(function(){
+    document.getElementById('turchin-bar').style.width='68%';
+    document.getElementById('bifur-bar').style.width='54%';
+  },200);
+});
+</script>
+
+</body>
+</html>
