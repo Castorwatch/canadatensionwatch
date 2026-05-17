@@ -1,0 +1,20 @@
+[
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-17",
+    "date_verification": "2026-06-14",
+    "score_actuel": 0.07,
+    "score_predit": 0.09,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Canada national",
+    "signal_dominant": "Stabilité plate persistante",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le niveau de stress lié au vol d'auto devrait demeurer faible et stable, potentiellement avec une légère hausse saisonnière estivale typique associée à l'augmentation des déplacements et des véhicules laissés sans surveillance. Aucun signal précurseur ne laisse présager une montée en tension significative à court terme.",
+    "prediction_en": "Over the next 4 to 8 weeks, auto theft stress levels are expected to remain low and stable, with a possible slight seasonal uptick typical of summer months associated with increased travel and unattended vehicles. No leading signals suggest a significant rise in tension in the near term.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
+  }
+]

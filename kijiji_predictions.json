@@ -15,5 +15,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-17",
+    "date_verification": "2026-06-14",
+    "score_actuel": 0.32,
+    "score_predit": 0.41,
+    "niveau_alerte_predit": "NORMAL",
+    "signal_dominant": "Liquidation actifs Vancouver-Toronto",
+    "prediction_fr": "Les signaux de Vancouver et Toronto indiquent une pression financière localisée qui pourrait faire monter le score national vers 0.40–0.45 d'ici 4 à 8 semaines, surtout si les taux de chômage estivaux se confirment à la hausse. Une propagation à Montréal ferait basculer le baromètre en zone TENSION.",
+    "prediction_en": "The Vancouver and Toronto signals point to localized financial pressure that could push the national score toward 0.40–0.45 over the next 4 to 8 weeks, especially if summer unemployment figures trend upward. A spillover to Montreal would tip the barometer into TENSION territory.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

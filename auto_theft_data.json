@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-17 12:54",
+  "updated": "2026-05-17 13:25",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 6.4,
+      "raw_score": 6.6,
       "stress_score": 0.09,
       "status": {
         "label_fr": "Normal",
@@ -110,14 +110,15 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de stress lié au vol d'auto s'établit à 0.07/1.0 aujourd'hui, reflétant un niveau d'intérêt très faible dans les recherches Google au Canada. L'historique des 30 derniers jours montre une stabilité remarquable avec un score constant de 0.07, assorti d'une légère tendance négative de -0.01 en date du 17 mai, suggérant un recul marginal de l'inquiétude publique. La région du Canada dans son ensemble affiche le score le plus élevé à 0.09, tandis que l'Ontario, le Québec, la Colombie-Britannique et l'Alberta se maintiennent toutes à 0.05. La catégorie 'vol_auto' domine légèrement les recherches à 0.09, indiquant que c'est le terme direct qui génère le plus d'activité.",
-    "analyse_en": "The national stress score related to auto theft sits at 0.07/1.0 today, reflecting very low search interest across Canada on Google Trends. The 30-day historical data shows remarkable stability with a consistent score of 0.07, with a slight negative trend of -0.01 recorded on May 17th, suggesting a marginal decline in public concern. The national Canada region scores highest at 0.09, while Ontario, Quebec, British Columbia, and Alberta all remain at 0.05. The 'vol_auto' category slightly leads searches at 0.09, indicating that direct theft-related queries are driving the most activity.",
-    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le niveau de stress lié au vol d'auto devrait demeurer bas et stable, avec une légère possibilité de hausse saisonnière en juin si les tendances estivales habituelles se confirment. Aucun signal précurseur n'indique une montée significative de l'inquiétude dans l'immédiat.",
-    "prediction_en": "Over the next 4 to 8 weeks, auto theft stress levels are expected to remain low and stable, with a slight possibility of a seasonal uptick in June if typical summer patterns hold. No leading signals currently indicate a significant surge in public concern in the near term.",
+    "analyse_fr": "Le score national de stress lié au vol d'auto s'établit à 0,07/1,0 aujourd'hui, reflétant un niveau d'intérêt de recherche très faible et stable. L'historique des 30 derniers jours confirme une tendance parfaitement plate, sans aucune variation détectée depuis le 14 mai 2026. La catégorie vol_auto affiche le score le plus élevé à 0,09, légèrement au-dessus des catégories assurance et sécurité, ce qui indique une préoccupation marginalement plus directe pour le phénomène lui-même. À l'échelle régionale, le Canada dans son ensemble score à 0,09 tandis que toutes les provinces individuelles se situent à 0,05, suggérant une répartition homogène sans foyer de stress particulier.",
+    "analyse_en": "The national auto theft stress score stands at 0.07/1.0 today, reflecting a very low and stable level of search interest across Canada. The 30-day historical data confirms a perfectly flat trend with no variation detected since May 14, 2026. The auto theft category scores highest at 0.09, slightly above insurance and security categories, indicating marginally more direct concern about the phenomenon itself. At the regional level, Canada overall scores 0.09 while all individual provinces sit at 0.05, suggesting a homogeneous distribution with no particular stress hotspot.",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le niveau de stress lié au vol d'auto devrait demeurer faible et stable, potentiellement avec une légère hausse saisonnière estivale typique associée à l'augmentation des déplacements et des véhicules laissés sans surveillance. Aucun signal précurseur ne laisse présager une montée en tension significative à court terme.",
+    "prediction_en": "Over the next 4 to 8 weeks, auto theft stress levels are expected to remain low and stable, with a possible slight seasonal uptick typical of summer months associated with increased travel and unattended vehicles. No leading signals suggest a significant rise in tension in the near term.",
     "region_risque": "Canada national",
-    "signal_dominant": "Stabilité faible intérêt",
+    "signal_dominant": "Stabilité plate persistante",
     "niveau_alerte": "NORMAL",
     "score_predit_4_semaines": 0.09
   },
-  "trend": -0.01
+  "trend": 0.0,
+  "prochaine_verification": "2026-06-14"
 }
