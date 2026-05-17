@@ -1,0 +1,19 @@
+[
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-17",
+    "date_verification": "2026-06-14",
+    "score_actuel": 0.32,
+    "score_predit": 0.39,
+    "niveau_alerte_predit": "TENSION",
+    "signal_dominant": "Bijoux Vancouver en hausse",
+    "prediction_fr": "Si la tendance de Vancouver se confirme et que Toronto maintient sa pression sur les outils, le score national devrait grimper vers 0.38–0.42 d'ici 4 à 8 semaines, surtout si les renouvellements hypothécaires estivaux accentuent la pression en Colombie-Britannique. Montréal pourrait agir comme stabilisateur national, mais insuffisamment pour compenser les hausses de l'Ouest.",
+    "prediction_en": "If Vancouver's trend confirms and Toronto maintains pressure in tools listings, the national score should climb toward 0.38–0.42 within 4 to 8 weeks, especially if summer mortgage renewals intensify stress in British Columbia. Montreal may act as a national stabilizer, but likely not enough to offset western Canada's rising signals.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
+  }
+]
