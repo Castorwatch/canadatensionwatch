@@ -49,5 +49,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-17",
+    "date_verification": "2026-06-14",
+    "score_actuel": 0.32,
+    "score_predit": 0.39,
+    "niveau_alerte_predit": "TENSION",
+    "signal_dominant": "Liquidation bijoux Vancouver",
+    "prediction_fr": "Si la tendance de liquidation d'actifs à Vancouver se confirme dans les prochaines semaines, combinée à la pression locative persistante à Toronto, le score national pourrait grimper vers 0.38–0.42 d'ici 4 à 8 semaines. Une détérioration du marché du travail ou une hausse des taux de défaut hypothécaire en Colombie-Britannique constituerait le principal catalyseur à surveiller.",
+    "prediction_en": "Should the asset-liquidation trend in Vancouver persist over the coming weeks, compounded by sustained rental pressure in Toronto, the national score could climb toward 0.38–0.42 within 4 to 8 weeks. A deterioration in the labour market or a rise in mortgage default rates in British Columbia would be the primary catalyst to watch.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

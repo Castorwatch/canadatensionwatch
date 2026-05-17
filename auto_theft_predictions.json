@@ -34,5 +34,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-17",
+    "date_verification": "2026-06-14",
+    "score_actuel": 0.08,
+    "score_predit": 0.11,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Canada national",
+    "signal_dominant": "Vol auto légère hausse",
+    "prediction_fr": "Au cours des 4 à 8 prochaines semaines, le score devrait rester dans une fourchette basse autour de 0.09 à 0.12, porté par l'approche de l'été qui historically corrèle avec une légère augmentation des incidents et des recherches liées au vol de véhicules. Une hausse modérée est attendue sans atteindre un niveau de tension significatif.",
+    "prediction_en": "Over the next 4 to 8 weeks, the score is expected to remain in a low range around 0.09 to 0.12, supported by the approaching summer season which historically correlates with a mild increase in vehicle theft incidents and related searches. A moderate uptick is anticipated without reaching a significant tension threshold.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
