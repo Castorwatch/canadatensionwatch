@@ -287,5 +287,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.33,
+    "score_predit": 0.39,
+    "niveau_alerte_predit": "TENSION",
+    "signal_dominant": "Liquidation bijoux Vancouver",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, si la tendance à Vancouver et Toronto se maintient — notamment la hausse des bijoux et des transferts de bail — le score national pourrait grimper vers 0.38 à 0.42, surtout si les pressions sur le marché locatif s'intensifient en approche de l'été. Une stabilisation est possible si Montréal reste en retrait et absorbe la moyenne.",
+    "prediction_en": "Over the next 4 to 8 weeks, if the trend in Vancouver and Toronto holds — particularly the rise in jewelry listings and lease transfers — the national score could climb toward 0.38 to 0.42, especially if rental market pressures intensify heading into summer. Stabilization remains possible if Montreal stays subdued and continues to anchor the national average.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

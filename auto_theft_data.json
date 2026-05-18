@@ -1,13 +1,13 @@
 {
-  "updated": "2026-05-18 22:41",
+  "updated": "2026-05-18 23:29",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 8.0,
-      "stress_score": 0.11,
+      "raw_score": 8.7,
+      "stress_score": 0.12,
       "status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -20,7 +20,7 @@
       "label_fr": "Réclamations Assurance",
       "label_en": "Insurance Claims",
       "emoji": "📋",
-      "raw_score": 0.4,
+      "raw_score": 0.6,
       "stress_score": 0.05,
       "status": {
         "label_fr": "Normal",
@@ -34,13 +34,13 @@
       "label_fr": "Sécurité Auto",
       "label_en": "Car Security",
       "emoji": "🔒",
-      "raw_score": null,
-      "stress_score": null,
+      "raw_score": 0.4,
+      "stress_score": 0.05,
       "status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       },
       "weight": 0.25
     }
@@ -102,7 +102,7 @@
       }
     }
   },
-  "national_score": 0.09,
+  "national_score": 0.08,
   "national_status": {
     "label_fr": "Normal",
     "label_en": "Normal",
@@ -110,15 +110,15 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de vol auto s'établit à 0,09/1,0 aujourd'hui, marquant une légère hausse progressive depuis 0,07 en début de semaine. La région canadienne globale affiche le signal le plus élevé à 0,11, tandis que l'Ontario, le Québec, la Colombie-Britannique et l'Alberta restent relativement stables à 0,05-0,06. La tendance sur 5 jours montre une montée modeste mais constante, suggérant un intérêt croissant pour le sujet sans atteindre un niveau préoccupant.",
-    "analyse_en": "The national auto theft score stands at 0.09/1.0 today, reflecting a gradual uptick from 0.07 earlier this week. The broader Canadian region shows the highest signal at 0.11, while Ontario, Quebec, British Columbia, and Alberta remain relatively stable between 0.05 and 0.06. The 5-day trend reveals a modest but consistent rise, suggesting growing public interest without reaching alarming levels.",
-    "prediction_fr": "Au cours des 4 à 8 prochaines semaines, le score de vol auto pourrait atteindre 0,13 à 0,16 avec l'arrivée de l'été, période historiquement propice à une hausse des incidents et des recherches connexes. La région canadienne dans son ensemble demeure la zone à surveiller en priorité.",
-    "prediction_en": "Over the next 4 to 8 weeks, the auto theft score could rise to between 0.13 and 0.16 as summer approaches, a period historically associated with increased incidents and related online searches. The broader Canadian region remains the primary area to monitor.",
+    "analyse_fr": "Le score national de stress lié au vol automobile s'établit à 0,08/1,0 aujourd'hui, un niveau bas indiquant une préoccupation minimale de la population canadienne. L'historique des 30 derniers jours montre une stabilité remarquable autour de 0,07-0,08, avec une légère hausse amorcée le 17 mai et une tendance légèrement négative (-0,01) aujourd'hui suggérant une stabilisation. Par région, le Canada dans son ensemble affiche le score le plus élevé à 0,11, tandis que l'Ontario, le Québec, la Colombie-Britannique et l'Alberta se situent tous à 0,05-0,06, ce qui désigne le Canada atlantique et les zones rurales comme foyer relatif des recherches. La catégorie vol_auto domine avec 0,12, confirmant que c'est la préoccupation directe plutôt que l'assurance ou la sécurité qui drive les recherches.",
+    "analyse_en": "The national automotive theft stress score sits at 0.08/1.0 today, reflecting minimal public concern across Canada. The 30-day historical data shows remarkable stability in the 0.07-0.08 range, with a slight uptick on May 17 followed by a marginal negative trend (-0.01) today suggesting stabilization. Regionally, the national Canada aggregate leads at 0.11 while Ontario, Quebec, BC, and Alberta all cluster at 0.05-0.06, pointing to broader national rather than province-specific anxiety. The vol_auto category dominates at 0.12, confirming that direct theft concerns rather than insurance or security topics are driving search activity.",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score devrait demeurer stable dans la fourchette 0,07-0,10, sans signal d'escalade notable à l'horizon. L'approche de l'été pourrait entraîner une légère hausse saisonnière des recherches liées au vol automobile, mais rien n'indique un niveau de tension élevé.",
+    "prediction_en": "Over the next 4 to 8 weeks, the score is expected to remain stable in the 0.07-0.10 range with no significant escalation signals on the horizon. The approaching summer season could trigger a modest seasonal uptick in auto theft-related searches, but no elevated tension level is anticipated.",
     "region_risque": "Canada national",
-    "signal_dominant": "Hausse progressive vol auto",
+    "signal_dominant": "Vol direct stable minimal",
     "niveau_alerte": "NORMAL",
-    "score_predit_4_semaines": 0.14
+    "score_predit_4_semaines": 0.09
   },
-  "trend": 0.0,
+  "trend": -0.01,
   "prochaine_verification": "2026-06-15"
 }
