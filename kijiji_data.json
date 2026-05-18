@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 18:13",
+  "updated": "2026-05-18 22:00",
   "version": "3.1",
   "pay_period": {
     "period": "apres-paye",
@@ -27,7 +27,7 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 604,
+          "count": 605,
           "baseline": 2840,
           "change_pct": -78.7,
           "score": 0.05,
@@ -43,9 +43,9 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 572,
+          "count": 573,
           "baseline": 576,
-          "change_pct": -0.7,
+          "change_pct": -0.5,
           "score": 0.15,
           "status": {
             "label_fr": "Normal",
@@ -104,9 +104,9 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 12553,
+          "count": 12584,
           "baseline": 4200,
-          "change_pct": 198.9,
+          "change_pct": 199.6,
           "score": 1.0,
           "status": {
             "label_fr": "CRISE",
@@ -120,9 +120,9 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 6346,
+          "count": 6345,
           "baseline": 6267,
-          "change_pct": 1.3,
+          "change_pct": 1.2,
           "score": 0.2,
           "status": {
             "label_fr": "Normal",
@@ -152,10 +152,10 @@
           "label_fr": "Bijoux & Montres",
           "label_en": "Jewelry & Watches",
           "emoji": "💍",
-          "count": 4407,
+          "count": 4411,
           "baseline": 4402,
-          "change_pct": 0.1,
-          "score": 0.15,
+          "change_pct": 0.2,
+          "score": 0.16,
           "status": {
             "label_fr": "Normal",
             "label_en": "Normal",
@@ -165,7 +165,7 @@
           "weight": 0.15
         }
       },
-      "composite_score": 0.43,
+      "composite_score": 0.44,
       "composite_status": {
         "label_fr": "Tension",
         "label_en": "Tension",
@@ -251,7 +251,7 @@
       }
     }
   },
-  "national_score": 0.32,
+  "national_score": 0.33,
   "national_status": {
     "label_fr": "Normal",
     "label_en": "Normal",
@@ -259,13 +259,13 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national Kijiji se maintient à 0.32 depuis cinq jours consécutifs, signalant une stabilité remarquable qui contraste avec des dynamiques urbaines très divergentes. Vancouver affiche le signal le plus préoccupant avec une explosion des annonces de bijoux (+487.7%) et une hausse des transferts de bail (+64.1%), indiquant une pression financière croissante sur les ménages de la côte ouest. Toronto montre une surtension dans la catégorie outils (+198.9%), souvent précurseur de difficultés chez les travailleurs autonomes et les petites entreprises. Montréal reste en zone calme avec des baisses marquées dans les outils et les transferts de bail, suggérant une relative résilience locale.",
-    "analyse_en": "The national Kijiji score has held steady at 0.32 for five consecutive days, reflecting remarkable stability that masks sharply diverging urban dynamics. Vancouver shows the most concerning signals, with jewelry listings surging +487.7% and lease transfers rising +64.1%, pointing to growing financial pressure on West Coast households. Toronto's tools category is spiking at +198.9%, a pattern historically linked to distress among self-employed workers and small businesses. Montreal remains in a calm zone with significant declines in tools and lease transfers, suggesting relative local resilience.",
-    "prediction_fr": "Si la tendance de Vancouver se confirme dans les 4 à 8 prochaines semaines, le score national pourrait grimper vers 0.41–0.45, porté par la liquidation d'actifs et la montée des transferts de bail dans les grandes métropoles. Une correction est peu probable sans détente notable sur le marché immobilier ou une amélioration du marché du travail.",
-    "prediction_en": "If Vancouver's trend holds over the next 4 to 8 weeks, the national score could climb toward 0.41–0.45, driven by asset liquidation and rising lease transfers in major metros. A correction appears unlikely without a meaningful easing in the housing market or a measurable improvement in labor conditions.",
-    "signal_dominant": "Liquidation bijoux Vancouver",
-    "niveau_alerte": "TENSION",
-    "score_predit_4_semaines": 0.41
+    "analyse_fr": "Le score national Kijiji atteint 0.33 aujourd'hui, en légère hausse par rapport aux 0.32 stables observés depuis le 14 mai, ce qui reste un niveau modéré de stress économique. Le signal dominant provient de Vancouver, avec une explosion des annonces de bijoux (+487.7%) et une hausse des transferts de bail (+64.1%), indiquant une pression financière croissante sur les ménages de la côte ouest. Toronto montre également une tension notable avec une forte augmentation des ventes d'outils (+199.6%), signe classique de liquidation d'actifs en période de serrement budgétaire. Montréal reste remarquablement calme avec un score de seulement 0.09, tirant la moyenne nationale vers le bas.",
+    "analyse_en": "The national Kijiji score reaches 0.33 today, slightly up from the stable 0.32 observed since May 14th, remaining at a moderate level of economic stress. The dominant signal comes from Vancouver, with an explosion in jewelry listings (+487.7%) and a rise in lease transfers (+64.1%), indicating growing financial pressure on West Coast households. Toronto also shows notable tension with a sharp increase in tool sales (+199.6%), a classic sign of asset liquidation during budget tightening. Montreal remains remarkably calm with a score of only 0.09, pulling the national average downward.",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score national devrait progressivement monter vers 0.38-0.42, porté par la persistance des signaux vancouvérois et torontois, surtout si les renouvellements hypothécaires de juin amplifient la pression sur les ménages endettés.",
+    "prediction_en": "Over the next 4 to 8 weeks, the national score should gradually rise toward 0.38-0.42, driven by the persistence of Vancouver and Toronto signals, especially if June mortgage renewals amplify pressure on indebted households.",
+    "signal_dominant": "Bijoux Vancouver en hausse",
+    "niveau_alerte": "NORMAL",
+    "score_predit_4_semaines": 0.39
   },
   "prochaine_verification": "2026-06-15"
 }

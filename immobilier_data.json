@@ -1,0 +1,137 @@
+{
+  "updated": "2026-05-18 22:05",
+  "source": "Statistique Canada — Indice des prix des logements neufs (tableau 18-10-0205)",
+  "indicator": "indice_prix_logements_neufs_variation_annuelle",
+  "provinces": {
+    "NL": {
+      "name_fr": "Terre-Neuve-et-Labrador",
+      "name_en": "Newfoundland and Labrador",
+      "indice": 109.8,
+      "variation_annuelle_pct": 0.6,
+      "stress_score": 0.28,
+      "status": {
+        "fr": "Détendu",
+        "en": "Relaxed",
+        "emoji": "🟢"
+      },
+      "ref_period": "2026-03"
+    },
+    "PE": {
+      "name_fr": "Île-du-Prince-Édouard",
+      "name_en": "Prince Edward Island",
+      "indice": 123.7,
+      "variation_annuelle_pct": 1.4,
+      "stress_score": 0.33,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-03"
+    },
+    "NS": {
+      "name_fr": "Nouvelle-Écosse",
+      "name_en": "Nova Scotia",
+      "indice": 128.6,
+      "variation_annuelle_pct": 1.8,
+      "stress_score": 0.35,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-03"
+    },
+    "NB": {
+      "name_fr": "Nouveau-Brunswick",
+      "name_en": "New Brunswick",
+      "indice": 120.7,
+      "variation_annuelle_pct": 0.0,
+      "stress_score": 0.25,
+      "status": {
+        "fr": "Détendu",
+        "en": "Relaxed",
+        "emoji": "🟢"
+      },
+      "ref_period": "2026-03"
+    },
+    "QC": {
+      "name_fr": "Québec",
+      "name_en": "Quebec",
+      "indice": 149.6,
+      "variation_annuelle_pct": 2.7,
+      "stress_score": 0.41,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-03"
+    },
+    "ON": {
+      "name_fr": "Ontario",
+      "name_en": "Ontario",
+      "indice": 118.5,
+      "variation_annuelle_pct": -3.8,
+      "stress_score": 0.15,
+      "status": {
+        "fr": "Détendu",
+        "en": "Relaxed",
+        "emoji": "🟢"
+      },
+      "ref_period": "2026-03"
+    },
+    "MB": {
+      "name_fr": "Manitoba",
+      "name_en": "Manitoba",
+      "indice": 146.1,
+      "variation_annuelle_pct": 2.5,
+      "stress_score": 0.4,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-03"
+    },
+    "SK": {
+      "name_fr": "Saskatchewan",
+      "name_en": "Saskatchewan",
+      "indice": 111.1,
+      "variation_annuelle_pct": 3.6,
+      "stress_score": 0.47,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-03"
+    },
+    "AB": {
+      "name_fr": "Alberta",
+      "name_en": "Alberta",
+      "indice": 120.1,
+      "variation_annuelle_pct": -1.4,
+      "stress_score": 0.18,
+      "status": {
+        "fr": "Détendu",
+        "en": "Relaxed",
+        "emoji": "🟢"
+      },
+      "ref_period": "2026-03"
+    },
+    "BC": {
+      "name_fr": "Colombie-Britannique",
+      "name_en": "British Columbia",
+      "indice": 123.8,
+      "variation_annuelle_pct": -2.4,
+      "stress_score": 0.15,
+      "status": {
+        "fr": "Détendu",
+        "en": "Relaxed",
+        "emoji": "🟢"
+      },
+      "ref_period": "2026-03"
+    }
+  }
+}

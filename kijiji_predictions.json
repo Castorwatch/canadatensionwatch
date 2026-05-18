@@ -253,5 +253,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.33,
+    "score_predit": 0.39,
+    "niveau_alerte_predit": "NORMAL",
+    "signal_dominant": "Bijoux Vancouver en hausse",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score national devrait progressivement monter vers 0.38-0.42, porté par la persistance des signaux vancouvérois et torontois, surtout si les renouvellements hypothécaires de juin amplifient la pression sur les ménages endettés.",
+    "prediction_en": "Over the next 4 to 8 weeks, the national score should gradually rise toward 0.38-0.42, driven by the persistence of Vancouver and Toronto signals, especially if June mortgage renewals amplify pressure on indebted households.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
