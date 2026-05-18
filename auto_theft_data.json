@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-18 15:40",
+  "updated": "2026-05-18 18:16",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": null,
-      "stress_score": null,
+      "raw_score": 7.1,
+      "stress_score": 0.1,
       "status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       },
       "weight": 0.5
     },
@@ -49,12 +49,12 @@
     "canada": {
       "name_fr": "Canada",
       "name_en": "Canada",
-      "composite_score": null,
+      "composite_score": 0.1,
       "composite_status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       }
     },
     "ontario": {
@@ -71,39 +71,54 @@
     "quebec": {
       "name_fr": "Québec",
       "name_en": "Quebec",
-      "composite_score": null,
+      "composite_score": 0.05,
       "composite_status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       }
     },
     "bc": {
       "name_fr": "C.-B.",
       "name_en": "BC",
-      "composite_score": null,
+      "composite_score": 0.05,
       "composite_status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       }
     },
     "alberta": {
       "name_fr": "Alberta",
       "name_en": "Alberta",
-      "composite_score": null,
+      "composite_score": 0.05,
       "composite_status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       }
     }
   },
-  "national_score": null,
-  "national_status": null,
-  "claude_analysis": null,
-  "trend": null
+  "national_score": 0.1,
+  "national_status": {
+    "label_fr": "Normal",
+    "label_en": "Normal",
+    "color": "green",
+    "emoji": "🟢"
+  },
+  "claude_analysis": {
+    "analyse_fr": "Le score national de vol d'auto atteint 0.10 aujourd'hui, en hausse notable par rapport aux 0.07 enregistrés de manière stable entre le 14 et le 16 mai, avec une légère progression dès le 17 mai à 0.08. Cette tendance haussière sur 48 heures suggère un regain d'intérêt pour les recherches liées au vol de véhicules. Le Québec et la Colombie-Britannique affichent des scores modérés à 0.05, tandis que les données pour l'Ontario restent indisponibles. Le niveau national demeure bas, mais la trajectoire récente mérite une surveillance accrue.",
+    "analyse_en": "The national auto theft score reaches 0.10 today, a notable increase from the stable 0.07 recorded between May 14 and 16, with a slight uptick to 0.08 on May 17. This 48-hour upward trend suggests a renewed interest in vehicle theft-related searches. Quebec and British Columbia show moderate scores at 0.05, while Ontario data remains unavailable. The national level remains low, but the recent trajectory warrants closer monitoring.",
+    "prediction_fr": "Si la tendance actuelle se maintient, le score national pourrait progresser vers 0.13 à 0.16 au cours des 4 à 8 prochaines semaines, typiquement en lien avec la hausse des activités estivales. Une vigilance accrue est recommandée, notamment dans les grandes zones urbaines canadiennes.",
+    "prediction_en": "If the current trend continues, the national score could rise toward 0.13 to 0.16 over the next 4 to 8 weeks, typically linked to increased summer activity. Heightened vigilance is recommended, particularly in major Canadian urban areas.",
+    "region_risque": "Canada national",
+    "signal_dominant": "Hausse soudaine recherches vol",
+    "niveau_alerte": "NORMAL",
+    "score_predit_4_semaines": 0.14
+  },
+  "trend": 0.0,
+  "prochaine_verification": "2026-06-15"
 }

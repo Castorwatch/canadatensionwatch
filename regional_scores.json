@@ -1,55 +1,130 @@
 {
-  "updated": "2026-05-18 15:42",
+  "updated": "2026-05-18 18:22",
   "note": "Score régional BEAVER. Conçu pour grandir (voir plan). On expose le nombre de signaux, jamais lesquels.",
-  "signaux_actifs_max": 3,
+  "signaux_actifs_max": 5,
   "signaux_prevus_total": 12,
   "provinces": {
     "AB": {
-      "score": 0.394,
+      "score": 0.374,
+      "score_100": 37,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 5,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "BC": {
+      "score": 0.367,
+      "score_100": 37,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 5,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "MB": {
+      "score": 0.322,
+      "score_100": 32,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 5,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NB": {
+      "score": 0.389,
       "score_100": 39,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
         "emoji": "🟡"
       },
-      "signaux_actifs": 2,
+      "signaux_actifs": 5,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
+        "fr": "Bonne",
+        "en": "Good"
       }
     },
-    "BC": {
-      "score": 0.377,
-      "score_100": 38,
+    "NL": {
+      "score": 0.459,
+      "score_100": 46,
+      "niveau": {
+        "fr": "TENSION",
+        "en": "TENSION",
+        "emoji": "🟠"
+      },
+      "signaux_actifs": 5,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NS": {
+      "score": 0.361,
+      "score_100": 36,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
         "emoji": "🟡"
       },
-      "signaux_actifs": 2,
+      "signaux_actifs": 5,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
+        "fr": "Bonne",
+        "en": "Good"
       }
     },
-    "MB": {
-      "score": 0.251,
-      "score_100": 25,
+    "NT": {
+      "score": 0.361,
+      "score_100": 36,
       "niveau": {
-        "fr": "STABLE",
-        "en": "STABLE",
-        "emoji": "🟢"
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
       },
-      "signaux_actifs": 2,
+      "signaux_actifs": 4,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
+        "fr": "Bonne",
+        "en": "Good"
       }
     },
-    "NB": {
+    "ON": {
+      "score": 0.397,
+      "score_100": 40,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 5,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "PE": {
       "score": 0.411,
       "score_100": 41,
       "niveau": {
@@ -57,178 +132,103 @@
         "en": "WATCH",
         "emoji": "🟡"
       },
-      "signaux_actifs": 2,
+      "signaux_actifs": 5,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
+        "fr": "Bonne",
+        "en": "Good"
       }
     },
-    "NL": {
-      "score": 0.577,
-      "score_100": 58,
+    "QC": {
+      "score": 0.348,
+      "score_100": 35,
       "niveau": {
-        "fr": "TENSION",
-        "en": "TENSION",
-        "emoji": "🟠"
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
       },
-      "signaux_actifs": 2,
+      "signaux_actifs": 5,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
+        "fr": "Bonne",
+        "en": "Good"
       }
     },
-    "NS": {
-      "score": 0.343,
+    "SK": {
+      "score": 0.337,
       "score_100": 34,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
         "emoji": "🟡"
       },
-      "signaux_actifs": 2,
+      "signaux_actifs": 5,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
-      }
-    },
-    "NT": {
-      "score": 0.32,
-      "score_100": 32,
-      "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
-      },
-      "signaux_actifs": 1,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Préliminaire",
-        "en": "Preliminary"
-      }
-    },
-    "ON": {
-      "score": 0.429,
-      "score_100": 43,
-      "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
-      },
-      "signaux_actifs": 2,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
-      }
-    },
-    "PE": {
-      "score": 0.463,
-      "score_100": 46,
-      "niveau": {
-        "fr": "TENSION",
-        "en": "TENSION",
-        "emoji": "🟠"
-      },
-      "signaux_actifs": 2,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
-      }
-    },
-    "QC": {
-      "score": 0.331,
-      "score_100": 33,
-      "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
-      },
-      "signaux_actifs": 2,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
-      }
-    },
-    "SK": {
-      "score": 0.286,
-      "score_100": 29,
-      "niveau": {
-        "fr": "STABLE",
-        "en": "STABLE",
-        "emoji": "🟢"
-      },
-      "signaux_actifs": 2,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
+        "fr": "Bonne",
+        "en": "Good"
       }
     },
     "YT": {
-      "score": 0.32,
-      "score_100": 32,
+      "score": 0.361,
+      "score_100": 36,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
         "emoji": "🟡"
       },
-      "signaux_actifs": 1,
+      "signaux_actifs": 4,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Préliminaire",
-        "en": "Preliminary"
+        "fr": "Bonne",
+        "en": "Good"
       }
     }
   },
   "villes": {
     "montreal": {
-      "score": 0.233,
-      "score_100": 23,
-      "niveau": {
-        "fr": "STABLE",
-        "en": "STABLE",
-        "emoji": "🟢"
-      },
-      "signaux_actifs": 2,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
-      }
-    },
-    "toronto": {
-      "score": 0.476,
-      "score_100": 48,
-      "niveau": {
-        "fr": "TENSION",
-        "en": "TENSION",
-        "emoji": "🟠"
-      },
-      "signaux_actifs": 2,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
-      }
-    },
-    "vancouver": {
-      "score": 0.433,
-      "score_100": 43,
+      "score": 0.316,
+      "score_100": 32,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
         "emoji": "🟡"
       },
-      "signaux_actifs": 2,
+      "signaux_actifs": 5,
       "signaux_prevus": 12,
       "confiance": {
-        "fr": "Modérée",
-        "en": "Moderate"
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "toronto": {
+      "score": 0.412,
+      "score_100": 41,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 5,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "vancouver": {
+      "score": 0.385,
+      "score_100": 38,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 5,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
       }
     }
   }
