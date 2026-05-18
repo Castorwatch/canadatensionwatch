@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 12:34",
+  "updated": "2026-05-18 13:22",
   "source": "Google Trends — recherches de détresse financière régionales (bilingue FR/EN)",
   "termes_fr": [
     "faillite personnelle",
@@ -14,7 +14,49 @@
     "debt help"
   ],
   "note": "Signal prédictif : précède les faillites officielles de plusieurs mois. Termes adaptés à la langue de chaque région.",
-  "regions": {},
-  "provinces": {},
+  "regions": {
+    "ontario": {
+      "name_fr": "Ontario",
+      "lang": "en",
+      "raw_interest": 0.8,
+      "stress_score": 0.05,
+      "status": {
+        "fr": "Normal",
+        "en": "Normal",
+        "emoji": "🟢"
+      }
+    },
+    "quebec": {
+      "name_fr": "Québec",
+      "lang": "fr",
+      "raw_interest": 1.0,
+      "stress_score": 0.05,
+      "status": {
+        "fr": "Normal",
+        "en": "Normal",
+        "emoji": "🟢"
+      }
+    }
+  },
+  "provinces": {
+    "ON": {
+      "stress_score": 0.05,
+      "status": {
+        "fr": "Normal",
+        "en": "Normal",
+        "emoji": "🟢"
+      },
+      "raw_interest": 0.8
+    },
+    "QC": {
+      "stress_score": 0.05,
+      "status": {
+        "fr": "Normal",
+        "en": "Normal",
+        "emoji": "🟢"
+      },
+      "raw_interest": 1.0
+    }
+  },
   "national_score": null
 }

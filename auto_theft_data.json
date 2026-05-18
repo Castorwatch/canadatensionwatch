@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-18 12:31",
+  "updated": "2026-05-18 13:18",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 8.0,
-      "stress_score": 0.11,
+      "raw_score": null,
+      "stress_score": null,
       "status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       },
       "weight": 0.5
     },
@@ -49,7 +49,7 @@
     "canada": {
       "name_fr": "Canada",
       "name_en": "Canada",
-      "composite_score": 0.12,
+      "composite_score": 0.11,
       "composite_status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -102,7 +102,7 @@
       }
     }
   },
-  "national_score": 0.09,
+  "national_score": 0.05,
   "national_status": {
     "label_fr": "Normal",
     "label_en": "Normal",
@@ -110,15 +110,15 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de vol d'auto se situe à 0,09/1,0 aujourd'hui, ce qui demeure dans une zone de faible préoccupation. On observe une légère progression sur 5 jours, passant de 0,07 à 0,09, soit une hausse modeste de 28% suggérant une attention croissante du public. L'Ontario et le Québec affichent des scores équivalents à 0,05, tandis que le Canada global atteint 0,12, indiquant une activité de recherche plus marquée au niveau national. Les données pour la Colombie-Britannique et l'Alberta sont absentes, ce qui limite l'analyse régionale.",
-    "analyse_en": "The national auto theft score stands at 0.09/1.0 today, remaining in a low-concern zone overall. A gradual upward trend is visible over the past 5 days, rising from 0.07 to 0.09, a modest 28% increase suggesting growing public awareness. Ontario and Quebec both register at 0.05, while the Canada-wide aggregate reaches 0.12, pointing to broader national search activity. Data for British Columbia and Alberta is unavailable, limiting full regional comparison.",
-    "prediction_fr": "La tendance haussière douce observée depuis 5 jours pourrait se poursuivre avec l'arrivée de l'été, saison historiquement propice aux vols de véhicules. D'ici 4 à 8 semaines, le score national devrait atteindre entre 0,12 et 0,16, avec un risque accru dans les grandes zones urbaines.",
-    "prediction_en": "The mild upward trend observed over the past 5 days is likely to continue as summer approaches, a period historically associated with higher vehicle theft activity. Over the next 4 to 8 weeks, the national score is expected to reach between 0.12 and 0.16, with elevated risk in major urban centres.",
+    "analyse_fr": "Le score national de stress lié au vol d'auto s'établit à 0.05/1.0 aujourd'hui, soit le niveau le plus bas observé sur les 5 derniers jours consignés. On note une tendance à la baisse marquée (-0.04) par rapport au score de 0.08 enregistré hier, après une stabilité relative entre 0.07 et 0.08 du 14 au 17 mai. Le Canada dans son ensemble affiche un score légèrement supérieur (0.11) comparé à l'Ontario et au Québec (tous deux à 0.05), suggérant une préoccupation plus diffuse à l'échelle nationale que dans ces deux provinces. Les données pour la Colombie-Britannique et l'Alberta sont absentes, ce qui limite l'analyse régionale.",
+    "analyse_en": "The national stress score related to auto theft stands at 0.05/1.0 today, the lowest level recorded over the past 5 logged days. A notable downward trend (-0.04) is observed compared to yesterday's score of 0.08, following relative stability between 0.07 and 0.08 from May 14 to 17. Canada overall shows a slightly higher score (0.11) compared to Ontario and Quebec (both at 0.05), suggesting broader national concern beyond these two provinces. Data for British Columbia and Alberta is unavailable, limiting full regional analysis.",
+    "prediction_fr": "Avec l'approche de l'été, saison historiquement plus active pour le vol d'auto au Canada, une remontée progressive vers 0.12–0.18 est attendue d'ici 4 à 8 semaines. Le Canada hors grandes provinces reste la zone à surveiller en priorité.",
+    "prediction_en": "With summer approaching — historically a more active season for auto theft in Canada — a gradual rise toward 0.12–0.18 is expected over the next 4 to 8 weeks. Canada outside major provinces remains the priority zone to monitor.",
     "region_risque": "Canada national",
-    "signal_dominant": "Hausse progressive vol auto",
+    "signal_dominant": "Accalmie avant hausse estivale",
     "niveau_alerte": "NORMAL",
     "score_predit_4_semaines": 0.14
   },
-  "trend": 0.0,
+  "trend": -0.04,
   "prochaine_verification": "2026-06-15"
 }

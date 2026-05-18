@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 12:31",
+  "updated": "2026-05-18 13:18",
   "source": "Google Trends",
   "timeframe": "Last 7 days",
   "keywords": {
@@ -7,8 +7,8 @@
       "label_fr": "Prets Payday",
       "label_en": "Payday Loans",
       "emoji": "💸",
-      "raw_score": 9.3,
-      "stress_score": 0.11,
+      "raw_score": 6.4,
+      "stress_score": 0.07,
       "status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -21,13 +21,13 @@
       "label_fr": "Aide Alimentaire",
       "label_en": "Food Assistance",
       "emoji": "🍞",
-      "raw_score": 1.4,
-      "stress_score": 0.05,
+      "raw_score": null,
+      "stress_score": null,
       "status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "?"
       },
       "weight": 0.25
     },
@@ -60,7 +60,7 @@
       "weight": 0.2
     }
   },
-  "national_score": 0.07,
+  "national_score": 0.06,
   "national_status": {
     "label_fr": "Normal",
     "label_en": "Normal",

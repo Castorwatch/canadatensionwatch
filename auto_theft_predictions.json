@@ -142,5 +142,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.05,
+    "score_predit": 0.14,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Canada national",
+    "signal_dominant": "Accalmie avant hausse estivale",
+    "prediction_fr": "Avec l'approche de l'été, saison historiquement plus active pour le vol d'auto au Canada, une remontée progressive vers 0.12–0.18 est attendue d'ici 4 à 8 semaines. Le Canada hors grandes provinces reste la zone à surveiller en priorité.",
+    "prediction_en": "With summer approaching — historically a more active season for auto theft in Canada — a gradual rise toward 0.12–0.18 is expected over the next 4 to 8 weeks. Canada outside major provinces remains the priority zone to monitor.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
