@@ -1,16 +1,16 @@
 {
-  "updated": "2026-05-18 14:19",
+  "updated": "2026-05-18 14:28",
   "note": "Score régional BEAVER. Conçu pour grandir (voir plan). On expose le nombre de signaux, jamais lesquels.",
   "signaux_actifs_max": 3,
   "signaux_prevus_total": 12,
   "provinces": {
     "AB": {
-      "score": 0.309,
-      "score_100": 31,
+      "score": 0.291,
+      "score_100": 29,
       "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
       },
       "signaux_actifs": 3,
       "signaux_prevus": 12,
@@ -20,8 +20,8 @@
       }
     },
     "BC": {
-      "score": 0.297,
-      "score_100": 30,
+      "score": 0.279,
+      "score_100": 28,
       "niveau": {
         "fr": "STABLE",
         "en": "STABLE",
@@ -35,7 +35,7 @@
       }
     },
     "MB": {
-      "score": 0.209,
+      "score": 0.206,
       "score_100": 21,
       "niveau": {
         "fr": "STABLE",
@@ -50,7 +50,7 @@
       }
     },
     "NB": {
-      "score": 0.321,
+      "score": 0.318,
       "score_100": 32,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -65,8 +65,8 @@
       }
     },
     "NL": {
-      "score": 0.437,
-      "score_100": 44,
+      "score": 0.434,
+      "score_100": 43,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -80,7 +80,7 @@
       }
     },
     "NS": {
-      "score": 0.273,
+      "score": 0.27,
       "score_100": 27,
       "niveau": {
         "fr": "STABLE",
@@ -95,8 +95,8 @@
       }
     },
     "NT": {
-      "score": 0.215,
-      "score_100": 22,
+      "score": 0.21,
+      "score_100": 21,
       "niveau": {
         "fr": "STABLE",
         "en": "STABLE",
@@ -110,7 +110,7 @@
       }
     },
     "ON": {
-      "score": 0.315,
+      "score": 0.321,
       "score_100": 32,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -125,8 +125,8 @@
       }
     },
     "PE": {
-      "score": 0.357,
-      "score_100": 36,
+      "score": 0.354,
+      "score_100": 35,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -140,8 +140,8 @@
       }
     },
     "QC": {
-      "score": 0.247,
-      "score_100": 25,
+      "score": 0.262,
+      "score_100": 26,
       "niveau": {
         "fr": "STABLE",
         "en": "STABLE",
@@ -155,7 +155,7 @@
       }
     },
     "SK": {
-      "score": 0.233,
+      "score": 0.23,
       "score_100": 23,
       "niveau": {
         "fr": "STABLE",
@@ -170,8 +170,8 @@
       }
     },
     "YT": {
-      "score": 0.215,
-      "score_100": 22,
+      "score": 0.21,
+      "score_100": 21,
       "niveau": {
         "fr": "STABLE",
         "en": "STABLE",
@@ -187,8 +187,8 @@
   },
   "villes": {
     "montreal": {
-      "score": 0.178,
-      "score_100": 18,
+      "score": 0.193,
+      "score_100": 19,
       "niveau": {
         "fr": "STABLE",
         "en": "STABLE",
@@ -202,7 +202,7 @@
       }
     },
     "toronto": {
-      "score": 0.348,
+      "score": 0.354,
       "score_100": 35,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -217,8 +217,8 @@
       }
     },
     "vancouver": {
-      "score": 0.336,
-      "score_100": 34,
+      "score": 0.318,
+      "score_100": 32,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",

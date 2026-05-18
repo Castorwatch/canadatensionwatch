@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-18 13:18",
+  "updated": "2026-05-18 14:26",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": null,
-      "stress_score": null,
+      "raw_score": 6.8,
+      "stress_score": 0.1,
       "status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       },
       "weight": 0.5
     },
@@ -20,13 +20,13 @@
       "label_fr": "Réclamations Assurance",
       "label_en": "Insurance Claims",
       "emoji": "📋",
-      "raw_score": 0.3,
-      "stress_score": 0.05,
+      "raw_score": null,
+      "stress_score": null,
       "status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       },
       "weight": 0.25
     },
@@ -49,7 +49,7 @@
     "canada": {
       "name_fr": "Canada",
       "name_en": "Canada",
-      "composite_score": 0.11,
+      "composite_score": 0.1,
       "composite_status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -60,7 +60,7 @@
     "ontario": {
       "name_fr": "Ontario",
       "name_en": "Ontario",
-      "composite_score": 0.05,
+      "composite_score": 0.07,
       "composite_status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -71,6 +71,17 @@
     "quebec": {
       "name_fr": "Québec",
       "name_en": "Quebec",
+      "composite_score": null,
+      "composite_status": {
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
+      }
+    },
+    "bc": {
+      "name_fr": "C.-B.",
+      "name_en": "BC",
       "composite_score": 0.05,
       "composite_status": {
         "label_fr": "Normal",
@@ -79,30 +90,19 @@
         "emoji": "🟢"
       }
     },
-    "bc": {
-      "name_fr": "C.-B.",
-      "name_en": "BC",
-      "composite_score": null,
-      "composite_status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
-      }
-    },
     "alberta": {
       "name_fr": "Alberta",
       "name_en": "Alberta",
-      "composite_score": null,
+      "composite_score": 0.05,
       "composite_status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       }
     }
   },
-  "national_score": 0.05,
+  "national_score": 0.1,
   "national_status": {
     "label_fr": "Normal",
     "label_en": "Normal",
@@ -110,15 +110,15 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de stress lié au vol d'auto s'établit à 0.05/1.0 aujourd'hui, soit le niveau le plus bas observé sur les 5 derniers jours consignés. On note une tendance à la baisse marquée (-0.04) par rapport au score de 0.08 enregistré hier, après une stabilité relative entre 0.07 et 0.08 du 14 au 17 mai. Le Canada dans son ensemble affiche un score légèrement supérieur (0.11) comparé à l'Ontario et au Québec (tous deux à 0.05), suggérant une préoccupation plus diffuse à l'échelle nationale que dans ces deux provinces. Les données pour la Colombie-Britannique et l'Alberta sont absentes, ce qui limite l'analyse régionale.",
-    "analyse_en": "The national stress score related to auto theft stands at 0.05/1.0 today, the lowest level recorded over the past 5 logged days. A notable downward trend (-0.04) is observed compared to yesterday's score of 0.08, following relative stability between 0.07 and 0.08 from May 14 to 17. Canada overall shows a slightly higher score (0.11) compared to Ontario and Quebec (both at 0.05), suggesting broader national concern beyond these two provinces. Data for British Columbia and Alberta is unavailable, limiting full regional analysis.",
-    "prediction_fr": "Avec l'approche de l'été, saison historiquement plus active pour le vol d'auto au Canada, une remontée progressive vers 0.12–0.18 est attendue d'ici 4 à 8 semaines. Le Canada hors grandes provinces reste la zone à surveiller en priorité.",
-    "prediction_en": "With summer approaching — historically a more active season for auto theft in Canada — a gradual rise toward 0.12–0.18 is expected over the next 4 to 8 weeks. Canada outside major provinces remains the priority zone to monitor.",
-    "region_risque": "Canada national",
-    "signal_dominant": "Accalmie avant hausse estivale",
+    "analyse_fr": "Le score national de vol auto atteint 0,10 aujourd'hui, en hausse notable par rapport aux 0,07 enregistrés de manière stable du 14 au 16 mai, suggérant une légère montée des recherches liées au vol de véhicules. La tendance positive de 0,05 observée le 18 mai confirme une accélération récente, bien que le niveau global demeure bas. L'Ontario affiche le score régional le plus élevé à 0,07, se positionnant comme la région la plus préoccupante, tandis que la Colombie-Britannique et l'Alberta restent stables à 0,05. Le Québec ne fournit pas de données suffisantes pour l'analyse ce jour.",
+    "analyse_en": "The national auto theft score reaches 0.10 today, a notable increase from the stable 0.07 recorded from May 14 to 16, suggesting a slight uptick in vehicle theft-related searches. The positive trend of 0.05 observed on May 18 confirms a recent acceleration, although the overall level remains low. Ontario shows the highest regional score at 0.07, positioning it as the most concerning region, while British Columbia and Alberta remain stable at 0.05. Quebec does not provide sufficient data for analysis today.",
+    "prediction_fr": "Si la tendance haussière observée cette semaine se maintient, le score national pourrait atteindre entre 0,13 et 0,17 d'ici 4 à 8 semaines, notamment en Ontario où les signaux de recherche sont les plus actifs. Une vigilance accrue est recommandée à l'approche de la saison estivale, période historiquement propice aux vols de véhicules.",
+    "prediction_en": "If the upward trend observed this week persists, the national score could reach between 0.13 and 0.17 within 4 to 8 weeks, particularly in Ontario where search signals are most active. Increased vigilance is recommended heading into the summer season, a period historically associated with higher vehicle theft rates.",
+    "region_risque": "Ontario urbain",
+    "signal_dominant": "Hausse recherches vol véhicule",
     "niveau_alerte": "NORMAL",
-    "score_predit_4_semaines": 0.14
+    "score_predit_4_semaines": 0.15
   },
-  "trend": -0.04,
+  "trend": 0.05,
   "prochaine_verification": "2026-06-15"
 }

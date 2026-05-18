@@ -160,5 +160,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.1,
+    "score_predit": 0.15,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Ontario urbain",
+    "signal_dominant": "Hausse recherches vol véhicule",
+    "prediction_fr": "Si la tendance haussière observée cette semaine se maintient, le score national pourrait atteindre entre 0,13 et 0,17 d'ici 4 à 8 semaines, notamment en Ontario où les signaux de recherche sont les plus actifs. Une vigilance accrue est recommandée à l'approche de la saison estivale, période historiquement propice aux vols de véhicules.",
+    "prediction_en": "If the upward trend observed this week persists, the national score could reach between 0.13 and 0.17 within 4 to 8 weeks, particularly in Ontario where search signals are most active. Increased vigilance is recommended heading into the summer season, a period historically associated with higher vehicle theft rates.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

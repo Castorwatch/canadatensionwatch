@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 13:16",
+  "updated": "2026-05-18 14:23",
   "version": "3.1",
   "pay_period": {
     "period": "apres-paye",
@@ -27,9 +27,9 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 0,
+          "count": 611,
           "baseline": 2840,
-          "change_pct": -100.0,
+          "change_pct": -78.5,
           "score": 0.05,
           "status": {
             "label_fr": "Normal",
@@ -43,9 +43,9 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 571,
+          "count": 572,
           "baseline": 576,
-          "change_pct": -0.9,
+          "change_pct": -0.7,
           "score": 0.15,
           "status": {
             "label_fr": "Normal",
@@ -75,10 +75,10 @@
           "label_fr": "Bijoux & Montres",
           "label_en": "Jewelry & Watches",
           "emoji": "💍",
-          "count": 501,
+          "count": 504,
           "baseline": 502,
-          "change_pct": -0.2,
-          "score": 0.15,
+          "change_pct": 0.4,
+          "score": 0.17,
           "status": {
             "label_fr": "Normal",
             "label_en": "Normal",
@@ -104,9 +104,9 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 12524,
+          "count": 12522,
           "baseline": 4200,
-          "change_pct": 198.2,
+          "change_pct": 198.1,
           "score": 1.0,
           "status": {
             "label_fr": "CRISE",
@@ -152,9 +152,9 @@
           "label_fr": "Bijoux & Montres",
           "label_en": "Jewelry & Watches",
           "emoji": "💍",
-          "count": 4402,
+          "count": 4405,
           "baseline": 4402,
-          "change_pct": 0.0,
+          "change_pct": 0.1,
           "score": 0.15,
           "status": {
             "label_fr": "Normal",
@@ -259,11 +259,11 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national demeure stable à 0.32 depuis plusieurs jours consécutifs, suggérant une stagnation du stress économique plutôt qu'une détérioration active. Montréal affiche un score remarquablement bas à 0.09, avec des chutes importantes dans les outils (-100%) et les transferts de bail (-89.7%), ce qui pourrait indiquer un marché secondaire atone dans cette ville. Vancouver se démarque avec un score de 0.45 et des signaux préoccupants : bijoux en hausse de +488.9% et transferts de bail en hausse de +64.5%, indiquant une possible pression financière sur les ménages. Toronto confirme cette tension de l'Ouest avec 0.43 et une explosion des annonces d'outils (+198.2%), signe classique de liquidation de biens par des ménages sous pression.",
-    "analyse_en": "The national score has held steady at 0.32 for several consecutive days, suggesting economic stress stagnation rather than active deterioration. Montreal posts a remarkably low score of 0.09, with sharp drops in tools (-100%) and lease transfers (-89.7%), possibly reflecting a sluggish secondary market in that city. Vancouver stands out with a score of 0.45 and concerning signals: jewelry listings up +488.9% and lease transfers up +64.5%, pointing to potential financial pressure on households. Toronto confirms this western tension at 0.43, with a surge in tool listings (+198.2%), a classic sign of asset liquidation by financially stressed households.",
-    "prediction_fr": "Si la tendance Vancouver-Toronto se maintient, le score national pourrait progresser modérément vers 0.38–0.42 d'ici 4 à 8 semaines, surtout si les renouvellements hypothécaires de l'été amplifient les transferts de bail. Montréal pourrait légèrement rebondir une fois l'inertie du marché local dissipée.",
-    "prediction_en": "If the Vancouver-Toronto trend persists, the national score could moderately climb toward 0.38–0.42 over the next 4 to 8 weeks, especially if summer mortgage renewals amplify lease transfer activity. Montreal may see a modest rebound once local market inertia dissipates.",
-    "signal_dominant": "Liquidation bijoux Vancouver",
+    "analyse_fr": "Le score national Kijiji se maintient à 0.32 depuis plusieurs jours consécutifs, signalant un niveau de stress économique modéré mais stable. Vancouver se démarque nettement avec un score de 0.45, porté par une explosion des annonces de bijoux (+488.9%) et une hausse des transferts de bail (+64.5%), deux indicateurs classiques de liquidation d'actifs personnels sous pression financière. Toronto affiche également un score élevé (0.43) avec une forte hausse des outils (+198.1%), suggérant des ventes d'équipement professionnel, souvent signe de travailleurs autonomes en difficulté. Montréal reste en zone calme (0.09), avec des baisses marquées dans les outils et les transferts de bail.",
+    "analyse_en": "The national Kijiji score holds steady at 0.32 over several consecutive days, reflecting a moderate but stable level of economic stress. Vancouver stands out with a score of 0.45, driven by a surge in jewelry listings (+488.9%) and rising lease transfers (+64.5%), two classic indicators of personal asset liquidation under financial pressure. Toronto also shows elevated stress (0.43) with a sharp spike in tools (+198.1%), often a sign of self-employed workers selling off equipment. Montreal remains in a calm zone (0.09), with notable declines in tools and lease transfer listings.",
+    "prediction_fr": "Si la tendance Vancouver-Toronto se confirme dans les prochaines semaines, le score national pourrait grimper vers 0.38–0.42 d'ici mi-juin, particulièrement si les renouvellements hypothécaires de l'été amplifient la pression sur les ménages. Une vigilance accrue sur les catégories bijoux et transferts de bail dans l'Ouest est recommandée.",
+    "prediction_en": "If the Vancouver-Toronto trend persists over the coming weeks, the national score could rise toward 0.38–0.42 by mid-June, especially if summer mortgage renewals increase household pressure. Increased monitoring of jewelry and lease transfer categories in Western Canada is advised.",
+    "signal_dominant": "Liquidation actifs Vancouver bijoux",
     "niveau_alerte": "TENSION",
     "score_predit_4_semaines": 0.39
   },
