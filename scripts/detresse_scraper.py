@@ -39,33 +39,43 @@ TERMES_EN = [
     "debt help",
 ]
 
-# Régions canadiennes (codes Google Trends) + langue dominante
+# Régions clés (moins de requêtes = moins de risque 429).
+# On peut en rajouter quand Trends sera stable.
 REGIONS = {
-    "canada":  {"geo": "CA",    "prov": None, "name_fr": "Canada",                "lang": "en"},
-    "ontario": {"geo": "CA-ON", "prov": "ON", "name_fr": "Ontario",               "lang": "en"},
-    "quebec":  {"geo": "CA-QC", "prov": "QC", "name_fr": "Québec",                "lang": "fr"},
-    "bc":      {"geo": "CA-BC", "prov": "BC", "name_fr": "Colombie-Britannique",  "lang": "en"},
-    "alberta": {"geo": "CA-AB", "prov": "AB", "name_fr": "Alberta",               "lang": "en"},
-    "manitoba":{"geo": "CA-MB", "prov": "MB", "name_fr": "Manitoba",              "lang": "en"},
+    "canada":  {"geo": "CA",    "prov": None, "name_fr": "Canada",               "lang": "en"},
+    "ontario": {"geo": "CA-ON", "prov": "ON", "name_fr": "Ontario",              "lang": "en"},
+    "quebec":  {"geo": "CA-QC", "prov": "QC", "name_fr": "Québec",               "lang": "fr"},
+    "bc":      {"geo": "CA-BC", "prov": "BC", "name_fr": "Colombie-Britannique", "lang": "en"},
 }
 
 
 def get_trend_score(terms, geo, lang):
-    """Récupère l'intérêt moyen Google Trends (7 derniers jours)."""
-    try:
-        from pytrends.request import TrendReq
-        hl = "fr-CA" if lang == "fr" else "en-CA"
-        pytrends = TrendReq(hl=hl, tz=-300, timeout=(10, 25), retries=2)
-        time.sleep(random.uniform(10, 15))  # délai anti-blocage (comme auto_theft)
-        pytrends.build_payload(terms[:5], cat=0, timeframe="now 7-d", geo=geo, gprop="")
-        data = pytrends.interest_over_time()
-        if data.empty:
+    """Récupère l'intérêt moyen Google Trends (7 derniers jours).
+    Robuste : réessaie avec backoff si Google bloque (429)."""
+    import time as _t
+    for attempt in range(3):
+        try:
+            from pytrends.request import TrendReq
+            hl = "fr-CA" if lang == "fr" else "en-CA"
+            pytrends = TrendReq(hl=hl, tz=-300, timeout=(10, 30), retries=3, backoff_factor=2)
+            # délai croissant entre tentatives + de base long (anti-429)
+            wait = random.uniform(25, 40) + (attempt * 30)
+            _t.sleep(wait)
+            pytrends.build_payload(terms[:5], cat=0, timeframe="now 7-d", geo=geo, gprop="")
+            data = pytrends.interest_over_time()
+            if data.empty:
+                return None
+            scores = [data[t].mean() for t in terms if t in data.columns]
+            return round(sum(scores) / len(scores), 1) if scores else None
+        except Exception as e:
+            msg = str(e)
+            if "429" in msg and attempt < 2:
+                print(f"    (429 — nouvelle tentative {attempt+2}/3 après pause)", end=" ", flush=True)
+                _t.sleep(60 + attempt * 60)  # pause longue avant retry
+                continue
+            print(f"    Trends error: {msg[:80]}")
             return None
-        scores = [data[t].mean() for t in terms if t in data.columns]
-        return round(sum(scores) / len(scores), 1) if scores else None
-    except Exception as e:
-        print(f"    Trends error: {e}")
-        return None
+    return None
 
 
 def normalize_score(raw, baseline=20):
@@ -99,6 +109,11 @@ def run():
     print(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print("🔍 Source : Google Trends régional (recherches de détresse)")
     print("=" * 52)
+
+    # Pause de démarrage : laisse Google "oublier" le scraper
+    # auto_theft qui vient de tourner juste avant (anti-429).
+    print("\n⏳ Pause anti-blocage (90s) après auto_theft...")
+    time.sleep(90)
 
     output = {
         "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
