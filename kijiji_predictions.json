@@ -66,5 +66,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.32,
+    "score_predit": 0.41,
+    "niveau_alerte_predit": "TENSION",
+    "signal_dominant": "Liquidation actifs Vancouver-Toronto",
+    "prediction_fr": "Si la tendance de Toronto et Vancouver se confirme dans les prochaines semaines, le score national pourrait grimper vers 0.40-0.45 d'ici mi-juin, notamment si le marché du travail se détériore davantage. Une surveillance accrue des catégories bijoux et transferts de bail dans les grandes métropoles est recommandée.",
+    "prediction_en": "If the trends in Toronto and Vancouver continue over the coming weeks, the national score could climb toward 0.40-0.45 by mid-June, particularly if labor market conditions worsen. Increased monitoring of jewelry and lease transfer categories in major metropolitan areas is strongly advised.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

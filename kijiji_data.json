@@ -1,14 +1,14 @@
 {
-  "updated": "2026-05-17 23:52",
+  "updated": "2026-05-18 00:04",
   "version": "3.1",
   "pay_period": {
     "period": "apres-paye",
     "period_en": "after-payday",
     "label_fr": "Apres la Paye",
     "label_en": "After Payday",
-    "day_of_month": 17,
+    "day_of_month": 18,
     "days_until_payday": null,
-    "days_since_payday": 2,
+    "days_since_payday": 3,
     "emoji": "📈"
   },
   "payday_alert": {
@@ -43,9 +43,9 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 568,
+          "count": 569,
           "baseline": 576,
-          "change_pct": -1.4,
+          "change_pct": -1.2,
           "score": 0.14,
           "status": {
             "label_fr": "Normal",
@@ -104,9 +104,9 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 12515,
+          "count": 12513,
           "baseline": 4200,
-          "change_pct": 198.0,
+          "change_pct": 197.9,
           "score": 1.0,
           "status": {
             "label_fr": "CRISE",
@@ -120,7 +120,7 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 6334,
+          "count": 6335,
           "baseline": 6267,
           "change_pct": 1.1,
           "score": 0.19,
@@ -259,13 +259,13 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de stress économique se maintient à 0.32 depuis quatre jours consécutifs, indiquant une stabilité relative mais persistante de la pression financière au Canada. Les disparités régionales sont marquées : Montréal affiche un score très bas (0.09) avec une chute spectaculaire des annonces d'outils (-78.7%) et un marché de transfert de baux complètement effondré (-100%), suggérant une contraction de l'activité plutôt qu'un soulagement. Toronto (0.43) et Vancouver (0.45) tirent le score national vers le haut, avec Vancouver en tête grâce à une explosion des annonces de bijoux (+488.9%) et une hausse des transferts de baux (+64.5%), deux signaux classiques de liquidation d'actifs sous contrainte financière. Le signal dominant est clairement concentré sur la côte Ouest et dans la région torontoise.",
-    "analyse_en": "The national economic stress score has held steady at 0.32 for four consecutive days, suggesting a persistent but stable level of financial pressure across Canada. Regional disparities are significant: Montreal posts a very low score (0.09) driven by a sharp collapse in tool listings (-78.7%) and a complete disappearance of lease transfer ads (-100%), pointing more to market contraction than relief. Toronto (0.43) and Vancouver (0.45) are pulling the national average upward, with Vancouver showing alarming spikes in jewelry listings (+488.9%) and lease transfers (+64.5%) — classic distress-liquidation signals. The dominant stress signal is clearly concentrated in Western Canada and the Greater Toronto Area.",
-    "prediction_fr": "Si la tendance de liquidation d'actifs à Vancouver se confirme dans les prochaines semaines, combinée à la pression locative persistante à Toronto, le score national pourrait grimper vers 0.38–0.42 d'ici 4 à 8 semaines. Une détérioration du marché du travail ou une hausse des taux de défaut hypothécaire en Colombie-Britannique constituerait le principal catalyseur à surveiller.",
-    "prediction_en": "Should the asset-liquidation trend in Vancouver persist over the coming weeks, compounded by sustained rental pressure in Toronto, the national score could climb toward 0.38–0.42 within 4 to 8 weeks. A deterioration in the labour market or a rise in mortgage default rates in British Columbia would be the primary catalyst to watch.",
-    "signal_dominant": "Liquidation bijoux Vancouver",
+    "analyse_fr": "Le score national Beaver.Watch se maintient à 0.32 depuis cinq jours consécutifs, signalant une stabilité relative mais masquant des disparités régionales importantes. Montréal affiche un score très bas (0.09) avec des chutes massives dans les outils (-78.7%) et les transferts de bail (-100%), suggérant peu d'activité de détresse. Toronto présente le signal le plus préoccupant (0.43) avec une explosion des ventes d'outils (+197.9%), indicateur classique de liquidation d'actifs professionnels. Vancouver inquiète davantage (0.45) avec une flambée spectaculaire des bijoux (+488.9%) et une hausse des transferts de bail (+64.5%), deux signaux de détresse financière aiguë.",
+    "analyse_en": "The national Beaver.Watch score holds steady at 0.32 for five consecutive days, suggesting relative stability at the surface while masking significant regional divergences. Montreal posts a very low score (0.09) with sharp drops in tools (-78.7%) and lease transfers (-100%), indicating little distress activity. Toronto shows the most concerning signal (0.43) with a surge in tool listings (+197.9%), a classic indicator of professional asset liquidation. Vancouver raises the most alarm (0.45) with a dramatic spike in jewelry listings (+488.9%) and rising lease transfers (+64.5%), two hallmarks of acute financial distress.",
+    "prediction_fr": "Si la tendance de Toronto et Vancouver se confirme dans les prochaines semaines, le score national pourrait grimper vers 0.40-0.45 d'ici mi-juin, notamment si le marché du travail se détériore davantage. Une surveillance accrue des catégories bijoux et transferts de bail dans les grandes métropoles est recommandée.",
+    "prediction_en": "If the trends in Toronto and Vancouver continue over the coming weeks, the national score could climb toward 0.40-0.45 by mid-June, particularly if labor market conditions worsen. Increased monitoring of jewelry and lease transfer categories in major metropolitan areas is strongly advised.",
+    "signal_dominant": "Liquidation actifs Vancouver-Toronto",
     "niveau_alerte": "TENSION",
-    "score_predit_4_semaines": 0.39
+    "score_predit_4_semaines": 0.41
   },
-  "prochaine_verification": "2026-06-14"
+  "prochaine_verification": "2026-06-15"
 }

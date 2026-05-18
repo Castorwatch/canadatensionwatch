@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17 23:55",
+  "updated": "2026-05-18 00:06",
   "source": "Google Trends",
   "timeframe": "Last 7 days",
   "keywords": {
@@ -7,7 +7,7 @@
       "label_fr": "Prets Payday",
       "label_en": "Payday Loans",
       "emoji": "💸",
-      "raw_score": 5.2,
+      "raw_score": 5.3,
       "stress_score": 0.06,
       "status": {
         "label_fr": "Normal",

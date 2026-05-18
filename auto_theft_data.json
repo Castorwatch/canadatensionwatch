@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-17 23:55",
+  "updated": "2026-05-18 00:06",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 6.9,
+      "raw_score": 7.0,
       "stress_score": 0.1,
       "status": {
         "label_fr": "Normal",
@@ -110,15 +110,15 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de stress lié au vol d'auto atteint 0.08/1.0 ce 17 mai 2026, marquant une légère hausse par rapport aux trois jours précédents stabilisés à 0.07. Les recherches restent globalement faibles et uniformes à travers les régions, avec le Canada global légèrement plus actif à 0.10 comparativement aux provinces individuelles toutes à 0.05. La catégorie vol_auto domine les signaux à 0.10, suggérant un intérêt de recherche modéré mais sans pic d'alarme notable. Aucune région ne se distingue dramatiquement, bien que le niveau national agrégé indique une légère montée d'inquiétude diffuse.",
-    "analyse_en": "The national auto theft stress score reaches 0.08/1.0 on May 17, 2026, marking a slight uptick from the three previous days stabilized at 0.07. Search activity remains broadly low and uniform across regions, with the national Canada aggregate slightly more active at 0.10 compared to individual provinces all sitting at 0.05. The auto theft category leads signals at 0.10, suggesting moderate search interest without any alarming spike. No single region stands out dramatically, though the aggregated national level points to a mild diffuse rise in public concern.",
-    "prediction_fr": "Au cours des 4 à 8 prochaines semaines, le score devrait rester dans une fourchette basse autour de 0.09 à 0.12, porté par l'approche de l'été qui historically corrèle avec une légère augmentation des incidents et des recherches liées au vol de véhicules. Une hausse modérée est attendue sans atteindre un niveau de tension significatif.",
-    "prediction_en": "Over the next 4 to 8 weeks, the score is expected to remain in a low range around 0.09 to 0.12, supported by the approaching summer season which historically correlates with a mild increase in vehicle theft incidents and related searches. A moderate uptick is anticipated without reaching a significant tension threshold.",
-    "region_risque": "Canada national",
-    "signal_dominant": "Vol auto légère hausse",
+    "analyse_fr": "Le score national de vol d'auto s'établit à 0.08/1.0 aujourd'hui, reflétant un niveau d'intérêt de recherche très faible et stable. L'historique des 30 derniers jours montre une progression minime de 0.07 à 0.08, sans tendance marquée ni accélération significative. Toutes les régions affichent des scores quasi identiques et bas (0.05), ce qui indique une préoccupation uniforme et modérée à travers le pays. La catégorie 'vol_auto' domine légèrement à 0.10, suggérant que les recherches directes sur le vol restent le signal le plus actif.",
+    "analyse_en": "The national auto theft score stands at 0.08/1.0 today, reflecting a very low and stable level of search interest. The 30-day history shows a minimal progression from 0.07 to 0.08, with no marked trend or significant acceleration. All regions display nearly identical and low scores (0.05), indicating uniform and moderate concern across the country. The 'vol_auto' category slightly leads at 0.10, suggesting that direct theft-related searches remain the most active signal.",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score de vol d'auto devrait connaître une légère hausse saisonnière liée aux mois estivaux, période traditionnellement propice aux vols de véhicules au Canada. Une montée modérée vers 0.12 à 0.15 est anticipée, particulièrement en Ontario et au Québec.",
+    "prediction_en": "Over the next 4 to 8 weeks, the auto theft score is expected to see a slight seasonal uptick linked to summer months, a period traditionally associated with higher vehicle theft rates in Canada. A moderate rise toward 0.12 to 0.15 is anticipated, particularly in Ontario and Quebec.",
+    "region_risque": "Ontario Est",
+    "signal_dominant": "Légère hausse saisonnière estivale",
     "niveau_alerte": "NORMAL",
-    "score_predit_4_semaines": 0.11
+    "score_predit_4_semaines": 0.13
   },
   "trend": 0.0,
-  "prochaine_verification": "2026-06-14"
+  "prochaine_verification": "2026-06-15"
 }

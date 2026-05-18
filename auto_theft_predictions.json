@@ -52,5 +52,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.08,
+    "score_predit": 0.13,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Ontario Est",
+    "signal_dominant": "Légère hausse saisonnière estivale",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score de vol d'auto devrait connaître une légère hausse saisonnière liée aux mois estivaux, période traditionnellement propice aux vols de véhicules au Canada. Une montée modérée vers 0.12 à 0.15 est anticipée, particulièrement en Ontario et au Québec.",
+    "prediction_en": "Over the next 4 to 8 weeks, the auto theft score is expected to see a slight seasonal uptick linked to summer months, a period traditionally associated with higher vehicle theft rates in Canada. A moderate rise toward 0.12 to 0.15 is anticipated, particularly in Ontario and Quebec.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
