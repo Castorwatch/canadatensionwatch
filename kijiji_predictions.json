@@ -219,5 +219,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.32,
+    "score_predit": 0.41,
+    "niveau_alerte_predit": "NORMAL",
+    "signal_dominant": "Liquidation actifs Vancouver-Toronto",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score national devrait grimper vers 0.38–0.42 à mesure que les pressions hypothécaires de mi-année et les renouvellements de baux estivaux accentuent les ventes d'urgence, particulièrement à Vancouver et Toronto. Si la tendance à la liquidation de bijoux et d'outils se maintient, un seuil de TENSION pourrait être franchi avant la mi-juillet.",
+    "prediction_en": "Over the next 4 to 8 weeks, the national score is expected to climb toward 0.38–0.42 as mid-year mortgage pressures and summer lease renewals intensify distressed selling, particularly in Vancouver and Toronto. If the jewelry and tool liquidation trend persists, a TENSION threshold could be crossed before mid-July.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

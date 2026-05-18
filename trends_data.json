@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 15:14",
+  "updated": "2026-05-18 15:39",
   "source": "Google Trends",
   "timeframe": "Last 7 days",
   "keywords": {
@@ -35,13 +35,13 @@
       "label_fr": "Faillite",
       "label_en": "Bankruptcy",
       "emoji": "📉",
-      "raw_score": null,
-      "stress_score": null,
+      "raw_score": 1.8,
+      "stress_score": 0.05,
       "status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "?"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       },
       "weight": 0.25
     },
@@ -60,7 +60,12 @@
       "weight": 0.2
     }
   },
-  "national_score": null,
-  "national_status": null,
+  "national_score": 0.05,
+  "national_status": {
+    "label_fr": "Normal",
+    "label_en": "Normal",
+    "color": "green",
+    "emoji": "🟢"
+  },
   "claude_analysis": null
 }
