@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 11:29",
+  "updated": "2026-05-18 12:28",
   "version": "3.1",
   "pay_period": {
     "period": "apres-paye",
@@ -27,7 +27,7 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 612,
+          "count": 611,
           "baseline": 2840,
           "change_pct": -78.5,
           "score": 0.05,
@@ -120,7 +120,7 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 6335,
+          "count": 6336,
           "baseline": 6267,
           "change_pct": 1.1,
           "score": 0.19,
@@ -152,7 +152,7 @@
           "label_fr": "Bijoux & Montres",
           "label_en": "Jewelry & Watches",
           "emoji": "💍",
-          "count": 4394,
+          "count": 4395,
           "baseline": 4402,
           "change_pct": -0.2,
           "score": 0.15,
@@ -259,13 +259,13 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de stress économique se maintient à 0.32 depuis plusieurs jours consécutifs, indiquant une stabilité remarquable mais contrastée selon les villes. Montréal affiche un score très bas à 0.09, avec des chutes drastiques des transferts de bail (-89.7%) et des outils (-78.5%), suggérant un marché local calme ou une activité atypiquement faible. Toronto et Vancouver tirent le score vers le haut avec respectivement 0.43 et 0.45 : Toronto montre une explosion des ventes d'outils (+198%) et Vancouver enregistre une hausse spectaculaire des bijoux (+488.9%) et des transferts de bail (+64.5%), signaux classiques de stress financier urbain.",
-    "analyse_en": "The national economic stress score has held steady at 0.32 for several consecutive days, reflecting a stable but geographically divided picture. Montreal posts a very low score of 0.09, with sharp drops in lease transfers (-89.7%) and tools (-78.5%), suggesting an unusually quiet local market. Toronto and Vancouver are pulling the national score upward at 0.43 and 0.45 respectively: Toronto shows a surge in tool listings (+198%) while Vancouver records a dramatic spike in jewelry (+488.9%) and lease transfers (+64.5%), both classic indicators of urban financial stress.",
-    "prediction_fr": "Si la tendance de Vancouver et Toronto se confirme dans les 4 à 8 prochaines semaines, notamment avec la poursuite des ventes de bijoux et des transferts de bail, le score national pourrait grimper vers 0.42-0.46. Montréal devrait rester un facteur stabilisateur, sauf choc extérieur.",
-    "prediction_en": "If the trends in Vancouver and Toronto persist over the next 4 to 8 weeks, particularly continued jewelry liquidations and lease transfers, the national score could rise toward 0.42-0.46. Montreal should remain a stabilizing factor barring any external shock.",
-    "signal_dominant": "Bijoux Vancouver en hausse",
+    "analyse_fr": "Le score national demeure stable à 0.32 depuis plusieurs jours, ce qui suggère une période de calme économique relatif au niveau agrégé. Cependant, Vancouver affiche des signaux préoccupants avec une explosion des annonces de bijoux (+488.9%) et une hausse des transferts de bail (+64.5%), indiquant une liquidation d'actifs personnels et une pression locative croissante. Toronto montre également une forte hausse des outils (+198%), signe classique de ménages cherchant à convertir des biens en liquidités. Montréal reste le marché le plus calme avec des baisses marquées dans presque toutes les catégories, possiblement en raison d'une saturation du marché ou d'une faible demande.",
+    "analyse_en": "The national score holds steady at 0.32 over the past several days, suggesting a period of relative economic calm at the aggregate level. However, Vancouver is displaying worrying signals with a surge in jewelry listings (+488.9%) and rising lease transfers (+64.5%), indicating personal asset liquidation and growing rental pressure. Toronto also shows a sharp increase in tool listings (+198%), a classic sign of households converting goods into cash. Montreal remains the quietest market with steep drops across nearly all categories, possibly due to market saturation or subdued demand.",
+    "prediction_fr": "Si la tendance de Vancouver se propage aux autres grandes villes dans les 4 à 8 prochaines semaines, le score national pourrait grimper vers 0.45–0.50, surtout si les renouvellements de baux de juin amplifient les transferts. Une vigilance particulière s'impose sur les catégories bijoux et outils comme indicateurs avancés.",
+    "prediction_en": "If Vancouver's trend spreads to other major cities over the next 4 to 8 weeks, the national score could climb toward 0.45–0.50, especially if June lease renewals amplify transfer activity. Jewelry and tool categories warrant close monitoring as leading indicators.",
+    "signal_dominant": "Liquidation actifs Vancouver",
     "niveau_alerte": "TENSION",
-    "score_predit_4_semaines": 0.41
+    "score_predit_4_semaines": 0.44
   },
   "prochaine_verification": "2026-06-15"
 }

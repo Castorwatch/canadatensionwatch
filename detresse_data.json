@@ -1,0 +1,20 @@
+{
+  "updated": "2026-05-18 12:34",
+  "source": "Google Trends — recherches de détresse financière régionales (bilingue FR/EN)",
+  "termes_fr": [
+    "faillite personnelle",
+    "syndic faillite",
+    "huissier",
+    "saisie salaire"
+  ],
+  "termes_en": [
+    "personal bankruptcy",
+    "bankruptcy trustee",
+    "wage garnishment",
+    "debt help"
+  ],
+  "note": "Signal prédictif : précède les faillites officielles de plusieurs mois. Termes adaptés à la langue de chaque région.",
+  "regions": {},
+  "provinces": {},
+  "national_score": null
+}

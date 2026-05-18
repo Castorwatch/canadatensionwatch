@@ -1,16 +1,16 @@
 {
-  "updated": "2026-05-18 11:34",
+  "updated": "2026-05-18 12:35",
   "note": "Score régional BEAVER. Conçu pour grandir (voir plan). On expose le nombre de signaux, jamais lesquels.",
   "signaux_actifs_max": 3,
   "signaux_prevus_total": 12,
   "provinces": {
     "AB": {
-      "score": 0.291,
-      "score_100": 29,
+      "score": 0.312,
+      "score_100": 31,
       "niveau": {
-        "fr": "STABLE",
-        "en": "STABLE",
-        "emoji": "🟢"
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
       },
       "signaux_actifs": 3,
       "signaux_prevus": 12,
@@ -20,12 +20,12 @@
       }
     },
     "BC": {
-      "score": 0.279,
-      "score_100": 28,
+      "score": 0.3,
+      "score_100": 30,
       "niveau": {
-        "fr": "STABLE",
-        "en": "STABLE",
-        "emoji": "🟢"
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
       },
       "signaux_actifs": 3,
       "signaux_prevus": 12,
@@ -35,7 +35,7 @@
       }
     },
     "MB": {
-      "score": 0.209,
+      "score": 0.212,
       "score_100": 21,
       "niveau": {
         "fr": "STABLE",
@@ -50,7 +50,7 @@
       }
     },
     "NB": {
-      "score": 0.321,
+      "score": 0.324,
       "score_100": 32,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -65,7 +65,7 @@
       }
     },
     "NL": {
-      "score": 0.437,
+      "score": 0.44,
       "score_100": 44,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -80,8 +80,8 @@
       }
     },
     "NS": {
-      "score": 0.273,
-      "score_100": 27,
+      "score": 0.276,
+      "score_100": 28,
       "niveau": {
         "fr": "STABLE",
         "en": "STABLE",
@@ -95,7 +95,7 @@
       }
     },
     "NT": {
-      "score": 0.215,
+      "score": 0.22,
       "score_100": 22,
       "niveau": {
         "fr": "STABLE",
@@ -125,7 +125,7 @@
       }
     },
     "PE": {
-      "score": 0.357,
+      "score": 0.36,
       "score_100": 36,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -155,8 +155,8 @@
       }
     },
     "SK": {
-      "score": 0.233,
-      "score_100": 23,
+      "score": 0.236,
+      "score_100": 24,
       "niveau": {
         "fr": "STABLE",
         "en": "STABLE",
@@ -170,7 +170,7 @@
       }
     },
     "YT": {
-      "score": 0.215,
+      "score": 0.22,
       "score_100": 22,
       "niveau": {
         "fr": "STABLE",
@@ -217,8 +217,8 @@
       }
     },
     "vancouver": {
-      "score": 0.318,
-      "score_100": 32,
+      "score": 0.339,
+      "score_100": 34,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",

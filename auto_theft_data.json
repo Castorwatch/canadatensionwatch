@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-18 11:32",
+  "updated": "2026-05-18 12:31",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 7.7,
+      "raw_score": 8.0,
       "stress_score": 0.11,
       "status": {
         "label_fr": "Normal",
@@ -20,20 +20,6 @@
       "label_fr": "Réclamations Assurance",
       "label_en": "Insurance Claims",
       "emoji": "📋",
-      "raw_score": null,
-      "stress_score": null,
-      "status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "❓"
-      },
-      "weight": 0.25
-    },
-    "securite_auto": {
-      "label_fr": "Sécurité Auto",
-      "label_en": "Car Security",
-      "emoji": "🔒",
       "raw_score": 0.3,
       "stress_score": 0.05,
       "status": {
@@ -43,13 +29,27 @@
         "emoji": "🟢"
       },
       "weight": 0.25
+    },
+    "securite_auto": {
+      "label_fr": "Sécurité Auto",
+      "label_en": "Car Security",
+      "emoji": "🔒",
+      "raw_score": null,
+      "stress_score": null,
+      "status": {
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
+      },
+      "weight": 0.25
     }
   },
   "regions": {
     "canada": {
       "name_fr": "Canada",
       "name_en": "Canada",
-      "composite_score": 0.11,
+      "composite_score": 0.12,
       "composite_status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -82,23 +82,23 @@
     "bc": {
       "name_fr": "C.-B.",
       "name_en": "BC",
-      "composite_score": 0.05,
+      "composite_score": null,
       "composite_status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       }
     },
     "alberta": {
       "name_fr": "Alberta",
       "name_en": "Alberta",
-      "composite_score": 0.05,
+      "composite_score": null,
       "composite_status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       }
     }
   },
@@ -110,15 +110,15 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de stress lié au vol d'auto s'établit aujourd'hui à 0,09/1,0, ce qui demeure un niveau faible mais en légère progression par rapport aux 0,07 enregistrés en début de semaine. La tendance haussière observée depuis le 17 mai (+0,01) suggère un intérêt croissant des Canadiens pour les recherches liées au vol de véhicules. À l'échelle régionale, le Canada dans son ensemble affiche le score le plus élevé à 0,11, tandis que l'Ontario, le Québec, la Colombie-Britannique et l'Alberta se maintiennent toutes à 0,05, indiquant que la préoccupation est davantage diffuse à l'échelle nationale. Le signal reste bien en deçà des seuils d'alerte, mais la dynamique ascendante mérite une surveillance attentive.",
-    "analyse_en": "The national stress score for auto theft stands at 0.09/1.0 today, remaining low but showing a slight upward trend compared to the 0.07 recorded earlier this week. The rising trend observed since May 17 (+0.01) suggests growing Canadian interest in vehicle theft-related searches. Regionally, Canada as a whole posts the highest score at 0.11, while Ontario, Quebec, British Columbia, and Alberta all hold steady at 0.05, indicating concern is more broadly distributed nationally than provincially. The signal remains well below alert thresholds, but the upward momentum warrants continued monitoring.",
-    "prediction_fr": "Si la tendance haussière actuelle se maintient, le score pourrait atteindre 0,13 à 0,16 d'ici 4 à 8 semaines, porté par l'approche de la saison estivale qui coïncide historiquement avec une recrudescence des vols de véhicules au Canada. Une attention particulière devrait être portée aux grandes agglomérations du Canada national, où le signal est déjà le plus marqué.",
-    "prediction_en": "If the current upward trend continues, the score could reach 0.13 to 0.16 within 4 to 8 weeks, driven by the approaching summer season which historically coincides with a rise in vehicle thefts across Canada. Particular attention should be paid to major urban centres at the national level, where the signal is already most pronounced.",
+    "analyse_fr": "Le score national de vol d'auto se situe à 0,09/1,0 aujourd'hui, ce qui demeure dans une zone de faible préoccupation. On observe une légère progression sur 5 jours, passant de 0,07 à 0,09, soit une hausse modeste de 28% suggérant une attention croissante du public. L'Ontario et le Québec affichent des scores équivalents à 0,05, tandis que le Canada global atteint 0,12, indiquant une activité de recherche plus marquée au niveau national. Les données pour la Colombie-Britannique et l'Alberta sont absentes, ce qui limite l'analyse régionale.",
+    "analyse_en": "The national auto theft score stands at 0.09/1.0 today, remaining in a low-concern zone overall. A gradual upward trend is visible over the past 5 days, rising from 0.07 to 0.09, a modest 28% increase suggesting growing public awareness. Ontario and Quebec both register at 0.05, while the Canada-wide aggregate reaches 0.12, pointing to broader national search activity. Data for British Columbia and Alberta is unavailable, limiting full regional comparison.",
+    "prediction_fr": "La tendance haussière douce observée depuis 5 jours pourrait se poursuivre avec l'arrivée de l'été, saison historiquement propice aux vols de véhicules. D'ici 4 à 8 semaines, le score national devrait atteindre entre 0,12 et 0,16, avec un risque accru dans les grandes zones urbaines.",
+    "prediction_en": "The mild upward trend observed over the past 5 days is likely to continue as summer approaches, a period historically associated with higher vehicle theft activity. Over the next 4 to 8 weeks, the national score is expected to reach between 0.12 and 0.16, with elevated risk in major urban centres.",
     "region_risque": "Canada national",
-    "signal_dominant": "Tendance hausse légère",
+    "signal_dominant": "Hausse progressive vol auto",
     "niveau_alerte": "NORMAL",
     "score_predit_4_semaines": 0.14
   },
-  "trend": 0.01,
+  "trend": 0.0,
   "prochaine_verification": "2026-06-15"
 }

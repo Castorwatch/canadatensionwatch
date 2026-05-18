@@ -151,5 +151,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.32,
+    "score_predit": 0.44,
+    "niveau_alerte_predit": "TENSION",
+    "signal_dominant": "Liquidation actifs Vancouver",
+    "prediction_fr": "Si la tendance de Vancouver se propage aux autres grandes villes dans les 4 à 8 prochaines semaines, le score national pourrait grimper vers 0.45–0.50, surtout si les renouvellements de baux de juin amplifient les transferts. Une vigilance particulière s'impose sur les catégories bijoux et outils comme indicateurs avancés.",
+    "prediction_en": "If Vancouver's trend spreads to other major cities over the next 4 to 8 weeks, the national score could climb toward 0.45–0.50, especially if June lease renewals amplify transfer activity. Jewelry and tool categories warrant close monitoring as leading indicators.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

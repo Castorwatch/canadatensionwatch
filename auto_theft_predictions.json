@@ -124,5 +124,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.09,
+    "score_predit": 0.14,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Canada national",
+    "signal_dominant": "Hausse progressive vol auto",
+    "prediction_fr": "La tendance haussière douce observée depuis 5 jours pourrait se poursuivre avec l'arrivée de l'été, saison historiquement propice aux vols de véhicules. D'ici 4 à 8 semaines, le score national devrait atteindre entre 0,12 et 0,16, avec un risque accru dans les grandes zones urbaines.",
+    "prediction_en": "The mild upward trend observed over the past 5 days is likely to continue as summer approaches, a period historically associated with higher vehicle theft activity. Over the next 4 to 8 weeks, the national score is expected to reach between 0.12 and 0.16, with elevated risk in major urban centres.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
