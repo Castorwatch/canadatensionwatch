@@ -102,10 +102,13 @@ def get_csv_download_link():
 
 def download_and_parse(zip_url):
     """
-    Extrait, pour chaque province, le PLUS RÉCENT taux de
-    croissance démographique. On cherche la composante
-    'Population growth rate' ou on calcule via 'Population'
-    sur 2 périodes si besoin.
+    17-10-0008 contient des COMPOSANTES (immigrants, NPR,
+    migration interprov., naissances, décès), pas forcément
+    une ligne 'Population'. On calcule donc le flux entrant
+    net annuel = Immigrants + Net non-permanent residents
+    + Net interprovincial migration, rapporté à la
+    population (si dispo) sinon en valeur brute normalisée.
+    Auto-diagnostic : logue les composantes trouvées.
     """
     try:
         r = requests.get(zip_url, timeout=90)
@@ -119,21 +122,27 @@ def download_and_parse(zip_url):
             print("  Pas de CSV dans le ZIP")
             return {}
 
-        # series[geo] = liste (ref, population)
-        pop_series = {}
+        # On collecte par (geo, ref) les composantes utiles
+        data = {}            # (geo, ref) -> {comp: value}
+        comp_col = None
+        comps_seen = set()
+
         with zf.open(csv_name[0]) as fh:
             text = io.TextIOWrapper(fh, encoding="utf-8-sig")
             reader = csv.DictReader(text)
+            # Détecter la colonne des composantes (varie selon tableau)
+            if reader.fieldnames:
+                for cand in ("Components of population growth",
+                             "Estimates", "Components"):
+                    if cand in reader.fieldnames:
+                        comp_col = cand
+                        break
             for row in reader:
                 geo = (row.get("GEO") or "").strip()
                 if geo not in PROV_NAMES:
                     continue
-                comp = (row.get("Components of population growth")
-                        or row.get("Estimates") or "").strip()
-                # On veut la population totale pour calculer la vitesse
-                if comp not in ("Population at July 1", "Population on July 1",
-                                "Population", "Population at start of period"):
-                    continue
+                comp = (row.get(comp_col) or "").strip() if comp_col else ""
+                comps_seen.add(comp)
                 ref = (row.get("REF_DATE") or "").strip()
                 val = (row.get("VALUE") or "").strip()
                 if not ref or not val:
@@ -142,28 +151,64 @@ def download_and_parse(zip_url):
                     v = float(val)
                 except ValueError:
                     continue
-                if v <= 0:
-                    continue
-                pop_series.setdefault(geo, []).append((ref, v))
+                data.setdefault((geo, ref), {})[comp] = v
+
+        # Diagnostic : montrer les composantes disponibles
+        sample = sorted([c for c in comps_seen if c])[:12]
+        print(f"  Composantes détectées : {sample}")
+
+        # Pour chaque province, prendre la période la plus récente
+        # et sommer les flux entrants nets.
+        latest_ref = {}
+        for (geo, ref) in data:
+            if geo not in latest_ref or ref > latest_ref[geo]:
+                latest_ref[geo] = ref
+
+        IMMI_KEYS = ["Immigrants"]
+        NPR_KEYS = ["Net non-permanent residents",
+                    "Net emigration"]  # NPR principal
+        INTERPROV_KEYS = ["Net interprovincial migration"]
+        POP_KEYS = ["Population at July 1", "Population on July 1",
+                    "Population"]
 
         result = {}
-        for geo, pts in pop_series.items():
-            if len(pts) < 2:
+        for geo, ref in latest_ref.items():
+            comps = data.get((geo, ref), {})
+            if not comps:
                 continue
-            pts.sort(key=lambda x: x[0])
-            ref_latest, pop_latest = pts[-1]
-            ref_prev, pop_prev = pts[-2]
-            if pop_prev <= 0:
+
+            def pick(keys):
+                for k in keys:
+                    if k in comps and comps[k] is not None:
+                        return comps[k]
+                return None
+
+            immi = pick(IMMI_KEYS) or 0
+            npr = comps.get("Net non-permanent residents") or 0
+            interp = pick(INTERPROV_KEYS) or 0
+            pop = pick(POP_KEYS)
+
+            inflow = immi + npr + interp  # flux migratoire net
+            if inflow == 0 and immi == 0:
                 continue
-            growth = round((pop_latest - pop_prev) / pop_prev * 100, 2)
-            # GARDE-FOU : croissance annuelle plausible -5% à +10%
-            if growth < -5 or growth > 10:
+
+            if pop and pop > 0:
+                # taux de renouvellement migratoire annuel en %
+                rate = round(inflow / pop * 100, 2)
+            else:
+                # pas de pop dispo : normaliser grossièrement
+                # (immigrants pour 1000 ~ converti en % approx)
+                rate = round(inflow / 100000.0, 2)
+
+            # GARDE-FOU : taux plausible -5% à +10%
+            if rate < -5 or rate > 10:
                 continue
+
             result[geo] = {
-                "growth_pct": growth,
-                "ref": ref_latest,
-                "ref_prev": ref_prev,
-                "pop": int(pop_latest),
+                "growth_pct": rate,
+                "ref": ref,
+                "ref_prev": ref,
+                "pop": int(pop) if pop else 0,
             }
         return result
     except zipfile.BadZipFile:
