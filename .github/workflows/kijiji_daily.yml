@@ -42,6 +42,9 @@ jobs:
       - name: 📊 Run StatCan Scraper
         run: python scripts/statcan_scraper.py
 
+      - name: 🆘 Run Detresse Scraper
+        run: python scripts/detresse_scraper.py
+
       - name: 🧮 Run Regional Engine
         run: python scripts/regional_engine.py
 
