@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 22:00",
+  "updated": "2026-05-18 22:38",
   "version": "3.1",
   "pay_period": {
     "period": "apres-paye",
@@ -59,9 +59,9 @@
           "label_fr": "Transfert de Bail",
           "label_en": "Lease Transfers",
           "emoji": "🏠",
-          "count": 39,
+          "count": 38,
           "baseline": 380,
-          "change_pct": -89.7,
+          "change_pct": -90.0,
           "score": 0.05,
           "status": {
             "label_fr": "Normal",
@@ -104,9 +104,9 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 12584,
+          "count": 12589,
           "baseline": 4200,
-          "change_pct": 199.6,
+          "change_pct": 199.7,
           "score": 1.0,
           "status": {
             "label_fr": "CRISE",
@@ -120,10 +120,10 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 6345,
+          "count": 0,
           "baseline": 6267,
-          "change_pct": 1.2,
-          "score": 0.2,
+          "change_pct": -100.0,
+          "score": 0.05,
           "status": {
             "label_fr": "Normal",
             "label_en": "Normal",
@@ -152,7 +152,7 @@
           "label_fr": "Bijoux & Montres",
           "label_en": "Jewelry & Watches",
           "emoji": "💍",
-          "count": 4411,
+          "count": 4413,
           "baseline": 4402,
           "change_pct": 0.2,
           "score": 0.16,
@@ -165,7 +165,7 @@
           "weight": 0.15
         }
       },
-      "composite_score": 0.44,
+      "composite_score": 0.4,
       "composite_status": {
         "label_fr": "Tension",
         "label_en": "Tension",
@@ -251,7 +251,7 @@
       }
     }
   },
-  "national_score": 0.33,
+  "national_score": 0.31,
   "national_status": {
     "label_fr": "Normal",
     "label_en": "Normal",
@@ -259,13 +259,13 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national Kijiji atteint 0.33 aujourd'hui, en légère hausse par rapport aux 0.32 stables observés depuis le 14 mai, ce qui reste un niveau modéré de stress économique. Le signal dominant provient de Vancouver, avec une explosion des annonces de bijoux (+487.7%) et une hausse des transferts de bail (+64.1%), indiquant une pression financière croissante sur les ménages de la côte ouest. Toronto montre également une tension notable avec une forte augmentation des ventes d'outils (+199.6%), signe classique de liquidation d'actifs en période de serrement budgétaire. Montréal reste remarquablement calme avec un score de seulement 0.09, tirant la moyenne nationale vers le bas.",
-    "analyse_en": "The national Kijiji score reaches 0.33 today, slightly up from the stable 0.32 observed since May 14th, remaining at a moderate level of economic stress. The dominant signal comes from Vancouver, with an explosion in jewelry listings (+487.7%) and a rise in lease transfers (+64.1%), indicating growing financial pressure on West Coast households. Toronto also shows notable tension with a sharp increase in tool sales (+199.6%), a classic sign of asset liquidation during budget tightening. Montreal remains remarkably calm with a score of only 0.09, pulling the national average downward.",
-    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score national devrait progressivement monter vers 0.38-0.42, porté par la persistance des signaux vancouvérois et torontois, surtout si les renouvellements hypothécaires de juin amplifient la pression sur les ménages endettés.",
-    "prediction_en": "Over the next 4 to 8 weeks, the national score should gradually rise toward 0.38-0.42, driven by the persistence of Vancouver and Toronto signals, especially if June mortgage renewals amplify pressure on indebted households.",
-    "signal_dominant": "Bijoux Vancouver en hausse",
+    "analyse_fr": "Le score national Kijiji s'établit à 0.31 aujourd'hui, en légère baisse par rapport aux quatre jours précédents où il se maintenait à 0.32, suggérant une stabilisation modeste du stress économique en période post-paie. Vancouver affiche le signal le plus préoccupant avec une explosion des annonces de bijoux (+487.7%) et une hausse marquée des transferts de bail (+64.1%), indiquant une pression financière croissante sur les ménages de la côte ouest. Toronto présente une anomalie intéressante avec une envolée des outils (+199.7%) contrebalancée par un effondrement des annonces d'électronique (-100%), ce qui peut signaler une liquidation d'actifs professionnels. Montréal demeure la ville la plus calme avec un score de 0.09, les baisses importantes dans les outils et transferts de bail pouvant refléter un ralentissement saisonnier de l'activité plutôt qu'un soulagement du stress.",
+    "analyse_en": "The national Kijiji score stands at 0.31 today, slightly down from the 0.32 level held steadily over the previous four days, suggesting a modest stabilization of economic stress in the post-payroll period. Vancouver shows the most concerning signal with a surge in jewelry listings (+487.7%) and a notable rise in lease transfers (+64.1%), pointing to growing financial pressure on West Coast households. Toronto displays an interesting anomaly with a spike in tools listings (+199.7%) offset by a total collapse in electronics (-100%), potentially signaling professional asset liquidation. Montreal remains the calmest city with a score of 0.09, where sharp declines in tools and lease transfers may reflect seasonal slowdown rather than genuine stress relief.",
+    "prediction_fr": "Si la tendance de Vancouver se confirme et que les transferts de bail continuent de progresser dans d'autres marchés, le score national pourrait remonter vers 0.36 à 0.40 d'ici 4 à 8 semaines, particulièrement à l'approche des fins de mois de juin et juillet. Une surveillance étroite des catégories bijoux et transferts de bail dans Toronto sera déterminante pour confirmer ou infirmer cette trajectoire haussière.",
+    "prediction_en": "If Vancouver's trend solidifies and lease transfers continue rising in other markets, the national score could climb toward 0.36 to 0.40 over the next 4 to 8 weeks, especially as June and July end-of-month pressures approach. Close monitoring of jewelry and lease transfer categories in Toronto will be key to confirming or ruling out this upward trajectory.",
+    "signal_dominant": "Vancouver bijoux transferts bail",
     "niveau_alerte": "NORMAL",
-    "score_predit_4_semaines": 0.39
+    "score_predit_4_semaines": 0.37
   },
   "prochaine_verification": "2026-06-15"
 }

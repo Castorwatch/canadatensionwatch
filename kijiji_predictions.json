@@ -270,5 +270,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.31,
+    "score_predit": 0.37,
+    "niveau_alerte_predit": "NORMAL",
+    "signal_dominant": "Vancouver bijoux transferts bail",
+    "prediction_fr": "Si la tendance de Vancouver se confirme et que les transferts de bail continuent de progresser dans d'autres marchés, le score national pourrait remonter vers 0.36 à 0.40 d'ici 4 à 8 semaines, particulièrement à l'approche des fins de mois de juin et juillet. Une surveillance étroite des catégories bijoux et transferts de bail dans Toronto sera déterminante pour confirmer ou infirmer cette trajectoire haussière.",
+    "prediction_en": "If Vancouver's trend solidifies and lease transfers continue rising in other markets, the national score could climb toward 0.36 to 0.40 over the next 4 to 8 weeks, especially as June and July end-of-month pressures approach. Close monitoring of jewelry and lease transfer categories in Toronto will be key to confirming or ruling out this upward trajectory.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
