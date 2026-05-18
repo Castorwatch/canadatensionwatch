@@ -88,5 +88,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.08,
+    "score_predit": 0.12,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Canada national",
+    "signal_dominant": "Stabilité estivale émergente",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score devrait demeurer stable et bas, avec une légère possibilité de hausse saisonnière estivale pouvant porter le score vers 0.12 à 0.15, l'été étant historiquement propice aux vols de véhicules.",
+    "prediction_en": "Over the next 4 to 8 weeks, the score is expected to remain stable and low, with a slight possibility of a seasonal summer uptick potentially pushing the score toward 0.12 to 0.15, as summer months are historically associated with higher vehicle theft activity.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

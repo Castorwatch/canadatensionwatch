@@ -100,5 +100,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.32,
+    "score_predit": 0.39,
+    "niveau_alerte_predit": "TENSION",
+    "signal_dominant": "Liquidation bijoux/outils Vancouver-Toronto",
+    "prediction_fr": "Si la tendance de liquidation d'actifs à Vancouver et Toronto se maintient, le score national devrait grimper vers 0.38–0.42 d'ici 4 à 8 semaines, surtout si les renouvellements hypothécaires de mi-année accentuent la pression sur les ménages. Une stabilisation est possible si les données de Montréal restent basses et compensent les hausses des autres marchés.",
+    "prediction_en": "If the asset liquidation trend in Vancouver and Toronto persists, the national score is likely to climb toward 0.38–0.42 within 4 to 8 weeks, particularly if mid-year mortgage renewals add further pressure on households. Stabilization remains possible if Montreal's data stays low and offsets gains in other markets.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

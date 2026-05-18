@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 00:22",
+  "updated": "2026-05-18 00:34",
   "source": "Google Trends",
   "timeframe": "Last 7 days",
   "keywords": {
@@ -7,7 +7,7 @@
       "label_fr": "Prets Payday",
       "label_en": "Payday Loans",
       "emoji": "💸",
-      "raw_score": 5.3,
+      "raw_score": 5.4,
       "stress_score": 0.06,
       "status": {
         "label_fr": "Normal",
@@ -35,7 +35,7 @@
       "label_fr": "Faillite",
       "label_en": "Bankruptcy",
       "emoji": "📉",
-      "raw_score": 1.9,
+      "raw_score": 2.0,
       "stress_score": 0.05,
       "status": {
         "label_fr": "Normal",

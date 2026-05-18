@@ -1,10 +1,119 @@
 {
-  "updated": "2026-05-18 00:25",
-  "source": "Statistique Canada — Enquête sur la population active (tableau 14-10-0385 / 14-10-0287)",
-  "indicator": "taux_chomage_desaisonnalise",
-  "regions": {},
+  "updated": "2026-05-18 00:36",
+  "source": "Statistique Canada — Enquête sur la population active (tableau 14-10-0287, désaisonnalisé)",
+  "indicator": "taux_chomage",
   "provinces": {
+    "NL": {
+      "name_fr": "Terre-Neuve-et-Labrador",
+      "name_en": "Newfoundland and Labrador",
+      "taux_chomage": 10.0,
+      "stress_score": 0.77,
+      "status": {
+        "fr": "Critique",
+        "en": "Critical",
+        "emoji": "🔴"
+      },
+      "ref_period": "2026-04"
+    },
+    "PE": {
+      "name_fr": "Île-du-Prince-Édouard",
+      "name_en": "Prince Edward Island",
+      "taux_chomage": 8.0,
+      "stress_score": 0.57,
+      "status": {
+        "fr": "Tension",
+        "en": "Tension",
+        "emoji": "🟠"
+      },
+      "ref_period": "2026-04"
+    },
+    "NS": {
+      "name_fr": "Nouvelle-Écosse",
+      "name_en": "Nova Scotia",
+      "taux_chomage": 6.3,
+      "stress_score": 0.36,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-04"
+    },
+    "NB": {
+      "name_fr": "Nouveau-Brunswick",
+      "name_en": "New Brunswick",
+      "taux_chomage": 7.2,
+      "stress_score": 0.48,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-04"
+    },
+    "QC": {
+      "name_fr": "Québec",
+      "name_en": "Quebec",
+      "taux_chomage": 6.2,
+      "stress_score": 0.34,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-04"
+    },
+    "ON": {
+      "name_fr": "Ontario",
+      "name_en": "Ontario",
+      "taux_chomage": 7.5,
+      "stress_score": 0.51,
+      "status": {
+        "fr": "Tension",
+        "en": "Tension",
+        "emoji": "🟠"
+      },
+      "ref_period": "2026-04"
+    },
+    "MB": {
+      "name_fr": "Manitoba",
+      "name_en": "Manitoba",
+      "taux_chomage": 5.0,
+      "stress_score": 0.2,
+      "status": {
+        "fr": "Sain",
+        "en": "Healthy",
+        "emoji": "🟢"
+      },
+      "ref_period": "2026-04"
+    },
+    "SK": {
+      "name_fr": "Saskatchewan",
+      "name_en": "Saskatchewan",
+      "taux_chomage": 5.6,
+      "stress_score": 0.26,
+      "status": {
+        "fr": "Sain",
+        "en": "Healthy",
+        "emoji": "🟢"
+      },
+      "ref_period": "2026-04"
+    },
+    "AB": {
+      "name_fr": "Alberta",
+      "name_en": "Alberta",
+      "taux_chomage": 7.0,
+      "stress_score": 0.45,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-04"
+    },
     "BC": {
+      "name_fr": "Colombie-Britannique",
+      "name_en": "British Columbia",
       "taux_chomage": 6.8,
       "stress_score": 0.42,
       "status": {
@@ -12,67 +121,7 @@
         "en": "Watch",
         "emoji": "🟡"
       },
-      "ref_period": "2026-04-01"
-    },
-    "QC": {
-      "taux_chomage": 558.1,
-      "stress_score": 1.0,
-      "status": {
-        "fr": "Critique",
-        "en": "Critical",
-        "emoji": "🔴"
-      },
-      "ref_period": "2026-04-01"
-    },
-    "ON": {
-      "taux_chomage": 202.7,
-      "stress_score": 1.0,
-      "status": {
-        "fr": "Critique",
-        "en": "Critical",
-        "emoji": "🔴"
-      },
-      "ref_period": "2026-04-01"
-    },
-    "AB": {
-      "taux_chomage": 705.3,
-      "stress_score": 1.0,
-      "status": {
-        "fr": "Critique",
-        "en": "Critical",
-        "emoji": "🔴"
-      },
-      "ref_period": "2026-04-01"
-    },
-    "MB": {
-      "taux_chomage": 32.0,
-      "stress_score": 1.0,
-      "status": {
-        "fr": "Critique",
-        "en": "Critical",
-        "emoji": "🔴"
-      },
-      "ref_period": "2026-04-01"
-    },
-    "NS": {
-      "taux_chomage": 41.2,
-      "stress_score": 1.0,
-      "status": {
-        "fr": "Critique",
-        "en": "Critical",
-        "emoji": "🔴"
-      },
-      "ref_period": "2026-04-01"
-    },
-    "NB": {
-      "taux_chomage": 98.7,
-      "stress_score": 1.0,
-      "status": {
-        "fr": "Critique",
-        "en": "Critical",
-        "emoji": "🔴"
-      },
-      "ref_period": "2026-04-01"
+      "ref_period": "2026-04"
     }
   }
 }

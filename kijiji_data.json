@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 00:20",
+  "updated": "2026-05-18 00:31",
   "version": "3.1",
   "pay_period": {
     "period": "apres-paye",
@@ -75,10 +75,10 @@
           "label_fr": "Bijoux & Montres",
           "label_en": "Jewelry & Watches",
           "emoji": "💍",
-          "count": 502,
+          "count": 506,
           "baseline": 502,
-          "change_pct": 0.0,
-          "score": 0.15,
+          "change_pct": 0.8,
+          "score": 0.18,
           "status": {
             "label_fr": "Normal",
             "label_en": "Normal",
@@ -104,7 +104,7 @@
           "label_fr": "Outils & Équipement",
           "label_en": "Tools & Equipment",
           "emoji": "🔧",
-          "count": 12511,
+          "count": 12513,
           "baseline": 4200,
           "change_pct": 197.9,
           "score": 1.0,
@@ -120,10 +120,10 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 6336,
+          "count": 6338,
           "baseline": 6267,
           "change_pct": 1.1,
-          "score": 0.19,
+          "score": 0.2,
           "status": {
             "label_fr": "Normal",
             "label_en": "Normal",
@@ -152,7 +152,7 @@
           "label_fr": "Bijoux & Montres",
           "label_en": "Jewelry & Watches",
           "emoji": "💍",
-          "count": 4394,
+          "count": 4392,
           "baseline": 4402,
           "change_pct": -0.2,
           "score": 0.15,
@@ -259,11 +259,11 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national Kijiji demeure stable à 0.32 depuis cinq jours consécutifs, signalant un niveau de stress économique modéré mais sans aggravation notable. Vancouver affiche le signal le plus préoccupant avec une explosion des annonces de bijoux (+488.9%) et une hausse des transferts de bail (+64.5%), suggérant une pression financière croissante dans cette ville. Toronto montre une forte montée des outils (+197.9%), indicateur classique de ménages qui liquident des actifs pour combler des manques de liquidités. Montréal reste paradoxalement calme avec un score de 0.09, possiblement dû à un effet post-paye qui a temporairement réduit les inscriptions d'urgence.",
-    "analyse_en": "The national Kijiji score has held steady at 0.32 for five consecutive days, indicating moderate economic stress without notable deterioration. Vancouver displays the most concerning signals, with jewelry listings surging +488.9% and lease transfers up +64.5%, pointing to growing financial pressure in that city. Toronto shows a sharp spike in tool listings (+197.9%), a classic indicator of households liquidating assets to cover cash shortfalls. Montreal remains unusually calm at a score of 0.09, possibly reflecting a temporary post-payday reduction in distress listings.",
-    "prediction_fr": "Si la tendance vancouvéroise se confirme dans les deux prochaines semaines, le score national devrait progresser vers 0.38–0.42 d'ici mi-juin, porté par la pression immobilière et la liquidation d'actifs dans les grandes villes. Une stabilisation est possible si Toronto se normalise après cet épisode de liquidation d'outils.",
-    "prediction_en": "If the Vancouver trend holds over the next two weeks, the national score is likely to climb toward 0.38–0.42 by mid-June, driven by real estate pressure and asset liquidation in major cities. Stabilization remains possible if Toronto's tool-listing spike proves to be a short-term anomaly.",
-    "signal_dominant": "Liquidation bijoux Vancouver",
+    "analyse_fr": "Le score national demeure stable à 0.32 depuis plusieurs jours consécutifs, signalant un niveau de stress économique modéré mais sans escalade notable. Les disparités régionales sont marquées : Montréal affiche un score très bas (0.09) avec une chute drastique des ventes d'outils (-78.7%) et une disparition totale des transferts de bail, suggérant une accalmie ou un manque d'activité. Toronto (0.43) et Vancouver (0.45) présentent des signaux plus préoccupants, notamment une explosion des bijoux à Vancouver (+488.9%) et des outils à Toronto (+197.9%), indicateurs classiques de liquidation d'actifs sous pression financière. Le signal dominant reste la polarisation est-ouest, avec les grandes métropoles de l'Ouest et du Centre sous tension croissante.",
+    "analyse_en": "The national score remains stable at 0.32 over several consecutive days, indicating a moderate level of economic stress without notable escalation. Regional disparities are significant: Montreal shows a very low score (0.09) with a sharp drop in tool listings (-78.7%) and a complete disappearance of lease transfers, suggesting a lull in distress activity. Toronto (0.43) and Vancouver (0.45) present more concerning signals, particularly an explosion in jewelry listings in Vancouver (+488.9%) and tools in Toronto (+197.9%), classic indicators of asset liquidation under financial pressure. The dominant signal remains an east-west polarization, with major western and central metros under increasing strain.",
+    "prediction_fr": "Si la tendance de liquidation d'actifs à Vancouver et Toronto se maintient, le score national devrait grimper vers 0.38–0.42 d'ici 4 à 8 semaines, surtout si les renouvellements hypothécaires de mi-année accentuent la pression sur les ménages. Une stabilisation est possible si les données de Montréal restent basses et compensent les hausses des autres marchés.",
+    "prediction_en": "If the asset liquidation trend in Vancouver and Toronto persists, the national score is likely to climb toward 0.38–0.42 within 4 to 8 weeks, particularly if mid-year mortgage renewals add further pressure on households. Stabilization remains possible if Montreal's data stays low and offsets gains in other markets.",
+    "signal_dominant": "Liquidation bijoux/outils Vancouver-Toronto",
     "niveau_alerte": "TENSION",
     "score_predit_4_semaines": 0.39
   },

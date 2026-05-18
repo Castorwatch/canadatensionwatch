@@ -1,12 +1,12 @@
 {
-  "updated": "2026-05-18 00:23",
+  "updated": "2026-05-18 00:34",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 7.0,
+      "raw_score": 7.1,
       "stress_score": 0.1,
       "status": {
         "label_fr": "Normal",
@@ -110,12 +110,12 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de vol d'auto s'établit à 0,08/1,0 aujourd'hui, un niveau très bas indiquant une préoccupation minimale des Canadiens pour ce type de criminalité. L'historique des 30 derniers jours montre une stabilité remarquable autour de 0,07-0,08, avec une légère progression enregistrée les 17 et 18 mai. Toutes les régions affichent des scores uniformément faibles (0,05), à l'exception du Canada global et de la catégorie vol_auto qui atteignent 0,10, suggérant une dispersion nationale sans concentration géographique particulière. Aucune région ne se distingue nettement, bien que le signal national agrégé soit légèrement plus élevé que les données provinciales individuelles.",
-    "analyse_en": "The national auto theft score stands at 0.08/1.0 today, reflecting very low public concern about vehicle theft across Canada. The 30-day historical data shows remarkable stability around 0.07-0.08, with a minor uptick recorded on May 17th and 18th. All regions display uniformly low scores at 0.05, with only the national aggregate and the auto theft category reaching 0.10, suggesting no particular geographic hotspot. No single province stands out significantly, though the aggregated national signal remains marginally elevated compared to individual provincial readings.",
-    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score de vol d'auto devrait demeurer stable à légèrement en hausse, porté par l'approche de la saison estivale qui historiquement amplifie les incidents et les recherches connexes. Une montée modeste vers 0,12-0,15 est plausible si des événements médiatiques relancent l'attention publique.",
-    "prediction_en": "Over the next 4 to 8 weeks, the auto theft score is expected to remain stable with a slight upward bias, driven by the approaching summer season which historically correlates with increased incidents and related search activity. A modest rise toward 0.12-0.15 is plausible if media coverage reignites public attention.",
+    "analyse_fr": "Le score national de vol d'auto se maintient à un niveau très bas de 0.08/1.0, indiquant une préoccupation minimale de la population canadienne pour ce sujet. L'historique des 30 derniers jours révèle une stabilité quasi parfaite, avec une légère hausse de 0.07 à 0.08 observée entre le 17 et le 18 mai 2026. Toutes les régions affichent des scores uniformément faibles (0.05), à l'exception du Canada global qui atteint 0.10, ce qui suggère une dispersion nationale sans concentration régionale notable. La catégorie vol_auto domine légèrement les recherches à 0.10, devant assurance et sécurité auto.",
+    "analyse_en": "The national auto theft score remains at a very low level of 0.08/1.0, indicating minimal public concern across Canada regarding this topic. The 30-day historical data reveals near-perfect stability, with a slight uptick from 0.07 to 0.08 observed between May 17 and 18, 2026. All regions display uniformly low scores (0.05), with the national Canada aggregate reaching 0.10, suggesting broad diffuse interest without any notable regional concentration. The auto theft category slightly leads search activity at 0.10, ahead of insurance and vehicle security.",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score devrait demeurer stable et bas, avec une légère possibilité de hausse saisonnière estivale pouvant porter le score vers 0.12 à 0.15, l'été étant historiquement propice aux vols de véhicules.",
+    "prediction_en": "Over the next 4 to 8 weeks, the score is expected to remain stable and low, with a slight possibility of a seasonal summer uptick potentially pushing the score toward 0.12 to 0.15, as summer months are historically associated with higher vehicle theft activity.",
     "region_risque": "Canada national",
-    "signal_dominant": "Stabilité basse saison estivale",
+    "signal_dominant": "Stabilité estivale émergente",
     "niveau_alerte": "NORMAL",
     "score_predit_4_semaines": 0.12
   },
