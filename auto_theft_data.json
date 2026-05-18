@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-18 14:26",
+  "updated": "2026-05-18 15:15",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 6.8,
-      "stress_score": 0.1,
+      "raw_score": null,
+      "stress_score": null,
       "status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       },
       "weight": 0.5
     },
@@ -49,23 +49,23 @@
     "canada": {
       "name_fr": "Canada",
       "name_en": "Canada",
-      "composite_score": 0.1,
+      "composite_score": null,
       "composite_status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       }
     },
     "ontario": {
       "name_fr": "Ontario",
       "name_en": "Ontario",
-      "composite_score": 0.07,
+      "composite_score": null,
       "composite_status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       }
     },
     "quebec": {
@@ -82,43 +82,28 @@
     "bc": {
       "name_fr": "C.-B.",
       "name_en": "BC",
-      "composite_score": 0.05,
+      "composite_score": null,
       "composite_status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       }
     },
     "alberta": {
       "name_fr": "Alberta",
       "name_en": "Alberta",
-      "composite_score": 0.05,
+      "composite_score": null,
       "composite_status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       }
     }
   },
-  "national_score": 0.1,
-  "national_status": {
-    "label_fr": "Normal",
-    "label_en": "Normal",
-    "color": "green",
-    "emoji": "🟢"
-  },
-  "claude_analysis": {
-    "analyse_fr": "Le score national de vol auto atteint 0,10 aujourd'hui, en hausse notable par rapport aux 0,07 enregistrés de manière stable du 14 au 16 mai, suggérant une légère montée des recherches liées au vol de véhicules. La tendance positive de 0,05 observée le 18 mai confirme une accélération récente, bien que le niveau global demeure bas. L'Ontario affiche le score régional le plus élevé à 0,07, se positionnant comme la région la plus préoccupante, tandis que la Colombie-Britannique et l'Alberta restent stables à 0,05. Le Québec ne fournit pas de données suffisantes pour l'analyse ce jour.",
-    "analyse_en": "The national auto theft score reaches 0.10 today, a notable increase from the stable 0.07 recorded from May 14 to 16, suggesting a slight uptick in vehicle theft-related searches. The positive trend of 0.05 observed on May 18 confirms a recent acceleration, although the overall level remains low. Ontario shows the highest regional score at 0.07, positioning it as the most concerning region, while British Columbia and Alberta remain stable at 0.05. Quebec does not provide sufficient data for analysis today.",
-    "prediction_fr": "Si la tendance haussière observée cette semaine se maintient, le score national pourrait atteindre entre 0,13 et 0,17 d'ici 4 à 8 semaines, notamment en Ontario où les signaux de recherche sont les plus actifs. Une vigilance accrue est recommandée à l'approche de la saison estivale, période historiquement propice aux vols de véhicules.",
-    "prediction_en": "If the upward trend observed this week persists, the national score could reach between 0.13 and 0.17 within 4 to 8 weeks, particularly in Ontario where search signals are most active. Increased vigilance is recommended heading into the summer season, a period historically associated with higher vehicle theft rates.",
-    "region_risque": "Ontario urbain",
-    "signal_dominant": "Hausse recherches vol véhicule",
-    "niveau_alerte": "NORMAL",
-    "score_predit_4_semaines": 0.15
-  },
-  "trend": 0.05,
-  "prochaine_verification": "2026-06-15"
+  "national_score": null,
+  "national_status": null,
+  "claude_analysis": null,
+  "trend": null
 }
