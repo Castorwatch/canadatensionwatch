@@ -39,6 +39,9 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      - name: 📊 Run StatCan Scraper
+        run: python scripts/statcan_scraper.py
+
       - name: 📁 List generated files (debug)
         run: |
           echo "=== JSON files in repo root ==="
@@ -51,7 +54,7 @@ jobs:
           git pull origin main --no-rebase || true
           git add -A
           git status
-          git diff --staged --quiet || git commit -m "🦫 Daily update $(date +'%Y-%m-%d') — Kijiji + Trends + Auto Theft + Claude"
+          git diff --staged --quiet || git commit -m "🦫 Daily update $(date +'%Y-%m-%d') — Kijiji + Trends + Auto Theft + StatCan + Claude"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
