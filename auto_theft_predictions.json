@@ -106,5 +106,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.09,
+    "score_predit": 0.14,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Canada national",
+    "signal_dominant": "Tendance hausse légère",
+    "prediction_fr": "Si la tendance haussière actuelle se maintient, le score pourrait atteindre 0,13 à 0,16 d'ici 4 à 8 semaines, porté par l'approche de la saison estivale qui coïncide historiquement avec une recrudescence des vols de véhicules au Canada. Une attention particulière devrait être portée aux grandes agglomérations du Canada national, où le signal est déjà le plus marqué.",
+    "prediction_en": "If the current upward trend continues, the score could reach 0.13 to 0.16 within 4 to 8 weeks, driven by the approaching summer season which historically coincides with a rise in vehicle thefts across Canada. Particular attention should be paid to major urban centres at the national level, where the signal is already most pronounced.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

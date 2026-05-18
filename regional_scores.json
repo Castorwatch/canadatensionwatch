@@ -1,0 +1,235 @@
+{
+  "updated": "2026-05-18 11:34",
+  "note": "Score régional BEAVER. Conçu pour grandir (voir plan). On expose le nombre de signaux, jamais lesquels.",
+  "signaux_actifs_max": 3,
+  "signaux_prevus_total": 12,
+  "provinces": {
+    "AB": {
+      "score": 0.291,
+      "score_100": 29,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "BC": {
+      "score": 0.279,
+      "score_100": 28,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "MB": {
+      "score": 0.209,
+      "score_100": 21,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NB": {
+      "score": 0.321,
+      "score_100": 32,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NL": {
+      "score": 0.437,
+      "score_100": 44,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NS": {
+      "score": 0.273,
+      "score_100": 27,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NT": {
+      "score": 0.215,
+      "score_100": 22,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 2,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Modérée",
+        "en": "Moderate"
+      }
+    },
+    "ON": {
+      "score": 0.315,
+      "score_100": 32,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "PE": {
+      "score": 0.357,
+      "score_100": 36,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "QC": {
+      "score": 0.247,
+      "score_100": 25,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "SK": {
+      "score": 0.233,
+      "score_100": 23,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "YT": {
+      "score": 0.215,
+      "score_100": 22,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 2,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Modérée",
+        "en": "Moderate"
+      }
+    }
+  },
+  "villes": {
+    "montreal": {
+      "score": 0.178,
+      "score_100": 18,
+      "niveau": {
+        "fr": "STABLE",
+        "en": "STABLE",
+        "emoji": "🟢"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "toronto": {
+      "score": 0.348,
+      "score_100": 35,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "vancouver": {
+      "score": 0.318,
+      "score_100": 32,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 3,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    }
+  }
+}
