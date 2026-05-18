@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 23:26",
+  "updated": "2026-05-18 23:37",
   "version": "3.1",
   "pay_period": {
     "period": "apres-paye",
@@ -120,7 +120,7 @@
           "label_fr": "Consoles & Électronique",
           "label_en": "Electronics & Gaming",
           "emoji": "🎮",
-          "count": 6342,
+          "count": 6341,
           "baseline": 6267,
           "change_pct": 1.2,
           "score": 0.2,
@@ -259,13 +259,13 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national Kijiji atteint 0.33 aujourd'hui, en légère hausse par rapport aux quatre jours précédents stabilisés à 0.32, ce qui indique une pression économique modérée mais persistante. Vancouver se distingue nettement avec un score de 0.45, porté par une explosion des annonces de bijoux (+487.7%) et une hausse des transferts de bail (+64.1%), signaux classiques de liquidation d'actifs et de fuite locative. Toronto affiche également un score élevé (0.44) avec une forte poussée des outils (+199.6%), suggérant des ventes de nécessité dans le secteur des travailleurs autonomes ou de la construction. Montréal reste remarquablement calme (0.09), avec des baisses marquées dans presque toutes les catégories, ce qui atténue la moyenne nationale.",
-    "analyse_en": "The national Kijiji score reaches 0.33 today, slightly up from the four previous days stabilized at 0.32, indicating moderate but persistent economic pressure. Vancouver stands out sharply with a score of 0.45, driven by a surge in jewelry listings (+487.7%) and rising lease transfers (+64.1%), classic signals of asset liquidation and rental flight. Toronto also shows an elevated score (0.44) with a strong spike in tools (+199.6%), suggesting distress sales among self-employed workers or in the construction sector. Montreal remains remarkably calm (0.09), with sharp declines across nearly all categories, which dampens the national average.",
-    "prediction_fr": "Dans les 4 à 8 prochaines semaines, si la tendance à Vancouver et Toronto se maintient — notamment la hausse des bijoux et des transferts de bail — le score national pourrait grimper vers 0.38 à 0.42, surtout si les pressions sur le marché locatif s'intensifient en approche de l'été. Une stabilisation est possible si Montréal reste en retrait et absorbe la moyenne.",
-    "prediction_en": "Over the next 4 to 8 weeks, if the trend in Vancouver and Toronto holds — particularly the rise in jewelry listings and lease transfers — the national score could climb toward 0.38 to 0.42, especially if rental market pressures intensify heading into summer. Stabilization remains possible if Montreal stays subdued and continues to anchor the national average.",
-    "signal_dominant": "Liquidation bijoux Vancouver",
-    "niveau_alerte": "TENSION",
-    "score_predit_4_semaines": 0.39
+    "analyse_fr": "Le score national Kijiji atteint 0,33 aujourd'hui, en légère hausse par rapport au plateau stable de 0,32 observé depuis le 14 mai. Le signal le plus préoccupant provient de Vancouver, où les bijoux affichent une hausse spectaculaire de +487,7% et les transferts de bail bondissent de +64,1%, suggérant une liquidation d'actifs et une pression locative intense. Toronto montre également des tensions avec une explosion des annonces d'outils (+199,6%), signe classique de ménages qui monétisent leurs biens. Montréal reste en revanche très calme avec des baisses marquées dans presque toutes les catégories, ce qui pourrait indiquer un ralentissement de l'activité ou une saturation du marché local.",
+    "analyse_en": "The national Kijiji score reaches 0.33 today, a slight uptick from the stable plateau of 0.32 observed since May 14. The most concerning signal comes from Vancouver, where jewellery listings surged +487.7% and lease transfers jumped +64.1%, pointing to asset liquidation and acute housing pressure. Toronto also shows stress with a spike in tool listings (+199.6%), a classic indicator of households monetizing possessions. Montreal, by contrast, remains very quiet with sharp declines across most categories, possibly reflecting reduced activity or local market saturation.",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score national devrait progresser modestement vers 0,38–0,42, porté par l'intensification des signaux à Vancouver et Toronto à l'approche de l'été, période traditionnellement active pour les déménagements et les ventes de liquidation. Si la tendance vancouvéroise se propage, un franchissement du seuil de tension ne peut être exclu.",
+    "prediction_en": "Over the next 4 to 8 weeks, the national score is expected to climb modestly toward 0.38–0.42, driven by intensifying signals in Vancouver and Toronto as summer approaches — a period traditionally active for moves and liquidation sales. If the Vancouver trend spreads to other markets, a breach of the tension threshold cannot be ruled out.",
+    "signal_dominant": "Vancouver bijoux +488%",
+    "niveau_alerte": "NORMAL",
+    "score_predit_4_semaines": 0.4
   },
   "prochaine_verification": "2026-06-15"
 }

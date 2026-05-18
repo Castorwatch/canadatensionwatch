@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 23:31",
+  "updated": "2026-05-18 23:42",
   "note": "Socle = Google Sheet (castorScore) + signaux officiels. On expose le nombre de signaux, jamais lesquels.",
   "signaux_configures": 6,
   "signaux_prevus_total": 12,
@@ -35,7 +35,7 @@
       }
     },
     "MB": {
-      "score": 0.355,
+      "score": 0.356,
       "score_100": 36,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -50,7 +50,7 @@
       }
     },
     "NB": {
-      "score": 0.392,
+      "score": 0.394,
       "score_100": 39,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -65,7 +65,7 @@
       }
     },
     "NL": {
-      "score": 0.461,
+      "score": 0.462,
       "score_100": 46,
       "niveau": {
         "fr": "TENSION",
@@ -80,7 +80,7 @@
       }
     },
     "NS": {
-      "score": 0.382,
+      "score": 0.383,
       "score_100": 38,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -95,7 +95,7 @@
       }
     },
     "NT": {
-      "score": 0.398,
+      "score": 0.4,
       "score_100": 40,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -110,8 +110,8 @@
       }
     },
     "ON": {
-      "score": 0.376,
-      "score_100": 38,
+      "score": 0.374,
+      "score_100": 37,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -125,8 +125,8 @@
       }
     },
     "PE": {
-      "score": 0.425,
-      "score_100": 42,
+      "score": 0.426,
+      "score_100": 43,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -140,7 +140,7 @@
       }
     },
     "QC": {
-      "score": 0.379,
+      "score": 0.381,
       "score_100": 38,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -155,7 +155,7 @@
       }
     },
     "SK": {
-      "score": 0.379,
+      "score": 0.38,
       "score_100": 38,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -170,7 +170,7 @@
       }
     },
     "YT": {
-      "score": 0.398,
+      "score": 0.4,
       "score_100": 40,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -187,7 +187,7 @@
   },
   "villes": {
     "montreal": {
-      "score": 0.355,
+      "score": 0.357,
       "score_100": 36,
       "niveau": {
         "fr": "À SURVEILLER",
@@ -202,8 +202,8 @@
       }
     },
     "toronto": {
-      "score": 0.387,
-      "score_100": 39,
+      "score": 0.385,
+      "score_100": 38,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
