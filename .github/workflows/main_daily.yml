@@ -45,6 +45,9 @@ jobs:
       - name: 🏠 Run Immobilier Scraper
         run: python scripts/immobilier_scraper.py
 
+      - name: 📊 Run Demographie Scraper
+        run: python scripts/demographie_scraper.py
+
       - name: 🧮 Run Regional Engine
         run: python scripts/regional_engine.py
 
