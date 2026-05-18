@@ -1,9 +1,5 @@
 name: 🦫 BeaverWatch — Daily Data Update
 
-# Workflow PRINCIPAL : 11h UTC
-# Détresse n'est PAS ici (workflow séparé detresse_daily.yml à 16h)
-# car 2 scrapers Google Trends dans le même workflow = blocage 429.
-
 on:
   schedule:
     - cron: '0 11 * * *'
@@ -45,6 +41,9 @@ jobs:
 
       - name: 📊 Run StatCan Scraper
         run: python scripts/statcan_scraper.py
+
+      - name: 🏠 Run Immobilier Scraper
+        run: python scripts/immobilier_scraper.py
 
       - name: 🧮 Run Regional Engine
         run: python scripts/regional_engine.py
