@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 18:20",
+  "updated": "2026-05-18 20:56",
   "source": "Google Trends — recherches de détresse financière régionales (bilingue FR/EN)",
   "termes_fr": [
     "faillite personnelle",
@@ -18,7 +18,7 @@
     "canada": {
       "name_fr": "Canada",
       "lang": "en",
-      "raw_interest": 1.3,
+      "raw_interest": 0.6,
       "stress_score": 0.05,
       "status": {
         "fr": "Normal",
@@ -29,7 +29,7 @@
     "ontario": {
       "name_fr": "Ontario",
       "lang": "en",
-      "raw_interest": 0.7,
+      "raw_interest": 1.0,
       "stress_score": 0.05,
       "status": {
         "fr": "Normal",
@@ -40,7 +40,18 @@
     "quebec": {
       "name_fr": "Québec",
       "lang": "fr",
-      "raw_interest": 1.0,
+      "raw_interest": 3.4,
+      "stress_score": 0.06,
+      "status": {
+        "fr": "Normal",
+        "en": "Normal",
+        "emoji": "🟢"
+      }
+    },
+    "bc": {
+      "name_fr": "Colombie-Britannique",
+      "lang": "en",
+      "raw_interest": 0.2,
       "stress_score": 0.05,
       "status": {
         "fr": "Normal",
@@ -57,16 +68,25 @@
         "en": "Normal",
         "emoji": "🟢"
       },
-      "raw_interest": 0.7
+      "raw_interest": 1.0
     },
     "QC": {
+      "stress_score": 0.06,
+      "status": {
+        "fr": "Normal",
+        "en": "Normal",
+        "emoji": "🟢"
+      },
+      "raw_interest": 3.4
+    },
+    "BC": {
       "stress_score": 0.05,
       "status": {
         "fr": "Normal",
         "en": "Normal",
         "emoji": "🟢"
       },
-      "raw_interest": 1.0
+      "raw_interest": 0.2
     }
   },
   "national_score": 0.05
