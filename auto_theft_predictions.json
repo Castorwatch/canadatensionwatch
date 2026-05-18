@@ -70,5 +70,23 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "auto_theft",
+    "date_prediction": "2026-05-18",
+    "date_verification": "2026-06-15",
+    "score_actuel": 0.08,
+    "score_predit": 0.12,
+    "niveau_alerte_predit": "NORMAL",
+    "region_risque": "Canada national",
+    "signal_dominant": "Stabilité basse saison estivale",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score de vol d'auto devrait demeurer stable à légèrement en hausse, porté par l'approche de la saison estivale qui historiquement amplifie les incidents et les recherches connexes. Une montée modeste vers 0,12-0,15 est plausible si des événements médiatiques relancent l'attention publique.",
+    "prediction_en": "Over the next 4 to 8 weeks, the auto theft score is expected to remain stable with a slight upward bias, driven by the approaching summer season which historically correlates with increased incidents and related search activity. A modest rise toward 0.12-0.15 is plausible if media coverage reignites public attention.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]

@@ -1,0 +1,78 @@
+{
+  "updated": "2026-05-18 00:25",
+  "source": "Statistique Canada — Enquête sur la population active (tableau 14-10-0385 / 14-10-0287)",
+  "indicator": "taux_chomage_desaisonnalise",
+  "regions": {},
+  "provinces": {
+    "BC": {
+      "taux_chomage": 6.8,
+      "stress_score": 0.42,
+      "status": {
+        "fr": "Surveiller",
+        "en": "Watch",
+        "emoji": "🟡"
+      },
+      "ref_period": "2026-04-01"
+    },
+    "QC": {
+      "taux_chomage": 558.1,
+      "stress_score": 1.0,
+      "status": {
+        "fr": "Critique",
+        "en": "Critical",
+        "emoji": "🔴"
+      },
+      "ref_period": "2026-04-01"
+    },
+    "ON": {
+      "taux_chomage": 202.7,
+      "stress_score": 1.0,
+      "status": {
+        "fr": "Critique",
+        "en": "Critical",
+        "emoji": "🔴"
+      },
+      "ref_period": "2026-04-01"
+    },
+    "AB": {
+      "taux_chomage": 705.3,
+      "stress_score": 1.0,
+      "status": {
+        "fr": "Critique",
+        "en": "Critical",
+        "emoji": "🔴"
+      },
+      "ref_period": "2026-04-01"
+    },
+    "MB": {
+      "taux_chomage": 32.0,
+      "stress_score": 1.0,
+      "status": {
+        "fr": "Critique",
+        "en": "Critical",
+        "emoji": "🔴"
+      },
+      "ref_period": "2026-04-01"
+    },
+    "NS": {
+      "taux_chomage": 41.2,
+      "stress_score": 1.0,
+      "status": {
+        "fr": "Critique",
+        "en": "Critical",
+        "emoji": "🔴"
+      },
+      "ref_period": "2026-04-01"
+    },
+    "NB": {
+      "taux_chomage": 98.7,
+      "stress_score": 1.0,
+      "status": {
+        "fr": "Critique",
+        "en": "Critical",
+        "emoji": "🔴"
+      },
+      "ref_period": "2026-04-01"
+    }
+  }
+}

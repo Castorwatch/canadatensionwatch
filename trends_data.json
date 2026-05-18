@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18 00:06",
+  "updated": "2026-05-18 00:22",
   "source": "Google Trends",
   "timeframe": "Last 7 days",
   "keywords": {
@@ -21,7 +21,7 @@
       "label_fr": "Aide Alimentaire",
       "label_en": "Food Assistance",
       "emoji": "🍞",
-      "raw_score": 1.7,
+      "raw_score": 0.5,
       "stress_score": 0.05,
       "status": {
         "label_fr": "Normal",
@@ -49,13 +49,13 @@
       "label_fr": "Stress Logement",
       "label_en": "Housing Stress",
       "emoji": "🏠",
-      "raw_score": null,
-      "stress_score": null,
+      "raw_score": 0.2,
+      "stress_score": 0.05,
       "status": {
-        "label_fr": "N/A",
-        "label_en": "N/A",
-        "color": "gray",
-        "emoji": "?"
+        "label_fr": "Normal",
+        "label_en": "Normal",
+        "color": "green",
+        "emoji": "🟢"
       },
       "weight": 0.2
     }
