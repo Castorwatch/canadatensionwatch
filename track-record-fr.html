@@ -3,83 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🏆 Track Record — BEAVER.WATCH</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,900&display=swap" rel="stylesheet">
+<title>Track Record — BEAVER.WATCH</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#070707;--s1:#0F0F0F;--s2:#181818;--s3:#242424;--s4:#303030;
-  --text:#F5F0E8;--muted:#9A9A92;--faint:#141414;
+  --bg:#070707;--s1:#0F0F0F;--s2:#181818;--s3:#242424;
+  --text:#F5F0E8;--muted:#9A9A92;
   --red:#FF2D2D;--orange:#FF6D00;--yellow:#FFD600;--green:#00E676;
 }
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+*{margin:0;padding:0;box-sizing:border-box;}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
-body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;}
-
+a{color:inherit;text-decoration:none;}
 header{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--green);position:sticky;top:0;background:rgba(7,7,7,0.97);backdrop-filter:blur(8px);z-index:500;}
 .logo{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:3px;display:flex;align-items:center;gap:8px;}
 .logo-d{color:var(--yellow);}
 .logo-sub{font-size:0.5rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px;}
-.lang-toggle{display:flex;gap:2px;background:var(--s2);border:1px solid var(--s3);padding:3px;}
-.lang-btn{padding:5px 9px;font-size:0.58rem;letter-spacing:1px;font-weight:700;border:none;background:transparent;color:var(--muted);text-decoration:none;}
-.lang-btn.active{background:var(--green);color:#000;}
-
-.back{max-width:900px;margin:0 auto;padding:24px 24px 0;}
-.back a{font-size:0.7rem;letter-spacing:2px;color:var(--muted);text-decoration:none;text-transform:uppercase;}
-.back a:hover{color:var(--text);}
-
+.lang-toggle{display:flex;gap:4px;}
+.lang-btn{font-size:0.72rem;padding:6px 12px;border:1px solid var(--s3);color:var(--muted);letter-spacing:1px;}
+.lang-btn.active{background:var(--green);color:#000;border-color:var(--green);font-weight:700;}
+.back{max-width:900px;margin:0 auto;padding:18px 24px 0;}
+.back a{font-size:0.85rem;color:var(--muted);}
 .hero{max-width:900px;margin:0 auto;padding:30px 24px 0;text-align:center;}
 .hero-eyebrow{font-size:0.7rem;letter-spacing:5px;text-transform:uppercase;color:var(--green);margin-bottom:16px;}
 .hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,8vw,4.5rem);letter-spacing:3px;line-height:1;margin-bottom:14px;}
 .hero-title em{font-style:normal;color:var(--green);}
 .hero-desc{font-size:1rem;line-height:1.7;color:var(--muted);max-width:560px;margin:0 auto;}
-
+.explain{max-width:760px;margin:36px auto 0;padding:0 24px;}
+.explain-box{background:var(--s1);border-left:3px solid var(--green);padding:24px 26px;}
+.explain-eyebrow{font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:14px;}
+.explain-box p{font-size:0.95rem;line-height:1.75;color:var(--text);margin-bottom:16px;}
+.explain-list{display:grid;gap:11px;font-size:0.88rem;line-height:1.55;color:var(--muted);}
+.explain-list b{color:var(--text);}
+.explain-ex{font-size:0.82rem;line-height:1.6;color:var(--muted);margin-top:16px;font-style:italic;}
 .bigstat{max-width:900px;margin:44px auto 0;padding:0 24px;}
 .bigstat-box{background:var(--s1);border-top:2px solid var(--green);padding:36px;text-align:center;}
-.bigstat-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(5rem,18vw,9rem);line-height:0.9;color:var(--green);text-shadow:0 0 50px rgba(0,230,118,0.25);}
+.bigstat-num{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,16vw,8rem);line-height:0.9;color:var(--green);text-shadow:0 0 50px rgba(0,230,118,0.25);}
 .bigstat-label{font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:10px;}
-.bigstat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:20px;margin-top:32px;border-top:1px solid var(--s3);padding-top:24px;}
-.bs-n{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;color:var(--text);line-height:1;}
+.bigstat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:20px;margin-top:32px;border-top:1px solid var(--s3);padding-top:24px;}
+.bs-n{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;line-height:1;}
 .bs-n.o{color:var(--orange);}
 .bs-l{font-size:0.58rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:6px;}
-
-.section-t{max-width:900px;margin:60px auto 0;padding:0 24px;}
-.st-title{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:4px;margin-bottom:4px;}
-.st-sub{font-size:0.75rem;color:var(--muted);letter-spacing:1px;margin-bottom:24px;}
-
-.preds{max-width:900px;margin:0 auto;padding:0 24px;}
-.pred-card{background:var(--s1);border-left:4px solid var(--orange);padding:24px;margin-bottom:14px;}
-.pred-card.correct{border-left-color:var(--green);}
-.pred-card.wrong{border-left-color:var(--red);}
-.pred-card.pending{border-left-color:var(--yellow);}
-.pred-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:14px;}
+.section-t{max-width:900px;margin:56px auto 0;padding:0 24px;}
+.st-title{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px;}
+.st-sub{font-size:0.82rem;color:var(--muted);line-height:1.6;margin-top:8px;margin-bottom:24px;}
+.preds{max-width:900px;margin:0 auto;padding:0 24px;display:grid;gap:18px;}
+.pred-card{background:var(--s1);border:1px solid var(--s3);padding:22px;}
+.pred-card.pending{border-left:3px solid var(--orange);}
+.pred-card.correct{border-left:3px solid var(--green);}
+.pred-card.wrong{border-left:3px solid var(--red);}
+.pred-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
 .pred-ind{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:2px;}
-.pred-badge{font-size:0.6rem;letter-spacing:2px;font-weight:700;text-transform:uppercase;padding:5px 12px;border:1px solid;}
-.pred-badge.correct{color:var(--green);border-color:rgba(0,230,118,0.4);background:rgba(0,230,118,0.07);}
-.pred-badge.wrong{color:var(--red);border-color:rgba(255,45,45,0.4);background:rgba(255,45,45,0.07);}
-.pred-badge.pending{color:var(--yellow);border-color:rgba(255,214,0,0.4);background:rgba(255,214,0,0.07);}
-.pred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:18px;margin:14px 0;}
-.pg-n{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;line-height:1;}
+.pred-badge{font-size:0.62rem;letter-spacing:2px;text-transform:uppercase;padding:5px 10px;font-weight:700;}
+.pred-badge.pending{background:rgba(255,109,0,0.15);color:var(--orange);}
+.pred-badge.correct{background:rgba(0,230,118,0.15);color:var(--green);}
+.pred-badge.wrong{background:rgba(255,45,45,0.15);color:var(--red);}
+.pred-bet{background:var(--s2);padding:13px 15px;margin-bottom:16px;font-size:0.9rem;line-height:1.55;color:var(--text);}
+.pred-bet b{color:var(--green);}
+.pred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:14px;text-align:center;}
+.pg-n{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;line-height:1;}
 .pg-n.predit{color:var(--orange);}
 .pg-n.reel{color:var(--green);}
 .pg-l{font-size:0.55rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:5px;}
-.pred-dates{font-size:0.7rem;color:var(--muted);letter-spacing:1px;margin-top:12px;}
-.pred-text{font-size:0.85rem;line-height:1.7;color:var(--text);margin-top:12px;font-style:italic;border-top:1px solid var(--s3);padding-top:12px;}
-.countdown{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:2px;color:var(--yellow);margin-top:8px;}
-
-.vs{max-width:900px;margin:60px auto 0;padding:0 24px;}
-.vs-box{background:var(--s1);padding:32px;border-left:4px solid var(--yellow);}
-.vs-row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--s3);align-items:center;}
-.vs-row:last-child{border-bottom:none;}
-.vs-name{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:2px;}
-.vs-name span{display:block;font-family:'Inter',sans-serif;font-size:0.68rem;letter-spacing:0;color:var(--muted);margin-top:3px;text-transform:none;}
-.vs-val{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:1px;text-align:right;}
-.vs-val.win{color:var(--green);}
-.vs-val.lose{color:var(--muted);}
-
-footer{max-width:900px;margin:80px auto 40px;padding:30px 24px;border-top:1px solid var(--s3);text-align:center;}
-.foot-brand{font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:5px;color:var(--muted);}
-.foot-meta{font-size:0.65rem;letter-spacing:1px;color:var(--muted);margin-top:8px;line-height:1.7;}
+.countdown{background:var(--s2);text-align:center;padding:11px;font-size:0.8rem;color:var(--orange);letter-spacing:1px;margin-top:16px;}
+.pred-dates{font-size:0.72rem;color:var(--muted);margin-top:12px;text-align:center;}
+.pred-text{font-size:0.85rem;line-height:1.7;color:var(--muted);margin-top:14px;font-style:italic;border-top:1px solid var(--s3);padding-top:14px;}
+.note-total{text-align:center;font-size:0.78rem;color:var(--muted);margin-top:8px;opacity:0.7;}
+.empty{background:var(--s1);border:1px solid var(--s3);padding:30px;text-align:center;color:var(--muted);font-size:0.9rem;line-height:1.7;}
+.versus{max-width:900px;margin:60px auto 40px;padding:0 24px;}
+.vs-title{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px;text-align:center;margin-bottom:24px;}
+.vs-grid{display:grid;gap:14px;}
+.vs-row{display:flex;align-items:center;justify-content:space-between;gap:14px;background:var(--s1);border:1px solid var(--s3);padding:16px 20px;flex-wrap:wrap;}
+.vs-row.beaver{border-left:3px solid var(--green);}
+.vs-name{font-weight:700;font-size:0.95rem;}
+.vs-tag{font-size:0.72rem;color:var(--muted);}
+.vs-verdict{font-size:0.75rem;letter-spacing:1px;color:var(--green);font-weight:700;}
+footer{text-align:center;padding:40px 24px;border-top:1px solid var(--s3);font-size:0.75rem;color:var(--muted);line-height:1.8;}
 </style>
 </head>
 <body>
@@ -98,7 +96,7 @@ footer{max-width:900px;margin:80px auto 40px;padding:30px 24px;border-top:1px so
 <div class="back"><a href="index-fr.html">← Retour à l'accueil</a></div>
 
 <section class="hero">
-  <div class="hero-eyebrow">📊 TRANSPARENCE RADICALE</div>
+  <div class="hero-eyebrow">📊 Transparence radicale</div>
   <h1 class="hero-title">LE CASTOR A-T-IL <em>RAISON</em> ?</h1>
   <p class="hero-desc">
     Chaque prédiction est enregistrée avec une date de vérification.
@@ -106,10 +104,32 @@ footer{max-width:900px;margin:80px auto 40px;padding:30px 24px;border-top:1px so
   </p>
 </section>
 
+<section class="explain">
+  <div class="explain-box">
+    <div class="explain-eyebrow">💡 C'est quoi une prédiction ?</div>
+    <p>
+      Le Castor surveille des signaux réels (reventes d'urgence, vol auto…)
+      et <strong>annonce à l'avance où le score va aller</strong> dans les
+      4 à 8 prochaines semaines. C'est un pari daté et public qu'on ne peut
+      pas effacer.
+    </p>
+    <div class="explain-list">
+      <div>📊 <b>Score prédit</b> — où le Castor pense que ça ira (sur 100)</div>
+      <div>📍 <b>Score au moment</b> — où c'était quand il a fait le pari</div>
+      <div>⏳ <b>Vérification</b> — la date où on saura s'il avait raison</div>
+      <div>✅ <b>Plus tard</b> — CORRECT ou INCORRECT, jamais caché</div>
+    </div>
+    <div class="explain-ex">
+      Exemple : « prédit 41, score au moment 32 » = le Castor parie que
+      le stress va monter de 32 à 41. Rendez-vous à la date de vérification.
+    </div>
+  </div>
+</section>
+
 <section class="bigstat">
   <div class="bigstat-box">
     <div class="bigstat-num" id="precision">—</div>
-    <div class="bigstat-label">PRÉCISION GLOBALE DU CASTOR</div>
+    <div class="bigstat-label">Précision globale du Castor</div>
     <div class="bigstat-grid">
       <div><div class="bs-n" id="total">—</div><div class="bs-l">Prédictions totales</div></div>
       <div><div class="bs-n" id="verified">—</div><div class="bs-l">Vérifiées</div></div>
@@ -120,166 +140,177 @@ footer{max-width:900px;margin:80px auto 40px;padding:30px 24px;border-top:1px so
 </section>
 
 <div class="section-t">
-  <div class="st-title">⏳ PRÉDICTIONS EN ATTENTE</div>
-  <div class="st-sub">Le compte à rebours tourne. Reviens voir si le Castor avait raison.</div>
+  <div class="st-title">⏳ Prédictions en attente</div>
+  <div class="st-sub">Ces paris ne sont pas encore vérifiés. Le compte à rebours tourne — reviens à la date indiquée pour voir si le Castor avait raison.</div>
 </div>
 <section class="preds" id="pending-list">
-  <div class="pred-card pending">
-    <div class="pred-top">
-      <div class="pred-ind">Chargement...</div>
-    </div>
-  </div>
+  <div class="empty">Chargement des prédictions…</div>
 </section>
 
 <div class="section-t">
-  <div class="st-title">✅ PRÉDICTIONS VÉRIFIÉES</div>
-  <div class="st-sub">L'historique complet. Bonnes et mauvaises. Aucune cachée.</div>
+  <div class="st-title">✅ Prédictions vérifiées</div>
+  <div class="st-sub">L'historique complet. Les bonnes ET les mauvaises. Aucune cachée.</div>
 </div>
 <section class="preds" id="verified-list">
-  <div class="pred-card">
-    <div class="pred-top">
-      <div class="pred-ind">Aucune vérification avant le 11 juin 2026</div>
-    </div>
-    <div class="pred-text">Les premières prédictions ont été faites le 14 mai 2026. La première vérification automatique aura lieu 28 jours plus tard, le 11 juin 2026. Reviens à cette date.</div>
-  </div>
+  <div class="empty">Les premières prédictions ont été faites à la mi-mai 2026. La première vérification automatique a lieu 28 jours plus tard. Reviens à ce moment-là.</div>
 </section>
 
-<section class="vs">
-  <div class="st-title" style="margin-bottom:20px;">🥊 LE CASTOR VS LE MONDE</div>
-  <div class="vs-box">
-    <div class="vs-row">
-      <div class="vs-name">🦫 LE CASTOR<span>Données comportementales + IA qui apprend</span></div>
-      <div class="vs-val win">7 JOURS D'AVANCE</div>
+<section class="versus">
+  <div class="vs-title">🥊 Le Castor vs le monde</div>
+  <div class="vs-grid">
+    <div class="vs-row beaver">
+      <div><div class="vs-name">🦫 Le Castor</div><div class="vs-tag">Données comportementales + IA qui apprend</div></div>
+      <div class="vs-verdict">7 JOURS D'AVANCE</div>
     </div>
     <div class="vs-row">
-      <div class="vs-name">📊 STATISTIQUE CANADA<span>Données officielles, méthode rigoureuse</span></div>
-      <div class="vs-val lose">6 MOIS DE RETARD</div>
+      <div><div class="vs-name">📊 Statistique Canada</div><div class="vs-tag">Données officielles, méthode rigoureuse</div></div>
+      <div class="vs-tag">6 mois de retard</div>
     </div>
     <div class="vs-row">
-      <div class="vs-name">🎰 POLYMARKET<span>Sagesse de la foule, argent en jeu</span></div>
-      <div class="vs-val lose">OPINIONS, PAS DATA</div>
+      <div><div class="vs-name">🎰 Polymarket</div><div class="vs-tag">Sagesse des foules, argent en jeu</div></div>
+      <div class="vs-tag">Opinions, pas des données</div>
     </div>
     <div class="vs-row">
-      <div class="vs-name">🍕 PENTAGON PIZZA INDEX<span>1 seul signal (livraisons de pizza)</span></div>
-      <div class="vs-val lose">1 SIGNAL SEULEMENT</div>
+      <div><div class="vs-name">🍕 Pentagon Pizza Index</div><div class="vs-tag">1 seul signal (livraisons de pizza)</div></div>
+      <div class="vs-tag">1 signal seulement</div>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="foot-brand">🦫 BEAVER.WATCH</div>
-  <div class="foot-meta">
-    Aucune prédiction effacée · Vérification automatique · Données 100% publiques<br>
-    © 2026 BEAVER.WATCH
-  </div>
+  🦫 BEAVER.WATCH — Aucune prédiction effacée · Vérification automatique · Données 100% publiques<br>
+  © 2026 BEAVER.WATCH
 </footer>
 
 <script>
-function fmtDate(d){
+function fmtDate(s){
+  if(!s)return '—';
   try{
-    var dt=new Date(d);
-    var mois=['jan','fév','mar','avr','mai','juin','juil','août','sep','oct','nov','déc'];
-    return dt.getDate()+' '+mois[dt.getMonth()]+' '+dt.getFullYear();
-  }catch(e){return d;}
+    var d=new Date(s);
+    if(isNaN(d.getTime()))return s;
+    return d.toLocaleDateString('fr-CA',{year:'numeric',month:'long',day:'numeric'});
+  }catch(e){return s;}
 }
-
-function daysUntil(d){
+function daysUntil(s){
+  if(!s)return null;
   try{
-    var target=new Date(d);
-    var now=new Date();
-    var diff=Math.ceil((target-now)/(1000*60*60*24));
-    return diff;
+    var d=new Date(s),now=new Date();
+    return Math.ceil((d-now)/86400000);
   }catch(e){return null;}
 }
-
-function renderPred(p,type){
-  var cls=type;
-  var badge='';
-  if(type==='pending'){
-    var jours=daysUntil(p.date_verification);
-    badge='<div class="pred-badge pending">⏳ EN ATTENTE</div>';
-    var cd=jours!==null&&jours>0?('Vérification dans '+jours+' jours'):'Vérification imminente';
-    return '<div class="pred-card pending">'+
-      '<div class="pred-top"><div class="pred-ind">'+(p.indicateur==='kijiji'?'📦 KIJIJI STRESS':'🚗 VOL AUTO')+'</div>'+badge+'</div>'+
-      '<div class="pred-grid">'+
-        '<div><div class="pg-n predit">'+Math.round(p.score_predit*100)+'</div><div class="pg-l">Score prédit</div></div>'+
-        '<div><div class="pg-n" style="color:var(--text)">'+Math.round((p.score_actuel||0)*100)+'</div><div class="pg-l">Score au moment</div></div>'+
-      '</div>'+
-      '<div class="countdown">⏳ '+cd+'</div>'+
-      '<div class="pred-dates">Prédit le '+fmtDate(p.date_prediction)+' · Vérification le '+fmtDate(p.date_verification)+'</div>'+
-      (p.prediction_fr?'<div class="pred-text">'+p.prediction_fr+'</div>':'')+
-    '</div>';
-  } else {
-    var ok=p.claude_avait_raison===true;
-    cls=ok?'correct':'wrong';
-    badge=ok?'<div class="pred-badge correct">✅ CORRECT</div>':'<div class="pred-badge wrong">❌ INCORRECT</div>';
-    return '<div class="pred-card '+cls+'">'+
-      '<div class="pred-top"><div class="pred-ind">'+(p.indicateur==='kijiji'?'📦 KIJIJI STRESS':'🚗 VOL AUTO')+'</div>'+badge+'</div>'+
-      '<div class="pred-grid">'+
-        '<div><div class="pg-n predit">'+Math.round(p.score_predit*100)+'</div><div class="pg-l">Prédit</div></div>'+
-        '<div><div class="pg-n reel">'+Math.round(p.score_reel*100)+'</div><div class="pg-l">Réel</div></div>'+
-        '<div><div class="pg-n" style="color:'+(ok?'var(--green)':'var(--red)')+'">'+(p.ecart_pct>0?'+':'')+p.ecart_pct+'%</div><div class="pg-l">Écart</div></div>'+
-      '</div>'+
-      '<div class="pred-dates">Prédit le '+fmtDate(p.date_prediction)+' · Vérifié le '+fmtDate(p.verifie_le||p.date_verification)+'</div>'+
-      (p.prediction_fr?'<div class="pred-text">'+p.prediction_fr+'</div>':'')+
-    '</div>';
-  }
+function indLabel(ind){
+  if(ind==='kijiji')return '💰 Revente d\'urgence';
+  if(ind==='auto_theft'||ind==='autotheft')return '🚗 Vol auto';
+  return '📊 '+(ind||'Indice');
+}
+function pct(v){
+  var n=Number(v);
+  if(isNaN(n))return 0;
+  return n<=1?Math.round(n*100):Math.round(n);
 }
 
-function loadPredictions(){
-  var allPreds=[];
-  var sources=['kijiji_predictions.json','auto_theft_predictions.json'];
-  var loaded=0;
+function cardPending(p){
+  var sp=pct(p.score_predit);
+  var sa=pct(p.score_actuel!=null?p.score_actuel:p.score_au_moment);
+  var diff=sp-sa;
+  var sens;
+  if(diff>0)sens='📈 Le Castor parie que le stress <b>MONTE</b> de '+sa+' à '+sp;
+  else if(diff<0)sens='📉 Le Castor parie que le stress <b>BAISSE</b> de '+sa+' à '+sp;
+  else sens='➡️ Le Castor parie que le stress <b>reste stable</b> autour de '+sp;
+  var j=daysUntil(p.date_verification);
+  var cd=(j!=null&&j>0)?('Vérification dans '+j+' jours'):'Vérification imminente';
+  var txt=p.prediction_fr||p.prediction||'';
+  return '<div class="pred-card pending">'+
+    '<div class="pred-top"><div class="pred-ind">'+indLabel(p.indicateur)+'</div>'+
+    '<div class="pred-badge pending">⏳ En attente</div></div>'+
+    '<div class="pred-bet">'+sens+' sur 100, d\'ici 4 à 8 semaines.</div>'+
+    '<div class="pred-grid">'+
+      '<div><div class="pg-n predit">'+sp+'</div><div class="pg-l">Score prédit</div></div>'+
+      '<div><div class="pg-n">'+sa+'</div><div class="pg-l">Score au moment</div></div>'+
+    '</div>'+
+    '<div class="countdown">⏳ '+cd+'</div>'+
+    '<div class="pred-dates">Prédit le '+fmtDate(p.date_prediction)+' · Vérification le '+fmtDate(p.date_verification)+'</div>'+
+    (txt?'<div class="pred-text">'+txt+'</div>':'')+
+  '</div>';
+}
 
-  sources.forEach(function(src){
-    fetch(src+'?t='+Date.now())
-      .then(function(r){return r.json();})
-      .then(function(data){
-        if(Array.isArray(data))allPreds=allPreds.concat(data);
-        loaded++;
-        if(loaded===sources.length)render(allPreds);
-      })
-      .catch(function(){
-        loaded++;
-        if(loaded===sources.length)render(allPreds);
-      });
-  });
+function cardVerified(p){
+  var ok=p.claude_avait_raison===true;
+  var sp=pct(p.score_predit);
+  var sr=pct(p.score_reel);
+  var ecart=(p.ecart_pct!=null)?p.ecart_pct:(sr-sp);
+  var txt=p.prediction_fr||p.prediction||'';
+  return '<div class="pred-card '+(ok?'correct':'wrong')+'">'+
+    '<div class="pred-top"><div class="pred-ind">'+indLabel(p.indicateur)+'</div>'+
+    '<div class="pred-badge '+(ok?'correct':'wrong')+'">'+(ok?'✅ Correct':'❌ Incorrect')+'</div></div>'+
+    '<div class="pred-grid">'+
+      '<div><div class="pg-n predit">'+sp+'</div><div class="pg-l">Prédit</div></div>'+
+      '<div><div class="pg-n reel">'+sr+'</div><div class="pg-l">Réel</div></div>'+
+      '<div><div class="pg-n" style="color:'+(ok?'var(--green)':'var(--red)')+'">'+(ecart>0?'+':'')+ecart+'%</div><div class="pg-l">Écart</div></div>'+
+    '</div>'+
+    '<div class="pred-dates">Prédit le '+fmtDate(p.date_prediction)+' · Vérifié le '+fmtDate(p.verifie_le||p.date_verification)+'</div>'+
+    (txt?'<div class="pred-text">'+txt+'</div>':'')+
+  '</div>';
 }
 
 function render(preds){
-  var verified=preds.filter(function(p){return p.score_reel!==null&&p.score_reel!==undefined;});
-  var pending=preds.filter(function(p){return p.score_reel===null||p.score_reel===undefined;});
+  var verified=[],pending=[];
+  preds.forEach(function(p){
+    if(p.score_reel!=null)verified.push(p);
+    else pending.push(p);
+  });
   var correct=verified.filter(function(p){return p.claude_avait_raison===true;});
 
-  // Big stats
   if(verified.length>0){
     document.getElementById('precision').textContent=Math.round(correct.length/verified.length*100)+'%';
-  } else {
+  }else{
     document.getElementById('precision').textContent='NOUVEAU';
-    document.getElementById('precision').style.fontSize='clamp(3rem,12vw,6rem)';
+    document.getElementById('precision').style.fontSize='clamp(3rem,12vw,5.5rem)';
   }
   document.getElementById('total').textContent=preds.length;
   document.getElementById('verified').textContent=verified.length;
   document.getElementById('pending').textContent=pending.length;
 
-  // Pending list
   var pl=document.getElementById('pending-list');
   if(pending.length>0){
-    pl.innerHTML=pending.map(function(p){return renderPred(p,'pending');}).join('');
-  } else {
-    pl.innerHTML='<div class="pred-card pending"><div class="pred-top"><div class="pred-ind">Aucune prédiction en attente</div></div></div>';
+    var latest={};
+    pending.forEach(function(p){
+      var k=p.indicateur||'autre';
+      if(!latest[k]||new Date(p.date_prediction)>new Date(latest[k].date_prediction))latest[k]=p;
+    });
+    var shown=Object.keys(latest).map(function(k){return latest[k];});
+    shown.sort(function(a,b){return new Date(b.date_prediction)-new Date(a.date_prediction);});
+    pl.innerHTML=shown.map(cardPending).join('')+
+      '<div class="note-total">'+pending.length+' prédictions en attente au total · 1 affichée par indicateur (la plus récente)</div>';
+  }else{
+    pl.innerHTML='<div class="empty">Aucune prédiction en attente pour le moment.</div>';
   }
 
-  // Verified list
+  var vl=document.getElementById('verified-list');
   if(verified.length>0){
-    var vl=document.getElementById('verified-list');
     verified.sort(function(a,b){return new Date(b.date_prediction)-new Date(a.date_prediction);});
-    vl.innerHTML=verified.map(function(p){return renderPred(p,'verified');}).join('');
+    vl.innerHTML=verified.map(cardVerified).join('');
   }
 }
 
+function loadPredictions(){
+  var sources=['kijiji_predictions.json','auto_theft_predictions.json'];
+  var all=[],done=0;
+  sources.forEach(function(src){
+    fetch(src+'?t='+Date.now())
+      .then(function(r){return r.ok?r.json():[];})
+      .then(function(data){
+        if(Array.isArray(data))all=all.concat(data);
+        done++;
+        if(done===sources.length)render(all);
+      })
+      .catch(function(){
+        done++;
+        if(done===sources.length)render(all);
+      });
+  });
+}
 window.addEventListener('load',loadPredictions);
 </script>
-
 </body>
 </html>
