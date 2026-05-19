@@ -1,10 +1,85 @@
 {
-  "updated": "2026-05-18 23:42",
+  "updated": "2026-05-19 02:50",
   "note": "Socle = Google Sheet (castorScore) + signaux officiels. On expose le nombre de signaux, jamais lesquels.",
   "signaux_configures": 6,
   "signaux_prevus_total": 12,
   "provinces": {
     "AB": {
+      "score": 0.358,
+      "score_100": 36,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 6,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "BC": {
+      "score": 0.343,
+      "score_100": 34,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 6,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "MB": {
+      "score": 0.338,
+      "score_100": 34,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 6,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NB": {
+      "score": 0.376,
+      "score_100": 38,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 6,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NL": {
+      "score": 0.445,
+      "score_100": 44,
+      "niveau": {
+        "fr": "À SURVEILLER",
+        "en": "WATCH",
+        "emoji": "🟡"
+      },
+      "signaux_actifs": 6,
+      "signaux_prevus": 12,
+      "confiance": {
+        "fr": "Bonne",
+        "en": "Good"
+      }
+    },
+    "NS": {
       "score": 0.366,
       "score_100": 37,
       "niveau": {
@@ -19,84 +94,9 @@
         "en": "Good"
       }
     },
-    "BC": {
-      "score": 0.355,
-      "score_100": 36,
-      "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
-      },
-      "signaux_actifs": 6,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Bonne",
-        "en": "Good"
-      }
-    },
-    "MB": {
-      "score": 0.356,
-      "score_100": 36,
-      "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
-      },
-      "signaux_actifs": 6,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Bonne",
-        "en": "Good"
-      }
-    },
-    "NB": {
-      "score": 0.394,
-      "score_100": 39,
-      "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
-      },
-      "signaux_actifs": 6,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Bonne",
-        "en": "Good"
-      }
-    },
-    "NL": {
-      "score": 0.462,
-      "score_100": 46,
-      "niveau": {
-        "fr": "TENSION",
-        "en": "TENSION",
-        "emoji": "🟠"
-      },
-      "signaux_actifs": 6,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Bonne",
-        "en": "Good"
-      }
-    },
-    "NS": {
-      "score": 0.383,
-      "score_100": 38,
-      "niveau": {
-        "fr": "À SURVEILLER",
-        "en": "WATCH",
-        "emoji": "🟡"
-      },
-      "signaux_actifs": 6,
-      "signaux_prevus": 12,
-      "confiance": {
-        "fr": "Bonne",
-        "en": "Good"
-      }
-    },
     "NT": {
-      "score": 0.4,
-      "score_100": 40,
+      "score": 0.372,
+      "score_100": 37,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -110,8 +110,8 @@
       }
     },
     "ON": {
-      "score": 0.374,
-      "score_100": 37,
+      "score": 0.362,
+      "score_100": 36,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -125,8 +125,8 @@
       }
     },
     "PE": {
-      "score": 0.426,
-      "score_100": 43,
+      "score": 0.409,
+      "score_100": 41,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -140,8 +140,8 @@
       }
     },
     "QC": {
-      "score": 0.381,
-      "score_100": 38,
+      "score": 0.367,
+      "score_100": 37,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -155,8 +155,8 @@
       }
     },
     "SK": {
-      "score": 0.38,
-      "score_100": 38,
+      "score": 0.363,
+      "score_100": 36,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -170,8 +170,8 @@
       }
     },
     "YT": {
-      "score": 0.4,
-      "score_100": 40,
+      "score": 0.372,
+      "score_100": 37,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -187,8 +187,8 @@
   },
   "villes": {
     "montreal": {
-      "score": 0.357,
-      "score_100": 36,
+      "score": 0.353,
+      "score_100": 35,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",
@@ -202,8 +202,8 @@
       }
     },
     "toronto": {
-      "score": 0.385,
-      "score_100": 38,
+      "score": 0.351,
+      "score_100": 35,
       "niveau": {
         "fr": "À SURVEILLER",
         "en": "WATCH",

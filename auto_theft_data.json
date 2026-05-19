@@ -1,18 +1,18 @@
 {
-  "updated": "2026-05-18 23:40",
+  "updated": "2026-05-19 02:47",
   "source": "Google Trends",
   "keywords": {
     "vol_auto": {
       "label_fr": "Vol d'Auto",
       "label_en": "Auto Theft",
       "emoji": "🚗",
-      "raw_score": 8.4,
-      "stress_score": 0.12,
+      "raw_score": null,
+      "stress_score": null,
       "status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       },
       "weight": 0.5
     },
@@ -20,7 +20,7 @@
       "label_fr": "Réclamations Assurance",
       "label_en": "Insurance Claims",
       "emoji": "📋",
-      "raw_score": 0.3,
+      "raw_score": 0.5,
       "stress_score": 0.05,
       "status": {
         "label_fr": "Normal",
@@ -49,7 +49,7 @@
     "canada": {
       "name_fr": "Canada",
       "name_en": "Canada",
-      "composite_score": 0.12,
+      "composite_score": 0.08,
       "composite_status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -71,7 +71,7 @@
     "quebec": {
       "name_fr": "Québec",
       "name_en": "Quebec",
-      "composite_score": 0.06,
+      "composite_score": 0.05,
       "composite_status": {
         "label_fr": "Normal",
         "label_en": "Normal",
@@ -93,16 +93,16 @@
     "alberta": {
       "name_fr": "Alberta",
       "name_en": "Alberta",
-      "composite_score": 0.05,
+      "composite_score": null,
       "composite_status": {
-        "label_fr": "Normal",
-        "label_en": "Normal",
-        "color": "green",
-        "emoji": "🟢"
+        "label_fr": "N/A",
+        "label_en": "N/A",
+        "color": "gray",
+        "emoji": "❓"
       }
     }
   },
-  "national_score": 0.08,
+  "national_score": 0.05,
   "national_status": {
     "label_fr": "Normal",
     "label_en": "Normal",
@@ -110,15 +110,15 @@
     "emoji": "🟢"
   },
   "claude_analysis": {
-    "analyse_fr": "Le score national de stress lié au vol d'auto s'établit à 0,08/1,0 aujourd'hui, ce qui représente un niveau très bas et stable. L'historique des 30 derniers jours confirme cette stabilité, avec un score qui n'a que légèrement progressé de 0,07 à 0,08 entre le 17 et le 18 mai 2026. Par région, le Canada dans son ensemble affiche le score le plus élevé à 0,12, tandis que l'Ontario, le Québec, la Colombie-Britannique et l'Alberta restent tous à 0,05. La catégorie vol_auto domine les recherches à 0,12, suggérant une légère préoccupation nationale mais sans signal d'alarme.",
-    "analyse_en": "The national stress score related to auto theft stands at 0.08/1.0 today, reflecting a very low and stable level of concern. The 30-day historical data confirms this stability, with the score only marginally increasing from 0.07 to 0.08 between May 17 and 18, 2026. Regionally, Canada overall posts the highest score at 0.12, while Ontario, Quebec, British Columbia, and Alberta all remain at 0.05. The auto theft search category leads at 0.12, suggesting a mild national preoccupation but no alarming signal.",
-    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score de stress lié au vol d'auto devrait rester stable ou connaître une légère hausse saisonnière, les mois estivaux étant historiquement associés à une recrudescence des vols de véhicules au Canada. Un score autour de 0,11 à 0,13 est envisageable si des incidents médiatisés surviennent dans les grandes métropoles.",
-    "prediction_en": "Over the next 4 to 8 weeks, the auto theft stress score is expected to remain stable or experience a slight seasonal uptick, as summer months are historically associated with increased vehicle theft activity across Canada. A score around 0.11 to 0.13 is plausible if high-profile incidents gain media attention in major urban centres.",
-    "region_risque": "Canada national",
-    "signal_dominant": "Vol auto stable faible",
+    "analyse_fr": "Le score national de stress lié au vol d'auto s'établit aujourd'hui à 0.05/1.0, marquant une baisse notable de 0.03 points par rapport aux deux jours précédents (0.08). Sur les 30 derniers jours, le score oscillait de façon stable entre 0.07 et 0.08 avant cette détente, suggérant un réel recul de l'intérêt des Canadiens pour ce sujet. Les données régionales montrent que le Canada dans son ensemble (0.08) affiche le signal le plus élevé, tandis que l'Alberta ne génère aucune donnée mesurable. Les catégories assurance et sécurité auto maintiennent un niveau bas et stable à 0.05, indiquant une préoccupation de fond sans urgence perçue.",
+    "analyse_en": "The national stress score related to auto theft stands at 0.05/1.0 today, marking a notable drop of 0.03 points compared to the previous two days (0.08). Over the past 30 days, the score had been stable between 0.07 and 0.08 before this easing, suggesting a genuine decline in Canadians' interest in the topic. Regional data shows that Canada overall (0.08) carries the highest signal, while Alberta yields no measurable data. The auto insurance and security categories remain low and stable at 0.05, indicating a baseline concern without perceived urgency.",
+    "prediction_fr": "Au cours des 4 à 8 prochaines semaines, le score devrait se stabiliser autour de 0.07 à 0.10, porté par la saison estivale qui coïncide historiquement avec une hausse des vols de véhicules et une vigilance accrue des assurés. Une remontée progressive est probable si des incidents médiatisés surviennent dans les grandes métropoles ontariennes ou québécoises.",
+    "prediction_en": "Over the next 4 to 8 weeks, the score is expected to stabilize around 0.07 to 0.10, driven by the summer season which historically coincides with an increase in vehicle thefts and heightened awareness among policyholders. A gradual uptick is likely if high-profile incidents occur in major Ontario or Quebec metropolitan areas.",
+    "region_risque": "Ontario central",
+    "signal_dominant": "Baisse soudaine intérêt recherches",
     "niveau_alerte": "NORMAL",
-    "score_predit_4_semaines": 0.11
+    "score_predit_4_semaines": 0.09
   },
-  "trend": 0.0,
-  "prochaine_verification": "2026-06-15"
+  "trend": -0.03,
+  "prochaine_verification": "2026-06-16"
 }

@@ -321,5 +321,22 @@
     "claude_avait_raison": null,
     "resultat": null,
     "verifie_le": null
+  },
+  {
+    "indicateur": "kijiji",
+    "date_prediction": "2026-05-19",
+    "date_verification": "2026-06-16",
+    "score_actuel": 0.21,
+    "score_predit": 0.31,
+    "niveau_alerte_predit": "NORMAL",
+    "signal_dominant": "Vancouver bijoux bail alerte",
+    "prediction_fr": "Dans les 4 à 8 prochaines semaines, le score national devrait remonter vers 0.28-0.35 à l'approche de la prochaine période avant-paie, surtout si Vancouver maintient sa pression sur bijoux et transferts de bail. Une escalade au-delà de 0.40 est possible si les tendances vancouvéroises se propagent à Toronto et Montréal.",
+    "prediction_en": "Over the next 4 to 8 weeks, the national score is expected to climb back toward 0.28-0.35 as the next pre-payday window approaches, particularly if Vancouver's jewelry and lease transfer pressure persists. A push beyond 0.40 is possible should Vancouver's distress patterns begin spreading to Toronto and Montreal.",
+    "score_reel": null,
+    "ecart": null,
+    "ecart_pct": null,
+    "claude_avait_raison": null,
+    "resultat": null,
+    "verifie_le": null
   }
 ]
